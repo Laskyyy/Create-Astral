@@ -434,7 +434,7 @@ hash = "82345259c75fa165daeac4670393f7d30e08c21c011acaf1887976384964e641"
 
 [[files]]
 file = "config/fancymenu/customization/changelog_2.1_layout.txt"
-hash = "5564430a3ecf3924132d4153fe24aa018c898c9f4edc9cd6c185d6c8ae99fead"
+hash = "acf29fcc099a6555fa131ea58ff78eda59b81574cbd1526529aaf90563b2e8e1"
 
 [[files]]
 file = "config/fancymenu/customization/contributor_credits_layout.txt"
@@ -7022,7 +7022,7 @@ hash = "2f3dd0fdccacbd43120642cd2a71173503b062250c99deaab2857fa1a532bd61"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/desizer.js"
-hash = "d4cdb6c78f881fe516052e2fe545454813e7f6fe5509ca1dd2e24b34da2886ce"
+hash = "e12f0ec4be008095b6e48e0c2a433963d7d8b1c38510d378ad9e19926bef7253"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/desizer_sturdy_cage.js"
@@ -14358,11 +14358,11 @@ hash = "a60f2fce9490d76610595e235b0d9b2a89354a0defaf326f2d71c4e9835ac3ed"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/stonecutting.js"
-hash = "8ca4cb04fc07bb68c5453fcff9e1a3b48e43213ad539ee9e74e48cb069c92db9"
+hash = "a8fec6596dbb3178bb15d4c49257bbc2ec5accc3ba240199846f57234c585d6f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "f11c7f6cdcc9c8789b3d1e77036b0d1cba2bbb98147a8461b7002f8e78e76c3c"
+hash = "54247a05561b935e06d228e1f0bfcf84445a627a9603803b94c80852381e3035"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
@@ -14578,7 +14578,7 @@ hash = "f933bcc67a78f06410c5593837c91607de5b6a3e5f5c575a494e050dcefe5441"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/createastral/item/item.js"
-hash = "9abfcfe035343acf57dad7feda6a68eeb5c0dec40866e278017dba55cd3150a5"
+hash = "f563d82e4fc38a0ac7fa33206f5d53022b07326cb286b8a3072d76906bdea056"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/createastral/item/tool_tiers.js"

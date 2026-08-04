@@ -39,6 +39,10 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed basically all other resource pack issues introduced in 2.1.5 (#724) @The-Shortman
 - Fixed Dry Rich Farmland having a missing texture (#725) @The-Shortman @HyperRaccoon13
 - Fixed blocks not being wrenchable anymore (#726) @The-Shortman
+- Fixed a Gold dupe involving the Chemical Reactor (#727) @ethanicusss
+- Fixed sequenced assembly transitional items for Create's Casings (#730) @ethanicusss
+- Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
+- Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
 
 ## 2.1.5 - 2026/07/05
 
