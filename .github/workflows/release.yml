@@ -2,11 +2,11 @@ name: Create release
 run-name: "Release version ${{ github.ref }}"
 
 on:
-  workflow_dispatch:
-    inputs:
-      test:
-        description: Test workflow
-        default: "true"
+# workflow_dispatch:
+#   inputs:
+#     test:
+#       description: Test workflow
+#       default: "true"
   push:
     tags:
       - v*
@@ -46,18 +46,18 @@ jobs:
         id: get-latest-tag
         shell: bash
         run: |
-          if [ ! ${{ inputs.test }} ]; then
-            tag=$(git describe --tags --abbrev=0 origin/main)
-            if [ -z "$tag" ]; then
-              echo "Latest tag not found" && exit 1
-            else
-              echo "Latest tag found: $tag"
-              echo "GIT_TAG=$tag" >> $GITHUB_OUTPUT
-            fi
+#         if [ ! ${{ inputs.test }} ]; then
+          tag=$(git describe --tags --abbrev=0 origin/main)
+          if [ -z "$tag" ]; then
+            echo "Latest tag not found" && exit 1
           else
-            echo "Testing release, placeholder inserted."
-            echo "GIT_TAG=TEST_RELEASE" >> $GITHUB_OUTPUT
+            echo "Latest tag found: $tag"
+            echo "GIT_TAG=$tag" >> $GITHUB_OUTPUT
           fi
+#         else
+#           echo "Testing release, placeholder inserted."
+#           echo "GIT_TAG=TEST_RELEASE" >> $GITHUB_OUTPUT
+#         fi
 
       - name: Parse changelog
         id: parse-changelog
@@ -65,7 +65,7 @@ jobs:
         with:
           path: CHANGELOG.md
           version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
-        continue-on-error: true
+#       continue-on-error: true
 
   build-release:
     name: Build release artifacts
@@ -234,7 +234,7 @@ jobs:
 
       - name: Create release
         id: create-release
-        if: ${{ !inputs.test }}
+#       if: ${{ !inputs.test }}
         uses: softprops/action-gh-release@v3.0.2
         with:
           name: ${{ needs.get-info.outputs.version }}
