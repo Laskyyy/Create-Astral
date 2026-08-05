@@ -15,7 +15,36 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.5 [CURRENT RELEASE] - 2026/07/05
+## 2.1.5a [HOTFIX, CURRENT RELEASE] - 2026/07/26
+
+### ADDITIONS
+
+#### Quality of life
+
+- Added a quest to explain recipes for the Blender as the recipes don't appear in REI (#721) @ethanicusss
+
+### CHANGES
+
+#### Localisation
+
+- Added Russian (ru_ru) translations for Spud Shotgun, Saltmeal, and Blender quests (#719) @Nik-Was
+
+#### Bug patches
+
+- Fixed Chromatic Compound getting voided in Void fluid (#718) @novatransbian
+- Fixed the Honey Block piston smashing recipe giving only one Honey Bottle instead of four (#718) @novatransbian
+- Fixed Skeletons being practically invisible (#724) @The-Shortman
+- Fixed Corn returning and replacing Beetroot (#724) @The-Shortman
+- Fixed Create's Wrench being 2D (#724) @The-Shortman
+- Fixed basically all other resource pack issues introduced in 2.1.5 (#724) @The-Shortman
+- Fixed Dry Rich Farmland having a missing texture (#725) @The-Shortman @HyperRaccoon13
+- Fixed blocks not being wrenchable anymore (#726) @The-Shortman
+- Fixed a Gold dupe involving the Chemical Reactor (#727) @ethanicusss
+- Fixed sequenced assembly transitional items for Create's Casings (#730) @ethanicusss
+- Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
+- Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
+
+## 2.1.5 - 2026/07/05
 
 ### SUMMARY
 

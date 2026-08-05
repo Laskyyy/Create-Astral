@@ -1055,6 +1055,9 @@
   "ftbquests.chapter.6_raow.quests66.description3": "— В него невозможно автоматически помещать предметы (доставать можно!);",
   "ftbquests.chapter.6_raow.quests66.description4": "— В нём на один ряд меньше слотов, чем в двойном сундуке.",
   "ftbquests.chapter.6_raow.quests66.description5": "Стоит ли его использовать, решать вам.",
+  "ftbquests.chapter.6_raow.quests67.subtitle": "Ускоряем рост кристаллов!",
+  "ftbquests.chapter.6_raow.quests67.description0": "Кристалы тоже любыт приправы! Нажмите ПКМ по любому кристаллу, например, &6аметиста&r или &6эндер-слизи&r, и он сразу вырастет в следующую стадию!",
+  "ftbquests.chapter.6_raow.quests67.description1": "Солевое удобрение крафтится с помощью &6блендера&r, добавленного в Главе 4 (к сожалению, пока без поддержки REI)! Оно создаётся из &6Деликаче&r и &6селитры&r следующим образом:",
 
   "ftbquests.chapter.assorted_goals.title": "0.5) Начало пути",
   "ftbquests.chapter.assorted_goals.quests0.title": "Рыцарь в сияющей меди",
@@ -3093,7 +3096,7 @@
   "ftbquests.chapter.chapter_5.blender.subtitle": "Не для 3D моделирования!",
   "ftbquests.chapter.chapter_5.blender.description0": "&6Блендер&r — это высокотехнологичный миксер, предназначенный специально для еды, например, белковых шариков, картофльного пюре и сейтана!",
   "ftbquests.chapter.chapter_5.blender.description2": "... другие вкусняшки включают: более эффективные рецепты костной муки, слизи, песка, биомассы и других!",
-  "ftbquests.chapter.chapter_5.blender.description4": "Закидывайте предметы в &6блендер&r вручную или каким-либо методом перемещения предметов, например, &6жёлобом&r. Последовательность не важна.",
+  "ftbquests.chapter.chapter_5.blender.description4": "Закидывайте предметы в &6блендер&r вручную или каким-либо методом перемещения предметов, например, &6жёлобом&r. Последовательность не важна. К сожалению, поддержки REI для него пока нет, так что сделаем всё по-старому:",
   "ftbquests.chapter.chapter_5.quests77.subtitle": "Мчись быстро, &4убивай&r ещё быстрее",
   "ftbquests.chapter.chapter_5.quests77.description0": "&6Рапира&r позволяет выполнить &6двойную атаку в рывке&r, сначала вперёд, затем назад. В этом состоянии одна атака по вам будет отражена обратно! Правда, после этого присутствует кулдаун.",
   "ftbquests.chapter.chapter_5.quests77.description2": "Древнее оружие, преобразованное в новую эпоху.",
@@ -3103,6 +3106,8 @@
   "ftbquests.chapter.chapter_5.quests78.description2": "Нанесённые удары позволяют &6поглощать&r души тех, кого они поразили.",
   "ftbquests.chapter.chapter_5.quests78.description3": "&dИзлечивая&r вас!",
   "ftbquests.chapter.chapter_5.quests78.description4": "И &8истощая&r раненых.",
+  "ftbquests.chapter.chapter_5.quests79.subtitle": "Оружие массового картофеля",
+  "ftbquests.chapter.chapter_5.quests79.description0": "Новейшая человеческая разработка для противопиглинской обороны. Классическая &6картофельная пушка&r с неожиданным смертельным поворотом — этот &6картофельный дробовик&r наносит намного больше урона вблизи. Не забудьте запастись &6картофельными магазинами&r!",
 
   "ftbquests.chapter.read_the_questbook.title": "Читайте книгу квестов! (FAQ)",
   "ftbquests.chapter.read_the_questbook.quests0.title": "&6Ванильные инструменты",
