@@ -15,7 +15,7 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.5a [HOTFIX, CURRENT RELEASE] - 2026/07/26
+## [2.1.5a] - 2026-07-26
 
 ### ADDITIONS
 
@@ -44,7 +44,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
 - Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
 
-## 2.1.5 - 2026/07/05
+## [2.1.5] - 2026-07-05
 
 ### SUMMARY
 
@@ -267,7 +267,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 
 > _Nothing to see here yet..._
 
-## 2.1.4c [HOTFIX] - 2025/08/18
+## [2.1.4c] - 2025-08-18
 
 ### CHANGES
 
@@ -288,7 +288,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed Chromatic Compound not stacking properly.
 - Fixed melting yields of metals that were changed in 2.1.4a to give the correct value of 12 nuggets instead of 13.
 
-## 2.1.4b [HOTFIX] - 2025/08/11
+## [2.1.4b] - 2025-08-11
 
 ### CHANGES
 
@@ -314,7 +314,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed a KubeJS error being thrown every time a Foundry Controller was right clicked.
 - Fixed storage upgrades applied to Drawers from Extended Drawers showing a missing texture on the front face of the block.
 
-## 2.1.4a [HOTFIX] - 2025/08/09
+## [2.1.4a] - 2025-08-09
 
 ### CHANGES
 
@@ -333,7 +333,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
 - Fixed a missing recipe for coal dust in the Grinder.
 
-## 2.1.4 - 2025/08/08
+## [2.1.4] - 2025-08-08
 
 **IMPORTANT:**
 
@@ -515,7 +515,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 ---
 
-## 2.1.3 - 2025/01/05
+## [2.1.3] - 2025-01-05
 
 ### ADDITIONS
 
@@ -648,7 +648,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 ---
 
-## 2.1.2 - 2024/10/31
+## [2.1.2] - 2024-10-31
 
 ### ADDITIONS
 
@@ -743,7 +743,7 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 ---
 
-## 2.1.1 - 2024/10/16
+## [2.1.1] - 2024-10-16
 
 ### ADDITIONS
 
@@ -826,7 +826,7 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 ---
 
-## 2.1 - 2024/10/08
+## [2.1] - 2024-10-08
 
 > **Note**:
 >

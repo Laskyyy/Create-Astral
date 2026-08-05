@@ -1,28 +1,92 @@
-name: Create release branch
+name: Create release
+run-name: "Release version ${{ github.ref }}"
 
 on:
-  workflow_dispatch:
-    inputs:
-      new_version:
-        description: Version to display on all fields
-        required: true
+# workflow_dispatch:
+#   inputs:
+#     test:
+#       description: Test workflow
+#       default: "true"
+  push:
+    tags:
+      - v*
+    paths:
+      - "config"
+      - "configureddefaults"
+      - "defaultconfigs"
+      - "fancymenustuff"
+      - "journeymap"
+      - "kubejs"
+      - "mods"
+      - "resourcepacks"
+      - "schematics"
+      - "serverpack"
+      - "shaderpacks"
+      - ".packwizignore"
+      - "CHANGELOG.md"
+      - "icon.png"
+      - "index.toml"
+      - "pack.toml"
+      - "server.packwizignore"
 
 jobs:
-  create-pullrequest:
-    name: Create Pull Request
+  get-info:
+    name: Get modpack info
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          ref: Astral-Experimental
-          fetch-depth: 0
+    outputs:
+      version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
+      changelog: ${{ steps.parse-changelog.outputs.description }}
 
-      - name: Get old version
-        id: old-version
+    steps:
+      - name: Checkout repository
+        id: checkout-repo
+        uses: actions/checkout@v7
+
+      - name: Get latest tag
+        id: get-latest-tag
         shell: bash
         run: |
-          echo "version=$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)" >> "$GITHUB_OUTPUT"
+#         if [ ! ${{ inputs.test }} ]; then
+          tag=$(git describe --tags --abbrev=0 origin/main)
+          if [ -z "$tag" ]; then
+            echo "Latest tag not found" && exit 1
+          else
+            echo "Latest tag found: $tag"
+            echo "GIT_TAG=$tag" >> $GITHUB_OUTPUT
+          fi
+#         else
+#           echo "Testing release, placeholder inserted."
+#           echo "GIT_TAG=TEST_RELEASE" >> $GITHUB_OUTPUT
+#         fi
+
+      - name: Parse changelog
+        id: parse-changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+          version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
+#       continue-on-error: true
+
+  build-release:
+    name: Build release artifacts
+    needs: [get-info]
+    runs-on: ubuntu-latest
+    outputs:
+      cf_name: ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip
+      serverpack_name: ${{steps.construct-base-name.outputs.ASTRAL_SERVER_NAME}}.zip
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: 17
+          distribution: "temurin"
 
       - name: Download packwiz binary # now with static releases instead of action artifacts!
         id: download-packwiz
@@ -37,67 +101,149 @@ jobs:
         shell: bash
         run: chmod +x ./packwiz
 
-      # cant use sed easily here because it gets weird when the version grabber greps for regex characters like [] expecially in experimental versioning
-      - name: Set pack.toml version
-        id: packwiz-version
-        shell: bash
-        run: |
-          while read -r line; do
-            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
-          done < "pack.toml" > "tmp.toml"
-          cat tmp.toml > pack.toml
-          rm tmp.toml
+      - name: Restore cached mod downloads
+        id: cache-mods-restore
+        uses: actions/cache/restore@v6
+        with:
+          path: /home/runner/.cache/packwiz/cache
+          key: cached-mods
+          restore-keys: |
+            cached-mods-
 
-      # need to set IFS to be empty so that read preserves whitespace
-      - name: Set FancyMenu environment variable
-        id: fancymenu-version
+      - name: Construct version strings
+        id: construct-base-name
         shell: bash
         run: |
-          OLD_IFS="$IFS"
-          IFS=
-          while read -r line; do
-            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
-          done < "./config/fancymenu/user_variables.db" > "tmp.db"
-          IFS="$OLD_IFS"
-          cat tmp.db > ./config/fancymenu/user_variables.db
-          rm tmp.db
+          VERSION=${{ needs.get-info.outputs.version }}
+          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$VERSION" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$VERSION" >> "$GITHUB_OUTPUT"
+          FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
+          echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
 
-      - name: Set startup debug log version
-        id: startup-version
+      - name: Set in-game versions
+        id: set-in-game-versions
         shell: bash
         run: |
-          OLD_IFS="$IFS"
-          IFS=
-          while read -r line; do
-            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
-          done < "./kubejs/startup_scripts/misc/misc.js" > "tmp.js"
-          IFS="$OLD_IFS"
-          cat tmp.js > ./kubejs/startup_scripts/misc/misc.js
-          rm tmp.js
+          VERSION=${{ needs.get-info.outputs.version }}
 
-      - name: Refresh packwiz
-        id: refresh-packwiz
+          sed -i -e "s/DEV/${VERSION}/g" pack.toml
+          sed -i -e "s/DEV/${VERSION}/g" ./config/fancymenu/user_variables.db
+          sed -i -e "s/DEV/${VERSION}/g" ./kubejs/startup_scripts/misc/misc.js
+
+      # servercore needs to be turned into a .toml for the curseforge export as CF won't accept it as an override jar
+      - name: Prepare for CurseForge client zip creation
         shell: bash
         run: |
+          mkdir temp-jar
+          mv mods/servercore* ./temp-jar
+          ./packwiz cf add https://www.curseforge.com/minecraft/mc-mods/servercore/files/4492100
+
+      - name: Create CurseForge client zip
+        shell: bash
+        run: |
+          ./packwiz curseforge export -o "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip"
           ./packwiz refresh
 
-      - name: Remove packwiz
-        id: remove-packwiz
+      - name: Clean up after CurseForge client zip creation
         shell: bash
         run: |
-          rm ./packwiz
+          ./packwiz remove servercore
+          mv temp-jar/servercore* ./mods
+          rm -r ./temp-jar
 
-      - name: Create pull request to new release branch
-        id: open-pr
+      - name: Prepare for serverpack creation
+        run: |
+          cat server.packwizignore >> .packwizignore
+          mv serverpack/* ./
+          ./packwiz refresh
+          mkdir server
+
+      - name: Download packwiz-installer-bootstrap
+        uses: robinraju/release-downloader@v1.13
+        with:
+          repository: packwiz/packwiz-installer-bootstrap
+          latest: true
+          fileName: packwiz-installer-bootstrap.jar
+
+      - name: Create serverpack
+        run: |
+          cd server
+          java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+          curl "https://meta.fabricmc.net/v2/versions/loader/1.18.2/${{steps.construct-base-name.outputs.FABRIC_VERSION}}/0.11.1/server/jar" --output server.jar
+          rm -f packwiz-installer.jar
+          rm -f packwiz.json
+          ls -l
+          cd ../
+
+      - name: Cache mod downloads
+        id: cache-mods-save
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            /home/runner/.cache/packwiz/cache
+            ./server/mods
+          key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
+
+      # Otherwise the artifact would be a zip in a zip, which can't be automatically installed in launchers
+      - name: Unpack client pack for nicer artifact
+        run: |
+          unzip "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip" -d ./client
+
+      - name: Upload client pack to GitHub
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}
+          path: ./client
+
+      - name: Upload serverpack to GitHub
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{steps.construct-base-name.outputs.ASTRAL_SERVER_NAME}}
+          path: ./server
+
+  github-release:
+    name: GitHub release
+    needs: [get-info, build-release]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        id: checkout-repo
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v8.0.1
+        with:
+          merge-multiple: true
+
+      - name: Check if all artifacts are present
+        id: check_artifacts
         shell: bash
         run: |
-          VERSION=${{github.event.inputs.new_version}}
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "release/$VERSION"
-          git add -A
-          git commit -m "Prepare release"
-          git push -u origin "release/$VERSION"
-          gh pr create --title "Merge release/$VERSION into main" --body "Auto-generated by workflow. View changelog for more information at https://github.com/Laskyyy/Create-Astral/blob/release/$VERSION/CHANGELOG.md." --head "release/$VERSION" --base "main"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if [ ! ${{ needs.build-release.outputs.cf_name }} ]; then
+            echo '::error::No CurseForge pack found in artifacts.' && exit 1
+          fi
+          if [ ! ${{ needs.build-release.outputs.serverpack_name }} ]; then
+            echo '::error::No server pack found in artifacts.' && exit 1
+          fi
+
+          echo "All artifacts found."
+
+      - name: Create release
+        id: create-release
+#       if: ${{ !inputs.test }}
+        uses: softprops/action-gh-release@v3.0.2
+        with:
+          name: ${{ needs.get-info.outputs.version }}
+          tag_name: ${{ needs.get-info.outputs.version }}
+          target_commitish: ${{ github.ref_name }}
+          body: ${{ needs.get-info.outputs.changelog }}
+          files: |
+            Create-Astral-CurseForge-${{ needs.get-info.outputs.version }}.zip
+            Create-Astral-Server-${{ needs.get-info.outputs.version }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  # automatic curseforge release coming soontm
