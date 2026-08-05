@@ -147,6 +147,10 @@
         type: "techreborn:chemical_reactor",
         output: "minecraft:leather",
       },
+      {
+        type: "techreborn:chemical_reactor",
+        output: "minecraft:golden_apple",
+      },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
       {

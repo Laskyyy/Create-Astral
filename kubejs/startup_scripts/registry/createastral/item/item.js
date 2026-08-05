@@ -201,6 +201,7 @@
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_copper_casing0",
         up: "createastral:item/incomplete_copper_casing0",
         down: "createastral:item/incomplete_copper_casing0",
         north: "createastral:item/incomplete_copper_casing1",
@@ -212,6 +213,7 @@
     event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "techreborn:block/machines/structure/tier1_machine_block",
         up: "techreborn:block/machines/structure/tier1_machine_block",
         down: "create:block/copper_casing",
         north: "createastral:item/incomplete_basic_machine_frame0",
@@ -223,6 +225,7 @@
     event.create("createastral:incomplete_brass_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_brass_casing",
         up: "createastral:item/incomplete_brass_casing",
         down: "createastral:item/incomplete_brass_casing",
         north: "createastral:item/incomplete_brass_casing",
@@ -234,6 +237,7 @@
     event.create("createastral:incomplete_advanced_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_advanced_machine_frame",
         up: "createastral:item/incomplete_advanced_machine_frame",
         down: "createastral:item/incomplete_advanced_machine_frame",
         north: "createastral:item/incomplete_advanced_machine_frame",
@@ -245,6 +249,7 @@
     event.create("createastral:incomplete_industrial_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_industrial_machine_frame",
         up: "createastral:item/incomplete_industrial_machine_frame",
         down: "createastral:item/incomplete_industrial_machine_frame",
         north: "createastral:item/incomplete_industrial_machine_frame",
@@ -256,6 +261,7 @@
     event.create("createastral:incomplete_refined_radiance_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_refined_radiance_casing",
         up: "createastral:item/incomplete_refined_radiance_casing",
         down: "createastral:item/incomplete_refined_radiance_casing",
         north: "createastral:item/incomplete_refined_radiance_casing",
@@ -268,6 +274,7 @@
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_shadow_steel_casing",
         up: "createastral:item/incomplete_shadow_steel_casing",
         down: "createastral:item/incomplete_shadow_steel_casing",
         north: "createastral:item/incomplete_shadow_steel_casing",

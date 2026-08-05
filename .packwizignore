@@ -1,23 +1,32 @@
 # .packwizignore follows the same format as .gitignore, and can be used to exclude unwanted files from pack exports
 # See https://git-scm.com/docs/gitignore
 
-# Exclude README
+# documentation
 /README.md
 LICENSE*.md
 CHANGELOG.md
 CONTRIBUTING.md
 CODE_STYLE.md
+
+# linting
 .prettierrc
+
+# packwiz executables
 packwiz
 packwiz.exe
+
+# tools, git, and IDEs
 .vscode
 .github
-kubejs/probe
 .idea
+.mailmap
+
+# probejs typings
+kubejs/probe
+
+# scripts
 reload-example.bat
 server.packwizignore
-.envrc
-.mailmap
 
 # The contents of the serverpack folder will automatically get lifted to the root directory on build
 serverpack
@@ -30,3 +39,4 @@ temp-jar
 flake.nix
 flake.lock
 .direnv
+.envrc
