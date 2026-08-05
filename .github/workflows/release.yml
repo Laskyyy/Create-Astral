@@ -46,7 +46,7 @@ jobs:
         id: get-latest-tag
         shell: bash
         run: |
-          if [ ! ${{ github.events.inputs.test }} ]; then
+          if [ ! ${{ inputs.test }} ]; then
             tag=$(git describe --tags --abbrev=0 origin/main)
             if [ -z "$tag" ]; then
               echo "Latest tag not found" && exit 1
@@ -233,7 +233,7 @@ jobs:
 
       - name: Create release
         id: create-release
-        if: ${{ github.events.inputs.test }} != "true"
+        if: ${{ !inputs.test }}
         uses: softprops/action-gh-release@v3.0.2
         with:
           name: ${{ needs.get-info.outputs.version }}
