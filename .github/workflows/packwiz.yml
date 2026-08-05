@@ -96,6 +96,7 @@ jobs:
           echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
 
       # cant use sed easily here because it gets weird when the version grabber greps for regex characters like [] expecially in experimental versioning
+      # note that in theory this workaround technically isn't needed due to the change in versioning strategy, but it still works :shrug:
       - name: Set pack.toml version
         id: packwiz-version
         shell: bash
