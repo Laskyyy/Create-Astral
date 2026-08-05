@@ -65,6 +65,7 @@ jobs:
         with:
           path: CHANGELOG.md
           version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
+        continue-on-error: true
 
   build-release:
     name: Build release artifacts
