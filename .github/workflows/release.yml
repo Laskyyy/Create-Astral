@@ -1,5 +1,5 @@
 name: Create release
-run-name: "Release version ${{ needs.get-info.outputs.version }}"
+run-name: "Release version ${{ github.ref }}"
 
 on:
   workflow_dispatch:
