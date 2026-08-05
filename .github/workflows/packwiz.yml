@@ -1,20 +1,33 @@
-name: Build with packwiz
+name: "Build with packwiz"
+run-name: "Packwiz Build #${{ github.run_number }}"
 
 on:
-  workflow_dispatch:
-    inputs:
-      artifacts:
-        description: Upload artifacts
-        required: true
-        default: "true"
-      serverpack:
-        description: Create serverpack
-        required: true
-        default: "true"
-  pull_request:
-    branches: ["main", "Astral-Experimental"]
   push:
-    branches: ["main", "Astral-Experimental"]
+    branches:
+      - Astral-Experimental
+      - main
+    paths:
+      - "config"
+      - "configureddefaults"
+      - "defaultconfigs"
+      - "fancymenustuff"
+      - "journeymap"
+      - "kubejs"
+      - "mods"
+      - "resourcepacks"
+      - "schematics"
+      - "serverpack"
+      - "shaderpacks"
+      - ".packwizignore"
+      - "CHANGELOG.md"
+      - "icon.png"
+      - "index.toml"
+      - "pack.toml"
+      - "server.packwizignore"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -22,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup JDK 17
         uses: actions/setup-java@v5
@@ -56,11 +69,53 @@ jobs:
         id: construct-base-name
         shell: bash
         run: |
-          MODPACK_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)"
-          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
-          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          GIT_HASH="$(git rev-parse --short ${{github.sha}})"
+          echo "MODPACK_VERSION_NUMBER=$GIT_HASH-Build.${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$MODPACK_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$MODPACK_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
           FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
           echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
+
+      # cant use sed easily here because it gets weird when the version grabber greps for regex characters like [] expecially in experimental versioning
+      - name: Set pack.toml version
+        id: packwiz-version
+        shell: bash
+        run: |
+          VERSION="${{steps.construct-base-name.outputs.MODPACK_VERSION_NUMBER}}"
+          while read -r line; do
+            echo "${line//"DEV"/"$VERSION"}"
+          done < "pack.toml" > "pack.toml.tmp"
+          cat pack.toml.tmp > pack.toml
+          rm pack.toml.tmp
+
+      # need to set IFS to be empty so that read preserves whitespace
+      - name: Set FancyMenu environment variable
+        id: fancymenu-version
+        shell: bash
+        run: |
+          VERSION="${{steps.construct-base-name.outputs.MODPACK_VERSION_NUMBER}}"
+          OLD_IFS="$IFS"
+          IFS=
+          while read -r line; do
+            echo "${line//"DEV"/"$VERSION"}"
+          done < "./config/fancymenu/user_variables.db" > "./config/fancymenu/user_variables.db.tmp"
+          IFS="$OLD_IFS"
+          cat ./config/fancymenu/user_variables.db.tmp > ./config/fancymenu/user_variables.db
+          rm ./config/fancymenu/user_variables.db.tmp
+
+      - name: Set startup debug log version
+        id: startup-version
+        shell: bash
+        run: |
+          VERSION="${{steps.construct-base-name.outputs.MODPACK_VERSION_NUMBER}}"
+          OLD_IFS="$IFS"
+          IFS=
+          while read -r line; do
+            echo "${line//"DEV"/"$VERSION"}"
+          done < "./kubejs/startup_scripts/misc/misc.js" > "./kubejs/startup_scripts/misc/misc.js.tmp"
+          IFS="$OLD_IFS"
+          cat ./kubejs/startup_scripts/misc/misc.js.tmp > ./kubejs/startup_scripts/misc/misc.js
+          rm ./kubejs/startup_scripts/misc/misc.js.tmp
 
       # servercore needs to be turned into a .toml for the curseforge export as CF won't accept it as an override jar
       - name: Prepare for CurseForge client zip creation
@@ -84,7 +139,6 @@ jobs:
           rm -r ./temp-jar
 
       - name: Prepare for serverpack creation
-        if: ${{ github.event.inputs.serverpack }}
         run: |
           cat server.packwizignore >> .packwizignore
           mv serverpack/* ./
@@ -92,7 +146,6 @@ jobs:
           mkdir server
 
       - name: Download packwiz-installer-bootstrap
-        if: ${{ github.event.inputs.serverpack }}
         uses: robinraju/release-downloader@v1.13
         with:
           repository: packwiz/packwiz-installer-bootstrap
@@ -100,7 +153,6 @@ jobs:
           fileName: packwiz-installer-bootstrap.jar
 
       - name: Create serverpack
-        if: ${{ github.event.inputs.serverpack }}
         run: |
           cd server
           java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
@@ -121,19 +173,16 @@ jobs:
 
       # Otherwise the artifact would be a zip in a zip, which can't be automatically installed in launchers
       - name: Unpack client pack for nicer artifact
-        if: ${{github.event.inputs.artifacts}}
         run: |
           unzip "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip" -d ./client
 
       - name: Upload client pack to GitHub
-        if: ${{ github.event.inputs.artifacts }}
         uses: actions/upload-artifact@v7
         with:
           name: ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}
           path: ./client
 
       - name: Upload serverpack to GitHub
-        if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
         uses: actions/upload-artifact@v7
         with:
           name: ${{steps.construct-base-name.outputs.ASTRAL_SERVER_NAME}}
