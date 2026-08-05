@@ -16,7 +16,6 @@ on:
       - "serverpack"
       - "shaderpacks"
       - ".packwizignore"
-      - "CHANGELOG.md"
       - "icon.png"
       - "index.toml"
       - "pack.toml"
@@ -25,6 +24,8 @@ on:
     branches:
       - Astral-Experimental
       - main
+    tags-ignore:
+      - v*
     paths:
       - "config"
       - "configureddefaults"
@@ -38,7 +39,6 @@ on:
       - "serverpack"
       - "shaderpacks"
       - ".packwizignore"
-      - "CHANGELOG.md"
       - "icon.png"
       - "index.toml"
       - "pack.toml"
