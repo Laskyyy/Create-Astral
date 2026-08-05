@@ -2,6 +2,25 @@ name: "Build with packwiz"
 run-name: "Packwiz Build #${{ github.run_number }}"
 
 on:
+  workflow_dispatch:
+    paths:
+      - "config"
+      - "configureddefaults"
+      - "defaultconfigs"
+      - "fancymenustuff"
+      - "journeymap"
+      - "kubejs"
+      - "mods"
+      - "resourcepacks"
+      - "schematics"
+      - "serverpack"
+      - "shaderpacks"
+      - ".packwizignore"
+      - "CHANGELOG.md"
+      - "icon.png"
+      - "index.toml"
+      - "pack.toml"
+      - "server.packwizignore"
   push:
     branches:
       - Astral-Experimental
