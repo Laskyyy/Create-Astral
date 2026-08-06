@@ -2,14 +2,12 @@ name: Create release
 run-name: "Release version ${{ github.ref }}"
 
 on:
-# workflow_dispatch:
-#   inputs:
-#     test:
-#       description: Test workflow
-#       default: "true"
-  push:
-    tags:
-      - v*
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to display on all fields (e.g. v2.1)
+        required: true
+        default: "v"
     paths:
       - "config"
       - "configureddefaults"
@@ -34,42 +32,26 @@ jobs:
     name: Get modpack info
     runs-on: ubuntu-latest
     outputs:
-      version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
       changelog: ${{ steps.parse-changelog.outputs.description }}
 
     steps:
       - name: Checkout repository
         id: checkout-repo
         uses: actions/checkout@v7
-
-      - name: Get latest tag
-        id: get-latest-tag
-        shell: bash
-        run: |
-#         if [ ! ${{ inputs.test }} ]; then
-          tag=$(git describe --tags --abbrev=0 origin/main)
-          if [ -z "$tag" ]; then
-            echo "Latest tag not found" && exit 1
-          else
-            echo "Latest tag found: $tag"
-            echo "GIT_TAG=$tag" >> $GITHUB_OUTPUT
-          fi
-#         else
-#           echo "Testing release, placeholder inserted."
-#           echo "GIT_TAG=TEST_RELEASE" >> $GITHUB_OUTPUT
-#         fi
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Parse changelog
         id: parse-changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-          version: ${{ steps.get-latest-tag.outputs.GIT_TAG }}
-#       continue-on-error: true
+          version: ${{ inputs.version }}
+        continue-on-error: true
 
   build-release:
     name: Build release artifacts
-    needs: [get-info]
     runs-on: ubuntu-latest
     outputs:
       cf_name: ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip
@@ -82,11 +64,25 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Setup JDK 17
-        uses: actions/setup-java@v5
-        with:
-          java-version: 17
-          distribution: "temurin"
+      - name: Construct version strings
+        id: construct-base-name
+        shell: bash
+        run: |
+          VERSION=${{ inputs.version }}
+          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$VERSION" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$VERSION" >> "$GITHUB_OUTPUT"
+          FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
+          echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
+
+      - name: Set in-game versions
+        id: set-in-game-versions
+        shell: bash
+        run: |
+          VERSION=${{ inputs.version }}
+
+          sed -i -e "s/DEV/${VERSION}/g" pack.toml
+          sed -i -e "s/DEV/${VERSION}/g" ./config/fancymenu/user_variables.db
+          sed -i -e "s/DEV/${VERSION}/g" ./kubejs/startup_scripts/misc/misc.js
 
       - name: Download packwiz binary # now with static releases instead of action artifacts!
         id: download-packwiz
@@ -97,9 +93,30 @@ jobs:
           fileName: Linux_x86-64.zip
           extract: true
 
-      - name: Make packwiz binary executable
+      - name: Make packwiz binary executable and refresh
+        id: packwiz-refresh
         shell: bash
-        run: chmod +x ./packwiz
+        run: |
+          chmod +x ./packwiz
+          ./packwiz refresh
+
+      - name: Push changes to new tag
+        id: create-tag
+        shell: bash
+        run: |
+          VERSION=${{ inputs.version }}
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git tag $VERSION
+          git push origin $VERSION
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: 17
+          distribution: "temurin"
 
       - name: Restore cached mod downloads
         id: cache-mods-restore
@@ -109,26 +126,6 @@ jobs:
           key: cached-mods
           restore-keys: |
             cached-mods-
-
-      - name: Construct version strings
-        id: construct-base-name
-        shell: bash
-        run: |
-          VERSION=${{ needs.get-info.outputs.version }}
-          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$VERSION" >> "$GITHUB_OUTPUT"
-          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$VERSION" >> "$GITHUB_OUTPUT"
-          FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
-          echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
-
-      - name: Set in-game versions
-        id: set-in-game-versions
-        shell: bash
-        run: |
-          VERSION=${{ needs.get-info.outputs.version }}
-
-          sed -i -e "s/DEV/${VERSION}/g" pack.toml
-          sed -i -e "s/DEV/${VERSION}/g" ./config/fancymenu/user_variables.db
-          sed -i -e "s/DEV/${VERSION}/g" ./kubejs/startup_scripts/misc/misc.js
 
       # servercore needs to be turned into a .toml for the curseforge export as CF won't accept it as an override jar
       - name: Prepare for CurseForge client zip creation
@@ -207,11 +204,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        id: checkout-repo
+      - name: Checkout tag
+        id: checkout-tag
         uses: actions/checkout@v7
         with:
-          ref: main
+          ref: ${{ inputs.version }}
           fetch-depth: 0
 
       - name: Download artifacts
@@ -234,16 +231,15 @@ jobs:
 
       - name: Create release
         id: create-release
-#       if: ${{ !inputs.test }}
         uses: softprops/action-gh-release@v3.0.2
         with:
-          name: ${{ needs.get-info.outputs.version }}
-          tag_name: ${{ needs.get-info.outputs.version }}
-          target_commitish: ${{ github.ref_name }}
-          body: ${{ needs.get-info.outputs.changelog }}
+          name: ${{ inputs.version }}
+          draft: true
+          tag_name: ${{ inputs.version }}
+          body: ${{ inputs.changelog }}
           files: |
-            Create-Astral-CurseForge-${{ needs.get-info.outputs.version }}.zip
-            Create-Astral-Server-${{ needs.get-info.outputs.version }}.zip
+            Create-Astral-CurseForge-${{ inputs.version }}.zip
+            Create-Astral-Server-${{ inputs.version }}.zip
           token: ${{ secrets.GITHUB_TOKEN }}
 
   # automatic curseforge release coming soontm
