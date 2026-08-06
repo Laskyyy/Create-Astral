@@ -59,6 +59,11 @@ jobs:
           file: CHANGELOG.md
           pattern: ${{ steps.remove-v.outputs.CHANGELOG_VERSION }}
 
+      - name: Print changelog
+        id: print-changelog
+        shell: bash
+        run: printf "${{ steps.parse-changelog.outputs.markdown }}"
+
   build-release:
     name: Build release artifacts
     runs-on: ubuntu-latest
