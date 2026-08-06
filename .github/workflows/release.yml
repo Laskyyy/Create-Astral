@@ -231,10 +231,10 @@ jobs:
         id: check_artifacts
         shell: bash
         run: |
-          if [ ! -f ./downloads/${{ needs.build-release.outputs.cf_name }} ]; then
+          if [ ! -f ${{ needs.build-release.outputs.cf_name }} ]; then
             echo '::error::No CurseForge pack found in artifacts.' && exit 1
           fi
-          if [ ! -f ./downloads/${{ needs.build-release.outputs.serverpack_name }} ]; then
+          if [ ! -f ${{ needs.build-release.outputs.serverpack_name }} ]; then
             echo '::error::No server pack found in artifacts.' && exit 1
           fi
 
@@ -249,8 +249,8 @@ jobs:
           tag_name: ${{ inputs.version }}
           body: ${{ needs.get-info.outputs.changelog-decription }}
           files: |
-            ./downloads/${{ needs.build-release.outputs.cf_name }}
-            ./downloads/${{ needs.build-release.outputs.serverpack_name }}
+            ${{ needs.build-release.outputs.cf_name }}
+            ${{ needs.build-release.outputs.serverpack_name }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
   # automatic curseforge release coming soontm
