@@ -47,7 +47,7 @@ jobs:
         shell: bash
         run: |
           VERSION=${{ inputs.version }}
-          OMIT_CHAR="v1"
+          OMIT_CHAR="v"
           CL_VERSION="${VERSION//$OMIT_CHAR}"
 
           echo "CHANGELOG_VERSION=$CL_VERSION" >> "$GITHUB_OUTPUT"
