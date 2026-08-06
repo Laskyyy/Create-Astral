@@ -50,7 +50,7 @@ jobs:
           OMIT_CHAR="v1"
           CL_VERSION="${VERSION//$OMIT_CHAR}"
 
-          echo "CHANGELOG_VERSION=CL_VERSION" >> "$GITHUB_OUTPUT"
+          echo "CHANGELOG_VERSION=$CL_VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Parse changelog
         id: parse-changelog
