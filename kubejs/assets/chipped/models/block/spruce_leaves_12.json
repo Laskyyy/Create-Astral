@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/spruce_leaves/spruce_leaves_11",
+    "side": "chipped:block/spruce_leaves/spruce_leaves_12"
+  }
+}
