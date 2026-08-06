@@ -225,6 +225,7 @@ jobs:
         uses: actions/download-artifact@v8.0.1
         with:
           merge-multiple: true
+          path: .
 
       - name: Check if all artifacts are present
         id: check_artifacts
