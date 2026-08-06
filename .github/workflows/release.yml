@@ -229,6 +229,7 @@ jobs:
         id: check_artifacts
         shell: bash
         run: |
+          ls -a
           if [ ! ${{ needs.build-release.outputs.cf_name }} ]; then
             echo '::error::No CurseForge pack found in artifacts.' && exit 1
           fi
@@ -245,10 +246,10 @@ jobs:
           name: ${{ inputs.version }}
           draft: true
           tag_name: ${{ inputs.version }}
-          body: ${{ inputs.changelog }}
+          body: ${{ needs.get-info.outputs.changelog-decription }}
           files: |
-            Create-Astral-CurseForge-${{ inputs.version }}.zip
-            Create-Astral-Server-${{ inputs.version }}.zip
+            ${{ needs.build-release.outputs.cf_name }}
+            ${{ needs.build-release.outputs.serverpack_name }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
   # automatic curseforge release coming soontm
