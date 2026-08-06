@@ -32,7 +32,7 @@ jobs:
     name: Get modpack info
     runs-on: ubuntu-latest
     outputs:
-      changelog: ${{ steps.parse-changelog.outputs.description }}
+      changelog-description: ${{ steps.parse-changelog.outputs.markdown }}
 
     steps:
       - name: Checkout repository
@@ -42,13 +42,22 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Remove v from version
+        id: remove-v
+        shell: bash
+        run: |
+          VERSION=${{ inputs.version }}
+          OMIT_CHAR="v1"
+          CL_VERSION="${VERSION//$OMIT_CHAR}"
+
+          echo "CHANGELOG_VERSION=CL_VERSION" >> "$GITHUB_OUTPUT"
+
       - name: Parse changelog
         id: parse-changelog
-        uses: coditory/changelog-parser@v1.0.2
+        uses: sean0x42/markdown-extract@v2.1.0
         with:
-          path: CHANGELOG.md
-          version: ${{ inputs.version }}
-        continue-on-error: true
+          file: CHANGELOG.md
+          pattern: ${{ steps.remove-v.outputs.CHANGELOG_VERSION }}
 
   build-release:
     name: Build release artifacts
