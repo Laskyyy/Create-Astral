@@ -252,7 +252,7 @@ jobs:
           name: ${{ inputs.version }}
           draft: true
           tag_name: ${{ inputs.version }}
-          body: ${{ needs.get-info.outputs.changelog-decription }}
+          body: ${{ needs.get-info.outputs.changelog-description }}
           files: |
             ${{ needs.build-release.outputs.cf_name }}
             ${{ needs.build-release.outputs.serverpack_name }}
