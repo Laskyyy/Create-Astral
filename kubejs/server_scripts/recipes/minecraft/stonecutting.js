@@ -1,5 +1,5 @@
 (function minecraftStonecuttingRecipes() {
-  const {OXIDIZATION_TYPES, VANILLA_COPPER_BLOCKS, CREATE_COPPER_BLOCKS} = global.server
+  const { OXIDIZATION_TYPES, VANILLA_COPPER_BLOCKS, CREATE_COPPER_BLOCKS } = global.server;
   /**
    * @typedef StonecuttingRecipe
    * @property {Internal.IngredientJS_} input
@@ -32,7 +32,7 @@
           "createastral:rock_salt_stairs",
           "createastral:rock_salt_bricks",
           "createastral:rock_salt_pillar",
-          "createastral:rock_salt_polished"
+          "createastral:rock_salt_polished",
         ],
       },
       {
@@ -84,7 +84,12 @@
       },
       {
         input: "#c:plates/gold",
-        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast", "createastral:straw_gold_cast"],
+        outputs: [
+          "tconstruct:gear_cast",
+          "astraladditions:ring_gold_cast",
+          "tconstruct:coin_cast",
+          "createastral:straw_gold_cast",
+        ],
       },
       {
         input: "automobility:dash_panel",
@@ -232,8 +237,6 @@
       const otherCopperStonecuttingRecipes = [
         { input: "minecraft:copper_block", outputs: [`minecraft:${state}_copper`] },
         { input: "minecraft:waxed_copper_block", outputs: [`minecraft:waxed_${state}_copper`] },
-        { input: "phonos:copper_speaker", outputs: [`phonos:${state}_copper_speaker`] },
-        { input: "phonos:waxed_copper_speaker", outputs: [`phonos:waxed_${state}_copper_speaker`] },
         { input: "tconstruct:copper_platform", outputs: [`tconstruct:${state}_copper_platform`] },
         { input: "tconstruct:waxed_copper_platform", outputs: [`tconstruct:waxed_${state}_copper_platform`] },
       ];
