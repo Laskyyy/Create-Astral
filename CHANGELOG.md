@@ -15,13 +15,14 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## [2.1.5a] - 2026-07-26
+## [2.1.5a] - 2026-08-08
 
 ### ADDITIONS
 
 #### Quality of life
 
 - Added a quest to explain recipes for the Blender as the recipes don't appear in REI (#721) @ethanicusss
+- Added three quests to explain the Wither and Chunk loading (#757) @ethanicusss
 
 ### CHANGES
 
@@ -44,6 +45,21 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
 - Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
 - Fixed Dement/Doncrete not being accepted as tasks for the Cement/Concrete quests (#754) @ethanicusss
+
+#### Behind-the-scenes
+
+- Fixed the GitHub repository getting out of hand, by recondensing and syncing the branches into `main` and `Astral-Experimental`
+  - From now on, bugfixes should target `main`, while features should target `Astral-Experimental`
+- Overhauled the release workflow, it now does basically everything automatically
+  - Building client and server artifacts with dynamic versioning
+  - Creating the Git tag for the release
+  - Uploading the built artifacts to GitHub as a release
+  - Parsing the changelog file and attaching it to the body of the release
+- The repository uses dynamic versioning now
+  - The repository's permanent displayed version in the source code is now `DEV`
+  - Artifacts are built automatically when pushed to main or triggered from the packwiz workflow
+  - Built artifacts (apart from release artifacts) will have the version of `[Git-Hash]-Build.[Run-Number]`, for example, `b4156eb-Build.1347` applied to them
+  - Release artifacts will have a normal semantic version associated with them
 
 ## [2.1.5] - 2026-07-05
 
