@@ -12,6 +12,12 @@
     /** @type {StonecuttingRecipe[]} */
     const stonecuttingRecipes = [
       {
+        input: "ad_astra:moon_stone_bricks",
+        outputs: [
+          Item.of("ad_astra:moon_stone_brick_slab", 2),
+        ],
+      },
+      {
         input: "createastral:blast-resistant_concrete",
         outputs: [
           Item.of("createastral:blast-resistant_concrete_slab", 2),
