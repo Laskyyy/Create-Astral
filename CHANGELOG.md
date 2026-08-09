@@ -53,6 +53,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
 - Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
 - Fixed Dement/Doncrete not being accepted as tasks for the Cement/Concrete quests (#754) @ethanicusss
+- Fixed 'Synthetic Redstone Crystal' quest wording from 'Shaped' to 'Shapeless' in the 'Automation Matrix' chapter (#760) @unanimousveto
 
 #### Behind-the-scenes
 
