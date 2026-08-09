@@ -17,26 +17,20 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 ## [Unreleased]
 
-### REMOVALS
-
-#### Behind-the-scenes
-
-- Removed the `BLAZING_BLOOD_MADIC_AMOUNT` constant from the entity melting recipe script, as it was only called once and has no other forseeable future purpose (#759) @The-Shortman
-
-## [2.1.5a] - 2026-08-08
+## [2.1.5a] - 2026-08-09
 
 ### ADDITIONS
 
 #### Quality of life
 
-- Added a quest to explain recipes for the Blender as the recipes don't appear in REI (#721) @ethanicusss
+- Added a quest to explain recipes for the Blender as the recipes don't appear in REI (#721, #761) @ethanicusss
 - Added three quests to explain the Wither and Chunk loading (#757) @ethanicusss
 
 ### CHANGES
 
 #### Localisation
 
-- Added Russian (ru_ru) translations for Spud Shotgun, Saltmeal, and Blender quests (#719) @Nik-Was
+- Added Russian (ru_ru) translations for Chunk Loader, Spud Shotgun, Saltmeal, and Blender quests (#719, #765) @Nik-Was
 
 #### Bug patches
 
@@ -54,6 +48,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
 - Fixed Dement/Doncrete not being accepted as tasks for the Cement/Concrete quests (#754) @ethanicusss
 - Fixed 'Synthetic Redstone Crystal' quest wording from 'Shaped' to 'Shapeless' in the 'Automation Matrix' chapter (#760) @unanimousveto
+- Fixed Moon Stone Brick Slabs not having a stonecutting recipe (#764) @unanimousveto
 
 #### Behind-the-scenes
 
@@ -69,6 +64,12 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
   - Artifacts are built automatically when pushed to main or triggered from the packwiz workflow
   - Built artifacts (apart from release artifacts) will have the version of `[Git-Hash]-Build.[Run-Number]`, for example, `b4156eb-Build.1347` applied to them
   - Release artifacts will have a normal semantic version associated with them
+
+### REMOVALS
+
+#### Behind-the-scenes
+
+- Removed the `BLAZING_BLOOD_MADIC_AMOUNT` constant from the entity melting recipe script, as it was only called once and has no other forseeable future purpose (#759) @The-Shortman
 
 ## [2.1.5] - 2026-07-05
 
