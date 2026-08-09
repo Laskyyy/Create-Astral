@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       changelog-description: ${{ steps.parse-changelog.outputs.markdown }}
+      version-name: ${{ steps.construct-version-name.outputs.CHANGELOG_VERSION }}
 
     steps:
       - name: Checkout repository
@@ -51,6 +52,13 @@ jobs:
           CL_VERSION="${VERSION//$OMIT_CHAR}"
 
           echo "CHANGELOG_VERSION=$CL_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Construct version name for CF release
+        id: construct-version-name
+        shell: bash
+        run: |
+          VERSION=${{ inputs.version }}
+          echo "VERSION_NAME=Create Astral $VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Parse changelog
         id: parse-changelog
@@ -222,8 +230,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout tag
-        id: checkout-tag
+      - name: Checkout
+        id: checkout
         uses: actions/checkout@v7
 
       - name: Download artifacts
@@ -259,3 +267,53 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   # automatic curseforge release coming soontm
+
+  curseforge-release:
+    name: CurseForge release
+    needs: [get-info, build-release, github-release]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if CurseForge token exists
+        id: cf-token-check
+        shell: bash
+        run: |
+          if [ "${{ secrets.CF_UPLOAD_TOKEN }}" == '' ]; then
+            echo '::error::No value found for secret key `CF_UPLOAD_TOKEN`.' && exit 1
+          fi
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v8.0.1
+        with:
+          merge-multiple: true
+          skip-decompress: true
+
+      - name: Check if all artifacts are present
+        id: check_artifacts
+        shell: bash
+        run: |
+          if [ ! -f ${{ needs.build-release.outputs.cf_name }} ]; then
+            echo '::error::No CurseForge pack found in artifacts.' && exit 1
+          fi
+          if [ ! -f ${{ needs.build-release.outputs.serverpack_name }} ]; then
+            echo '::error::No server pack found in artifacts.' && exit 1
+          fi
+
+          echo "All artifacts found."
+
+      - name: Upload to CurseForge
+        id: upload-to-cf
+        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+        with:
+          api-token: ${{ secrets.CF_UPLOAD_TOKEN }}
+          project-id: ${{ vars.CF_PROJECT_ID }}
+          display-name: ${{ needs.get-info.outputs.version-name }}
+          modpack-path: ${{ needs.build-release.outputs.cf_name }}
+          server-display-name: ${{ needs.get-info.outputs.version-name }} Server Pack
+          modpack-server-path: ${{ needs.build-release.outputs.serverpack_name }}
+          changelog: |
+            Please view our changelog here:
+            https://github.com/Laskyyy/releases/tag/${{ inputs.version }}
+          changelog-format: markdown
+          game-version: 1.18.2
+          release-type: release
