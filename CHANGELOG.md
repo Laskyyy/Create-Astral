@@ -15,6 +15,14 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
+## [Unreleased]
+
+### REMOVALS
+
+#### Behind-the-scenes
+
+- Removed the `BLAZING_BLOOD_MADIC_AMOUNT` constant from the entity melting recipe script, as it was only called once and has no other forseeable future purpose (#759) @The-Shortman
+
 ## [2.1.5a] - 2026-08-08
 
 ### ADDITIONS
@@ -48,14 +56,14 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 #### Behind-the-scenes
 
-- Fixed the GitHub repository getting out of hand, by recondensing and syncing the branches into `main` and `Astral-Experimental`
+- Fixed the GitHub repository getting out of hand, by recondensing and syncing the branches into `main` and `Astral-Experimental` (#735, #738, #746) @The-Shortman
   - From now on, bugfixes should target `main`, while features should target `Astral-Experimental`
-- Overhauled the release workflow, it now does basically everything automatically
+- Overhauled the release workflow, it now does basically everything automatically (#739, #740, #741, #742, #743, #745, #747, #748, #749, #750, #751, #752) @The-Shortman
   - Building client and server artifacts with dynamic versioning
   - Creating the Git tag for the release
   - Uploading the built artifacts to GitHub as a release
   - Parsing the changelog file and attaching it to the body of the release
-- The repository uses dynamic versioning now
+- The repository uses dynamic versioning now (#736) @The-Shortman
   - The repository's permanent displayed version in the source code is now `DEV`
   - Artifacts are built automatically when pushed to main or triggered from the packwiz workflow
   - Built artifacts (apart from release artifacts) will have the version of `[Git-Hash]-Build.[Run-Number]`, for example, `b4156eb-Build.1347` applied to them
