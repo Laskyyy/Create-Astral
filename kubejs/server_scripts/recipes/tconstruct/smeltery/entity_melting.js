@@ -1,6 +1,6 @@
 (function entityMeltingRecipes() {
   onEvent("recipes", (event) => {
-    const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
+    const BLAZING_BLOOD_MAGIC_AMOUNT = 1620;
 
     /**
      * @typedef EntityMeltingRecipe
