@@ -30,7 +30,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 #### Localisation
 
-- Added Russian (ru_ru) translations for Spud Shotgun, Saltmeal, and Blender quests (#719) @Nik-Was
+- Added Russian (ru_ru) translations for Chunk Loader, Spud Shotgun, Saltmeal, and Blender quests (#719, #765) @Nik-Was
 
 #### Bug patches
 
