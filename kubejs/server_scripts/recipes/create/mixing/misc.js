@@ -1,4 +1,4 @@
-(function createMixingRecipes() {
+(function createMiscMixingRecipes() {
   const { BUCKET, BOTTLE, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
 
   onEvent("recipes", (event) => {
