@@ -5,6 +5,7 @@
       .material("nether_wood")
       .hardness(2)
       .tagBlock("chipped:crimson_stem")
+      .tagItem("chipped:crimson_stem")
       .displayName("Rotten Crimson Stem")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -25,6 +26,7 @@
       .material("nether_wood")
       .hardness(2)
       .tagBlock("chipped:crimson_stem")
+      .tagItem("chipped:crimson_stem")
       .displayName("Shrooming Crimson Stem")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -45,6 +47,7 @@
       .material("nether_wood")
       .hardness(2)
       .tagBlock("chipped:crimson_stem")
+      .tagItem("chipped:crimson_stem")
       .displayName("Smooth Crimson Stem")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -65,6 +68,7 @@
       .material("wood")
       .hardness(2)
       .tagBlock("chipped:stripped_dark_oak_log")
+      .tagItem("chipped:stripped_dark_oak_log")
       .displayName("Patient Stripped Dark Oak Log")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -85,6 +89,7 @@
       .material("wood")
       .hardness(2)
       .tagBlock("chipped:stripped_dark_oak_log")
+      .tagItem("chipped:stripped_dark_oak_log")
       .displayName("Reinforced Stripped Dark Oak Log")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -105,6 +110,7 @@
       .material("wood")
       .hardness(2)
       .tagBlock("chipped:stripped_dark_oak_log")
+      .tagItem("chipped:stripped_dark_oak_log")
       .displayName("M Sign Stripped Dark Oak Log")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -125,6 +131,7 @@
       .material("wood")
       .hardness(2)
       .tagBlock("chipped:stripped_dark_oak_log")
+      .tagItem("chipped:stripped_dark_oak_log")
       .displayName("Stern Stripped Dark Oak Log")
       .property(BlockProperties.AXIS)
       .placementState(event =>
@@ -145,6 +152,7 @@
       .material("wood")
       .hardness(2)
       .tagBlock("chipped:stripped_dark_oak_log")
+      .tagItem("chipped:stripped_dark_oak_log")
       .displayName("Wise Stripped Dark Oak Log")
       .property(BlockProperties.AXIS)
       .placementState(event =>
