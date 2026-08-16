@@ -3334,5 +3334,7 @@
 
   "modifier.createastral.amplified": "Amplified",
   "modifier.createastral.amplified.flavor": "Supercharged!",
-  "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!"
+  "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!",
+
+  "ite.phonos.redstone_chip": "Redstone Chip"
 }
