@@ -6,6 +6,10 @@ reload.bat
 packwiz.exe
 packwiz
 
+# Exclude packwiz generated files
+index.toml
+pack.toml
+
 # Exclude exported CurseForge zip files
 *.zip
 
