@@ -12,6 +12,12 @@
     /** @type {StonecuttingRecipe[]} */
     const stonecuttingRecipes = [
       {
+        input: "ad_astra:moon_stone_bricks",
+        outputs: [
+          Item.of("ad_astra:moon_stone_brick_slab", 2),
+        ],
+      },
+      {
         input: "createastral:blast-resistant_concrete",
         outputs: [
           Item.of("createastral:blast-resistant_concrete_slab", 2),
@@ -120,18 +126,6 @@
           "yttr:ruined_frame",
           "yttr:ruined_lever",
           "yttr:ruined_torch",
-        ],
-      },
-      {
-        input: "astraladditions:desizer_8",
-        outputs: [
-          "astraladditions:desizer_1",
-          "astraladditions:desizer_2",
-          "astraladditions:desizer_3",
-          "astraladditions:desizer_4",
-          "astraladditions:desizer_6",
-          "astraladditions:desizer_7",
-          "astraladditions:desizer_9",
         ],
       },
       { input: "create:copper_sheet", outputs: [Item.of("createdeco:copper_sheet_metal", 2)] },

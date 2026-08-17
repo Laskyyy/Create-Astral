@@ -1,4 +1,4 @@
-console.info("Create: Astral Modpack version = EXPERIMENTAL [v2.1.5]");
+console.info("Create: Astral Modpack version = DEV");
 
 (function misc() {
   const { upgrades } = global.startup;
@@ -23,6 +23,6 @@ console.info("Create: Astral Modpack version = EXPERIMENTAL [v2.1.5]");
   ITEMS.register();
   // make create wrench work as tech reborn wrench
   $ToolManager.INSTANCE.customToolHandlerList.add(
-    new $GenericWrenchHelper(new $ResourceLocation("create:wrench"), true)
+    new $GenericWrenchHelper(new $ResourceLocation("create:wrench"), true),
   );
 })();

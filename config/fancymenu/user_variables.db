@@ -44,12 +44,12 @@ variable {
 
 variable {
   name = version
-  value = EXPERIMENTAL [v2.1.5]
+  value = DEV
   reset_on_launch = false
 }
 
 variable {
-  name = viewed_changelog_2.1.5
+  name = viewed_changelog_2.1.5a
   value = 0
   reset_on_launch = false
 }
