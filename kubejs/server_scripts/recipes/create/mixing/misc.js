@@ -423,33 +423,6 @@
         time: 2500,
       },
       {
-        output: Fluid.of("kubejs:compound_mixture", INGOT),
-        input: ["minecraft:andesite", "techreborn:tin_nugget", "minecraft:clay_ball"],
-      },
-      {
-        output: Fluid.of("kubejs:compound_mixture", INGOT),
-        input: ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
-      },
-      {
-        output: Fluid.of("kubejs:compound_mixture", INGOT),
-        input: ["minecraft:andesite", "minecraft:iron_nugget", "minecraft:clay_ball"],
-      },
-      {
-        output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
-        input: ["compressor:compressed_andesite", "minecraft:iron_ingot", "minecraft:clay"],
-        heat: "heated",
-      },
-      {
-        output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
-        input: ["compressor:compressed_andesite", "create:zinc_ingot", "minecraft:clay"],
-        heat: "heated",
-      },
-      {
-        output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
-        input: ["compressor:compressed_andesite", "techreborn:tin_ingot", "minecraft:clay"],
-        heat: "heated",
-      },
-      {
         output: Item.of("tconstruct:grout", 8),
         input: ["create:andesite_alloy", "create:zinc_ingot", Item.of("minecraft:gravel", 8)],
       },

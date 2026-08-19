@@ -321,6 +321,34 @@
       heat: "heated",
       time: 1000,
     },
+    // Combining - Compound Mixture (Andesite Alloy)
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT),
+      input: ["minecraft:andesite", "techreborn:tin_nugget", "minecraft:clay_ball"],
+    },
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT),
+      input: ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
+    },
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT),
+      input: ["minecraft:andesite", "minecraft:iron_nugget", "minecraft:clay_ball"],
+    },
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
+      input: ["compressor:compressed_andesite", "minecraft:iron_ingot", "minecraft:clay"],
+      heat: "heated",
+    },
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
+      input: ["compressor:compressed_andesite", "create:zinc_ingot", "minecraft:clay"],
+      heat: "heated",
+    },
+    {
+      output: Fluid.of("kubejs:compound_mixture", INGOT * 12),
+      input: ["compressor:compressed_andesite", "techreborn:tin_ingot", "minecraft:clay"],
+      heat: "heated",
+    },
     // Melting - Amethyst
     {
       output: { fluid: "tconstruct:molten_amethyst", amount: GEM },
