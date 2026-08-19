@@ -1,4 +1,4 @@
-{
+﻿{
   "fabric-loader-0.18.4.jar (modloader)": {
     "jarName": "fabric-loader-0.18.4.jar (modloader)",
     "modId": "fabric",
@@ -373,13 +373,13 @@
     "curseForgeHash": 2352135001,
     "modrinthHash": "2d00b8a6106e99cb72589a832efca90a9510765c"
   },
-  "CrashAssistant-fabric-1.18.2-1.11.11.jar": {
-    "jarName": "CrashAssistant-fabric-1.18.2-1.11.11.jar",
+  "CrashAssistant-fabric-1.18.2-1.11.12.jar": {
+    "jarName": "CrashAssistant-fabric-1.18.2-1.11.12.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.11",
-    "curseForgeHash": 2592595004,
-    "modrinthHash": "3e10469b270c79bc85cdbbf204e626770aa91c2e"
+    "version": "1.11.12",
+    "curseForgeHash": 2464793297,
+    "modrinthHash": "1048888a24a57f73c919a0d508c3bb1931de2cc6"
   },
   "create-fabric-0.5.1-f-build.1415+mc1.18.2.jar": {
     "jarName": "create-fabric-0.5.1-f-build.1415+mc1.18.2.jar",
