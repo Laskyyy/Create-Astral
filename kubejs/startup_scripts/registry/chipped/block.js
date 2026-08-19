@@ -6,6 +6,7 @@
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Rotten Crimson Stem")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -26,6 +27,7 @@
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Shrooming Crimson Stem")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -46,6 +48,7 @@
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Smooth Crimson Stem")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -66,6 +69,7 @@
       .hardness(2)
       .tagBoth("chipped:stripped_dark_oak_log")
       .displayName("Patient Stripped Dark Oak Log")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -86,6 +90,7 @@
       .hardness(2)
       .tagBoth("chipped:stripped_dark_oak_log")
       .displayName("Reinforced Stripped Dark Oak Log")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -106,6 +111,7 @@
       .hardness(2)
       .tagBoth("chipped:stripped_dark_oak_log")
       .displayName("M Sign Stripped Dark Oak Log")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -126,6 +132,7 @@
       .hardness(2)
       .tagBoth("chipped:stripped_dark_oak_log")
       .displayName("Stern Stripped Dark Oak Log")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
@@ -146,6 +153,7 @@
       .hardness(2)
       .tagBoth("chipped:stripped_dark_oak_log")
       .displayName("Wise Stripped Dark Oak Log")
+      .item(item => item.group("chipped.main"))
       .property(BlockProperties.AXIS)
       .placementState(event =>
         event.set(
