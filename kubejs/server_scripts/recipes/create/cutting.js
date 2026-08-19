@@ -88,6 +88,10 @@
         output: Item.of("ad_astra:glacian_planks", 6),
       },
       {
+        input: "ad_astra:moon_stone_bricks",
+        output: Item.of("ad_astra:moon_stone_brick_slab", 2),
+      },
+      {
         input: "create:track",
         output: "railways:track_acacia",
       },

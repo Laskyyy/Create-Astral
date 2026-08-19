@@ -1,7 +1,5 @@
 (function entityMeltingRecipes() {
   onEvent("recipes", (event) => {
-    const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
-
     /**
      * @typedef EntityMeltingRecipe
      * @property {Special.EntityType} entity
@@ -13,7 +11,7 @@
     const entityMeltingRecipes = [
       {
         entity: "minecraft:blaze",
-        result: { fluid: "tconstruct:blazing_blood", amount: BLAZING_BLOOD_MADIC_AMOUNT },
+        result: { fluid: "tconstruct:blazing_blood", amount: 1620 },
         damage: 2,
       },
     ];

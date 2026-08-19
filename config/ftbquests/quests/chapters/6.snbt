@@ -1388,6 +1388,32 @@
 				}
 			]
 		}
+		{
+			x: -3.0d
+			y: -2.0d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.6_raow.quests67.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests67.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests67.description1}"
+				""
+				"{image:createastral:textures/item/blender_rei_saltmeal.png width:200 height:64 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["586DA028F2A79E2F"]
+			id: "7AB989E821F11BB2"
+			tasks: [{
+				id: "4C1E419523CFB3DA"
+				type: "item"
+				item: "createastral:saltmeal"
+			}]
+			rewards: [{
+				id: "173DD8DA83D2E02B"
+				type: "item"
+				item: "tconstruct:small_ender_slime_crystal_bud"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

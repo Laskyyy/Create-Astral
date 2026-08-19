@@ -15,7 +15,63 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.5 [CURRENT RELEASE] - 2026/07/05
+## [Unreleased]
+
+## [2.1.5a] - 2026-08-09
+
+### ADDITIONS
+
+#### Quality of life
+
+- Added a quest to explain recipes for the Blender as the recipes don't appear in REI (#721, #761) @ethanicusss
+- Added three quests to explain the Wither and Chunk loading (#757) @ethanicusss
+
+### CHANGES
+
+#### Localisation
+
+- Added Russian (ru_ru) translations for Chunk Loader, Spud Shotgun, Saltmeal, and Blender quests (#719, #765) @Nik-Was
+
+#### Bug patches
+
+- Fixed Chromatic Compound getting voided in Void fluid (#718) @novatransbian
+- Fixed the Honey Block piston smashing recipe giving only one Honey Bottle instead of four (#718) @novatransbian
+- Fixed Skeletons being practically invisible (#724) @The-Shortman
+- Fixed Corn returning and replacing Beetroot (#724) @The-Shortman
+- Fixed Create's Wrench being 2D (#724) @The-Shortman
+- Fixed basically all other resource pack issues introduced in 2.1.5 (#724) @The-Shortman
+- Fixed Dry Rich Farmland having a missing texture (#725) @The-Shortman @HyperRaccoon13
+- Fixed blocks not being wrenchable anymore (#726) @The-Shortman
+- Fixed a Gold dupe involving the Chemical Reactor (#727) @ethanicusss
+- Fixed sequenced assembly transitional items for Create's Casings (#730) @ethanicusss
+- Fixed the ponder for the Desizer having missing blocks (#728) @ethanicusss
+- Fixed there being a broken Stonecutter recipe for the Desizer blocks (#728) @ethanicusss
+- Fixed Dement/Doncrete not being accepted as tasks for the Cement/Concrete quests (#754) @ethanicusss
+- Fixed 'Synthetic Redstone Crystal' quest wording from 'Shaped' to 'Shapeless' in the 'Automation Matrix' chapter (#760) @unanimousveto
+- Fixed Moon Stone Brick Slabs not having a stonecutting recipe (#764) @unanimousveto
+
+#### Behind-the-scenes
+
+- Fixed the GitHub repository getting out of hand, by recondensing and syncing the branches into `main` and `Astral-Experimental` (#735, #738, #746) @The-Shortman
+  - From now on, bugfixes should target `main`, while features should target `Astral-Experimental`
+- Overhauled the release workflow, it now does basically everything automatically (#739, #740, #741, #742, #743, #745, #747, #748, #749, #750, #751, #752) @The-Shortman
+  - Building client and server artifacts with dynamic versioning
+  - Creating the Git tag for the release
+  - Uploading the built artifacts to GitHub as a release
+  - Parsing the changelog file and attaching it to the body of the release
+- The repository uses dynamic versioning now (#736) @The-Shortman
+  - The repository's permanent displayed version in the source code is now `DEV`
+  - Artifacts are built automatically when pushed to main or triggered from the packwiz workflow
+  - Built artifacts (apart from release artifacts) will have the version of `[Git-Hash]-Build.[Run-Number]`, for example, `b4156eb-Build.1347` applied to them
+  - Release artifacts will have a normal semantic version associated with them
+
+### REMOVALS
+
+#### Behind-the-scenes
+
+- Removed the `BLAZING_BLOOD_MADIC_AMOUNT` constant from the entity melting recipe script, as it was only called once and has no other forseeable future purpose (#759) @The-Shortman
+
+## [2.1.5] - 2026-07-05
 
 ### SUMMARY
 
@@ -238,7 +294,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 
 > _Nothing to see here yet..._
 
-## 2.1.4c [HOTFIX] - 2025/08/18
+## [2.1.4c] - 2025-08-18
 
 ### CHANGES
 
@@ -259,7 +315,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed Chromatic Compound not stacking properly.
 - Fixed melting yields of metals that were changed in 2.1.4a to give the correct value of 12 nuggets instead of 13.
 
-## 2.1.4b [HOTFIX] - 2025/08/11
+## [2.1.4b] - 2025-08-11
 
 ### CHANGES
 
@@ -285,7 +341,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed a KubeJS error being thrown every time a Foundry Controller was right clicked.
 - Fixed storage upgrades applied to Drawers from Extended Drawers showing a missing texture on the front face of the block.
 
-## 2.1.4a [HOTFIX] - 2025/08/09
+## [2.1.4a] - 2025-08-09
 
 ### CHANGES
 
@@ -304,7 +360,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 - Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
 - Fixed a missing recipe for coal dust in the Grinder.
 
-## 2.1.4 - 2025/08/08
+## [2.1.4] - 2025-08-08
 
 **IMPORTANT:**
 
@@ -486,7 +542,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 ---
 
-## 2.1.3 - 2025/01/05
+## [2.1.3] - 2025-01-05
 
 ### ADDITIONS
 
@@ -619,7 +675,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 ---
 
-## 2.1.2 - 2024/10/31
+## [2.1.2] - 2024-10-31
 
 ### ADDITIONS
 
@@ -714,7 +770,7 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 ---
 
-## 2.1.1 - 2024/10/16
+## [2.1.1] - 2024-10-16
 
 ### ADDITIONS
 
@@ -797,7 +853,7 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 ---
 
-## 2.1 - 2024/10/08
+## [2.1] - 2024-10-08
 
 > **Note**:
 >

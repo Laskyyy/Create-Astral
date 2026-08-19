@@ -38,7 +38,7 @@
         input: { "block": "minecraft:honey_block" },
         catalysts: { "block": "minecraft:honeycomb_block" },
         cloudcolor: "#DFB240",
-        cloudsize: 1,
+        cloudsize: 4,
         cloudoutput: { "item": "minecraft:honey_bottle" },
         cloudeffects: [ { "effect": "minecraft:absorption", "duration": 8000 } ]
       },
