@@ -1,8 +1,19 @@
+const $JavaClass = java("java.lang.Class");
+const $MaterialJSConstructor = $JavaClass.forName("dev.latvian.mods.kubejs.block.MaterialJS").getDeclaredConstructors()[0];
+
+function materialFromBlock(name, blockId) {
+  const block = Item.getItem(blockId).getBlock();
+  const state = block.defaultBlockState();
+  return $MaterialJSConstructor.newInstance(name, state.getMaterial(), block.getSoundType(state));
+}
+
+const NETHER_WOOD = materialFromBlock("nether_wood","minecraft:crimson_stem");
+
 (function chippedBlockRegistry() {
   onEvent("block.registry", (event) => {
     event
       .create("chipped:crimson_stem_12")
-      .material("nether_wood")
+      .material(NETHER_WOOD)
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Rotten Crimson Stem")
@@ -23,7 +34,7 @@
       };
     event
       .create("chipped:crimson_stem_13")
-      .material("nether_wood")
+      .material(NETHER_WOOD)
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Shrooming Crimson Stem")
@@ -44,7 +55,7 @@
       };
     event
       .create("chipped:crimson_stem_14")
-      .material("nether_wood")
+      .material(NETHER_WOOD)
       .hardness(2)
       .tagBoth("chipped:crimson_stem")
       .displayName("Smooth Crimson Stem")
