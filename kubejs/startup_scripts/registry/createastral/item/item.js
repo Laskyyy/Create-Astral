@@ -19,11 +19,17 @@
     event.create("createastral:electrified_pin");
     event.create("createastral:ender_mush");
     event.create("createastral:promethium_atomic_battery").glow(true).rarity("epic");
-    event.create("createastral:logo");
+    event.create("createastral:circuit_paper");
+    event.create("createastral:copper_clad_lapis_board");
+    event.create("createastral:printed_copper_clad_lapis_board");
+    event.create("createastral:logo").displayName("Astral");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:desh_dust");
+    event.create("createastral:small_desh_dust");
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
+    event.create("createastral:sputum_bottle");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
@@ -38,11 +44,13 @@
       .food((food) => {
         food.hunger(2).saturation(0.5).alwaysEdible();
       });
-    event.create("createastral:protobeef");
-    event.create("createastral:protochicken");
-    event.create("createastral:protomutton");
-    event.create("createastral:protopork");
-    event.create("createastral:protorabbit");
+    event.create("createastral:protobeef", "create:sequenced_assembly");
+    event.create("createastral:protochicken", "create:sequenced_assembly");
+    event.create("createastral:protomutton", "create:sequenced_assembly");
+    event.create("createastral:protopork", "create:sequenced_assembly");
+    event.create("createastral:protorabbit", "create:sequenced_assembly");
+    event.create("createastral:protoegg", "create:sequenced_assembly");
+    event.create("createastral:dragons_sputum", "create:sequenced_assembly").displayName("Dragon's Sputum");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");
@@ -52,7 +60,7 @@
     event.create("createastral:shimmer_amplifier").rarity("epic");
     event.create("createastral:star_shard").glow(true);
     event.create("createastral:pure_star_shard").glow(true).rarity("epic");
-    event.create("createastral:crushed_raw_gadolinite");
+    event.create("createastral:crushed_raw_gadolinite").displayName("Crushed Raw Yttrium");
     event.create("createastral:crushed_raw_cobalt");
     event.create("createastral:experience_ingot").glow(true);
     event.create("createastral:stone_dust").displayName("Stone Dust");
@@ -62,6 +70,8 @@
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:saltmeal");
+    event.create("createastral:straw_gold_cast");
     event.create("createastral:horse").food((food) => {
       food.hunger(0).saturation(0).alwaysEdible();
     });
@@ -167,6 +177,8 @@
       .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
       .displayName("Incomplete Integrated Circuit");
     event
+      .create("createastral:incomplete_slop", "create:sequenced_assembly");
+    event
       .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
       .displayName("Incomplete Navigation Mechanism");
     event
@@ -189,6 +201,7 @@
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_copper_casing0",
         up: "createastral:item/incomplete_copper_casing0",
         down: "createastral:item/incomplete_copper_casing0",
         north: "createastral:item/incomplete_copper_casing1",
@@ -200,6 +213,7 @@
     event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "techreborn:block/machines/structure/tier1_machine_block",
         up: "techreborn:block/machines/structure/tier1_machine_block",
         down: "create:block/copper_casing",
         north: "createastral:item/incomplete_basic_machine_frame0",
@@ -211,6 +225,7 @@
     event.create("createastral:incomplete_brass_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_brass_casing",
         up: "createastral:item/incomplete_brass_casing",
         down: "createastral:item/incomplete_brass_casing",
         north: "createastral:item/incomplete_brass_casing",
@@ -222,6 +237,7 @@
     event.create("createastral:incomplete_advanced_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_advanced_machine_frame",
         up: "createastral:item/incomplete_advanced_machine_frame",
         down: "createastral:item/incomplete_advanced_machine_frame",
         north: "createastral:item/incomplete_advanced_machine_frame",
@@ -233,6 +249,7 @@
     event.create("createastral:incomplete_industrial_machine_frame", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_industrial_machine_frame",
         up: "createastral:item/incomplete_industrial_machine_frame",
         down: "createastral:item/incomplete_industrial_machine_frame",
         north: "createastral:item/incomplete_industrial_machine_frame",
@@ -244,6 +261,7 @@
     event.create("createastral:incomplete_refined_radiance_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_refined_radiance_casing",
         up: "createastral:item/incomplete_refined_radiance_casing",
         down: "createastral:item/incomplete_refined_radiance_casing",
         north: "createastral:item/incomplete_refined_radiance_casing",
@@ -252,9 +270,11 @@
         east: "createastral:item/incomplete_refined_radiance_casing",
       },
     });
+    event.create("createastral:tampered_beacon", "create:sequenced_assembly");
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
+        particle: "createastral:item/incomplete_shadow_steel_casing",
         up: "createastral:item/incomplete_shadow_steel_casing",
         down: "createastral:item/incomplete_shadow_steel_casing",
         north: "createastral:item/incomplete_shadow_steel_casing",

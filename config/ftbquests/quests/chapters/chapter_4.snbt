@@ -1,7 +1,7 @@
 {
 	id: "1A12E870F117B0D1"
 	group: ""
-	order_index: 5
+	order_index: 4
 	filename: "chapter_4"
 	title: "{ftbquests.chapter.chapter_4.title}"
 	icon: {
@@ -152,6 +152,11 @@
 					exclude_from_claim_all: true
 					table_id: 5253492355592689915L
 				}
+				{
+					id: "1262CD420C506063"
+					type: "item"
+					item: "create:crafter_slot_cover"
+				}
 			]
 		}
 		{
@@ -161,7 +166,9 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests3.description0}"
 				""
+				"{ftbquests.chapter.chapter_4.quests3.description2}"
 				""
+				"{ftbquests.chapter.chapter_4.quests3.description4}"
 			]
 			dependencies: ["705C815541DB89F8"]
 			id: "21DBCD51CC35B794"
@@ -729,8 +736,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests19.title}"
-			x: -18.5d
-			y: -2.0d
+			x: -17.5d
+			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests19.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests19.description0}"
@@ -755,16 +762,30 @@
 			x: -17.0d
 			y: -2.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests20.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests20.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests20.description}"
+				""
+				"{ftbquests.chapter.chapter_4.quests20.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests20.description4}"
+			]
+			min_required_dependencies: 1
 			dependencies: [
-				"1A08EE7C76242947"
 				"1DFF76A494C9A586"
+				"2F2D1A7A221900E5"
+				"1035D3C1E64A3322"
 			]
 			id: "73973C5E6D2573B8"
 			tasks: [{
 				id: "05C23BCCCFD166F1"
 				type: "item"
 				item: "create:integrated_circuit"
+			}]
+			rewards: [{
+				id: "5D91E4F0FF3D6D32"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -787,10 +808,7 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -798,8 +816,15 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						Damage: 0
-						tic_broken: 0b
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -810,11 +835,7 @@
 								level: 1s
 							}
 						]
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						tic_broken: 0b
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -955,20 +976,29 @@
 				"22C043704EB6527C"
 			]
 			size: 1.75d
+			min_required_tasks: 1
 			id: "57724BFDF0A78FAF"
-			tasks: [{
-				id: "6FDEEB9ACA45AA73"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:biofuel"
+			tasks: [
+				{
+					id: "6FDEEB9ACA45AA73"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:biofuel"
+						}
 					}
+					count: 3L
+					match_nbt: true
 				}
-				count: 3L
-				match_nbt: true
-			}]
+				{
+					id: "75B1D855F0B848E7"
+					type: "item"
+					item: "techreborn:biofuel_bucket"
+					count: 3L
+				}
+			]
 			rewards: [{
 				id: "3D434E26EC91C3E3"
 				type: "loot"
@@ -1018,37 +1048,74 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests28.description0}"
 				""
+				"{ftbquests.chapter.chapter_4.quests28.description2}"
 				""
 				"{ftbquests.chapter.chapter_4.quests28.description3}"
+				"{ftbquests.chapter.chapter_4.quests28.description4}"
 				""
+				"{ftbquests.chapter.chapter_4.quests28.description5}"
 				""
 				"{ftbquests.chapter.chapter_4.quests28.description6}"
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description7}"
 			]
 			dependencies: ["5459F646B9A392C4"]
 			size: 1.75d
 			id: "752215E611021472"
 			tasks: [
 				{
-					id: "7EE6369103C1E25B"
+					id: "6B9E53D683756E51"
 					type: "item"
-					item: "createaddition:connector"
-					count: 2L
+					item: "astralgenerators:resolith_manipulator"
 				}
 				{
-					id: "2C15FF4A593E1B6C"
+					id: "7FA22FC1EA03D901"
 					type: "item"
-					item: "createaddition:copper_spool"
+					title: "{ftbquests.chapter.chapter_4.quests28.tasks2.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "astralgenerators:iron_resolith_relay"
+									Count: 1b
+								}
+								{
+									id: "astralgenerators:electrum_resolith_relay"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
-					id: "1FE4FD6804CFFA00"
+					id: "0D7AECA112533A5B"
 					type: "item"
-					item: "createaddition:gold_spool"
+					title: "{ftbquests.chapter.chapter_4.quests28.tasks3.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "astralgenerators:iron_resolith_transceiver"
+									Count: 1b
+								}
+								{
+									id: "astralgenerators:electrum_resolith_transceiver"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
-				id: "1D210D89E1A57307"
+				id: "2282740643D475FA"
 				type: "item"
-				item: "techreborn:manual"
+				item: "astralgenerators:iron_resolith_relay"
+				count: 4
 			}]
 		}
 		{
@@ -1232,8 +1299,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests36.title}"
-			x: -1.5d
-			y: 3.0d
+			x: -4.0d
+			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests36.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests36.description0}"
@@ -1256,31 +1323,6 @@
 					item: "techreborn:lamp_incandescent"
 				}
 			]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_4.quests37.title}"
-			x: -17.0d
-			y: -1.0d
-			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests37.description0}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests37.description3}"
-			]
-			dependencies: ["73973C5E6D2573B8"]
-			id: "0ADFE1D87DB51856"
-			tasks: [{
-				id: "75F20E3FC26D6824"
-				type: "item"
-				item: "techreborn:basic_storage_unit"
-			}]
-			rewards: [{
-				id: "03284E024A33A23B"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests38.title}"
@@ -1636,11 +1678,6 @@
 			id: "494F84A10D6934E7"
 			tasks: [
 				{
-					id: "428441742E5CD542"
-					type: "item"
-					item: "createaddition:seed_oil_bucket"
-				}
-				{
 					id: "1C7275685128FEF1"
 					type: "item"
 					title: "{ftbquests.chapter.chapter_4.quests49.tasks1.title}"
@@ -1649,6 +1686,30 @@
 						Count: 1b
 						tag: {
 							value: "c:seeds"
+						}
+					}
+				}
+				{
+					id: "5719DFEA6A9725D8"
+					type: "item"
+					title: "{ftbquests.chapter.chapter_4.quests49.tasks2.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									Count: 1b
+									tag: {
+										fluid: "createaddition:seed_oil"
+									}
+								}
+								{
+									id: "createaddition:seed_oil_bucket"
+									Count: 1b
+								}
+							]
 						}
 					}
 				}
@@ -2053,7 +2114,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests64.title}"
 			x: -9.0d
-			y: -0.5d
+			y: 0.0d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_4.quests64.subtitle}"
 			description: [
@@ -2245,12 +2306,26 @@
 				"{ftbquests.chapter.chapter_4.quests72.description3}"
 			]
 			dependencies: ["64A1C434EB7021E6"]
+			min_required_tasks: 1
 			id: "55214095FAF22F42"
-			tasks: [{
-				id: "0276F73188BF69D0"
-				type: "item"
-				item: "tconstruct:molten_electrum_bucket"
-			}]
+			tasks: [
+				{
+					id: "0276F73188BF69D0"
+					type: "item"
+					item: "tconstruct:molten_electrum_bucket"
+				}
+				{
+					id: "4A8D77D1D9290759"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_electrum"
+						}
+					}
+				}
+			]
 			rewards: [
 				{
 					id: "365574D8751A7E34"
@@ -2458,7 +2533,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests81.title}"
 			x: -10.0d
-			y: -0.5d
+			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests81.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests81.description0}"
@@ -2901,8 +2976,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests94.title}"
-			x: -1.5d
-			y: 4.0d
+			x: -4.5d
+			y: 3.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests94.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests94.description0}"
@@ -2920,7 +2995,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests95.title}"
-			x: -0.5d
+			x: -1.0d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests95.subtitle}"
 			description: [
@@ -2939,24 +3014,55 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests96.title}"
-			x: -0.5d
+			x: -1.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests96.description0}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests96.description3}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests96.description0}"]
 			dependencies: [
 				"70FE485B4505AC81"
 				"49BE333EAC6260C8"
 			]
+			min_required_tasks: 1
 			id: "65DED861096175C2"
-			tasks: [{
-				id: "6EAE447DF0EF949F"
-				type: "item"
-				item: "kubejs:blast-resistant_cement_bucket"
+			tasks: [
+				{
+					id: "6EAE447DF0EF949F"
+					type: "item"
+					item: "kubejs:blast-resistant_cement_bucket"
+				}
+				{
+					id: "19B1B96B0520A59C"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:blast-resistant_cement"
+						}
+					}
+				}
+				{
+					id: "489B4A821CCFBD34"
+					type: "item"
+					item: "kubejs:blast-resistant_dement_bucket"
+				}
+				{
+					id: "6B091A805C3BA1C5"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:blast-resistant_dement"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4729C43413F11C82"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -2973,13 +3079,22 @@
 				"{ftbquests.chapter.chapter_4.quests97.description6}"
 			]
 			dependencies: ["65DED861096175C2"]
+			min_required_tasks: 1
 			id: "62C959AC63DD2A89"
-			tasks: [{
-				id: "2D8437605F091BEF"
-				type: "item"
-				item: "createastral:blast-resistant_concrete"
-				count: 16L
-			}]
+			tasks: [
+				{
+					id: "2D8437605F091BEF"
+					type: "item"
+					item: "createastral:blast-resistant_concrete"
+					count: 16L
+				}
+				{
+					id: "226C1A5FF27D32AE"
+					type: "item"
+					item: "createastral:blast-resistant_doncrete"
+					count: 16L
+				}
+			]
 			rewards: [{
 				id: "498DCE4281AF6E58"
 				type: "item"
@@ -3060,7 +3175,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests101.title}"
 			x: -10.0d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests101.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests101.description}"]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -3086,7 +3201,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests102.title}"
 			x: -9.0d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests102.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests102.description}"]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -3106,7 +3221,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests103.title}"
-			x: -1.5d
+			x: -2.5d
 			y: 5.0d
 			description: [
 				"{ftbquests.chapter.chapter_4.quests103.description0}"
@@ -3273,7 +3388,6 @@
 			title: "{ftbquests.chapter.chapter_4.quests110.title}"
 			x: -10.5d
 			y: -6.0d
-			subtitle: "{ftbquests.chapter.chapter_4.quests110.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests110.description}"]
 			dependencies: ["64271E1245394C9A"]
 			id: "7FF635D31674DBBA"
@@ -3291,8 +3405,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests111.title}"
-			x: -0.5d
-			y: 3.0d
+			x: -1.0d
+			y: 2.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests111.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests111.description0}"
@@ -3631,14 +3745,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3656,14 +3770,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3681,14 +3795,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3706,14 +3820,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3748,7 +3862,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests124.title}"
-			x: 1.0d
+			x: 0.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests124.subtitle}"
 			description: [
@@ -4066,6 +4180,11 @@
 					item: "create:large_cogwheel"
 				}
 				{
+					id: "6DA7469A8DE65795"
+					type: "item"
+					item: "createastral:cogwheel_skull"
+				}
+				{
 					id: "7AA1E7393E84E9B4"
 					type: "item"
 					item: "minecraft:arrow"
@@ -4184,9 +4303,29 @@
 					item: "xpcrystals:xp_crystal"
 				}
 				{
-					id: "7B476681124C996E"
+					id: "1A005A3EACD17C40"
 					type: "item"
-					item: "kubejs:liquid_xp_nuggies_bucket"
+					title: "{ftbquests.chapter.chapter_4.quests140.tasks3.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									Count: 1b
+									tag: {
+										fluid: "kubejs:liquid_xp_nuggies"
+									}
+								}
+								{
+									id: "kubejs:liquid_xp_nuggies_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+					match_nbt: true
 				}
 			]
 			rewards: [{
@@ -4260,6 +4399,274 @@
 				id: "25E6BAEB7430518E"
 				type: "item"
 				item: "blahaj:blue_shark"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests141.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests141.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description3}"
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description4}"
+			]
+			dependencies: ["301604FEAD4699AD"]
+			id: "20768473377DAF57"
+			tasks: [{
+				id: "33CDCD7F0C1EEDFE"
+				type: "item"
+				item: "techreborn:overclocker_upgrade"
+			}]
+			rewards: [{
+				id: "6CF8EFC215656F53"
+				type: "item"
+				item: "techreborn:nak_coolant_cell_60k"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_4.quests142.title}"
+			x: -12.0d
+			y: -3.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests142.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests142.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests142.description1}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "78CDCE09FF3D361C"
+			tasks: [{
+				id: "04F0510B3EE4D512"
+				type: "item"
+				item: "techreborn:solid_fuel_generator"
+			}]
+			rewards: [{
+				id: "578C6F52AE4B5D85"
+				type: "item"
+				item: "techreborn:red_cell_battery"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests145.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests145.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests145.description1}"
+			]
+			dependencies: ["07B10625859F1AF9"]
+			id: "4830FC116DADB964"
+			tasks: [{
+				id: "1E0C9C3A216F8277"
+				type: "item"
+				item: "techreborn:lightning_rod"
+			}]
+			rewards: [
+				{
+					id: "1F5F42886C482D57"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+				{
+					id: "13AC8DD527241A07"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "mcdw:thundering"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests144.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests144.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests144.description1}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "301604FEAD4699AD"
+			tasks: [{
+				id: "287992853B174B7D"
+				type: "item"
+				item: "techreborn:chemical_reactor"
+			}]
+			rewards: [{
+				id: "16D4B69EDB6A4D92"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			subtitle: "{ftbquests.chapter.chapter_4.quests143.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests143.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests143.description1}"
+				"{ftbquests.chapter.chapter_4.quests143.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests143.description3}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "5E6A803498A7CF11"
+			tasks: [{
+				id: "34159F7C1E5A2943"
+				type: "item"
+				item: "techreborn:greenhouse_controller"
+			}]
+			rewards: [
+				{
+					id: "5AAD4C3D25356B6D"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+					count: 4
+				}
+				{
+					id: "0720E2A96E3E79FA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
+		}
+		{
+			x: -17.0d
+			y: -1.0d
+			description: ["{ftbquests.chapter.chapter_4.printed_board.description}"]
+			dependencies: [
+				"1A08EE7C76242947"
+				"1D30E6C494694B78"
+			]
+			id: "2F2D1A7A221900E5"
+			tasks: [{
+				id: "3DBAEB5FF587648D"
+				type: "item"
+				item: "createastral:printed_copper_clad_lapis_board"
+			}]
+		}
+		{
+			x: -18.0d
+			y: -1.0d
+			description: ["{ftbquests.chapter.chapter_4.sulfuric_acid.description}"]
+			dependencies: ["34E60A5BAB205ACB"]
+			id: "1035D3C1E64A3322"
+			tasks: [{
+				id: "2DB2D97E19FD75BB"
+				type: "item"
+				item: "techreborn:sulfuric_acid_bucket"
+			}]
+		}
+		{
+			x: -16.5d
+			y: 0.0d
+			subtitle: "{ftbquests.chapter.chapter_4.circuit_paper.subtitle}"
+			description: ["{ftbquests.chapter.chapter_4.circuit_paper.description}"]
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			id: "1D30E6C494694B78"
+			tasks: [{
+				id: "1FD6E21CB531DDC2"
+				type: "item"
+				item: "createastral:circuit_paper"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 0.0d
+			description: [
+				"{ftbquests.chapter.chapter_4.sulfur_dust.description}"
+				""
+				"{ftbquests.chapter.chapter_4.sulfur_dust.description2}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			id: "34E60A5BAB205ACB"
+			tasks: [{
+				id: "20A98AFB75C27C88"
+				type: "item"
+				item: "techreborn:sulfur_dust"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_4.quests146.title}"
+			x: -26.0d
+			y: -6.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_4.quests146.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests146.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description3}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description4}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description5}"
+			]
+			dependencies: ["33875939443A5D1C"]
+			id: "39C2E83C1343D6B1"
+			tasks: [
+				{
+					id: "6C691B8042D96B93"
+					type: "item"
+					item: {
+						id: "astraladditions:shimmer_blower"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B39F2DC90EF96EC"
+					type: "item"
+					item: {
+						id: "astraladditions:lunar_wacker"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "364B99F7B58F1150"
+					type: "item"
+					item: "astraladditions:shimmerang"
+				}
+				{
+					id: "7B4A998BC6B687FE"
+					type: "item"
+					item: {
+						id: "astraladditions:shimmer_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "273918F8B327E101"
+				type: "item"
+				item: "create:experience_block"
 			}]
 		}
 	]

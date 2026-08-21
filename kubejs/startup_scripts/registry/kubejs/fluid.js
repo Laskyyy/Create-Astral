@@ -9,7 +9,7 @@
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .tag("tconstruct:tooltips/metal")
-      .displayName("Molten Calorite");
+      .displayName("Calorite");
     event
       .create("molten_ostrum")
       .thickTexture(0x73515e)
@@ -17,7 +17,7 @@
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .tag("tconstruct:tooltips/metal")
-      .displayName("Molten Ostrum");
+      .displayName("Ostrum");
     event
       .create("molten_desh")
       .thickTexture(0xec8742)
@@ -25,7 +25,7 @@
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .tag("tconstruct:tooltips/metal")
-      .displayName("Molten Desh");
+      .displayName("Desh");
     event
       .create("molten_yttrium")
       .thickTexture(0x487d77)
@@ -33,7 +33,7 @@
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .tag("tconstruct:tooltips/metal")
-      .displayName("Molten Yttrium");
+      .displayName("Yttrium");
     event
       .create("molten_shadowsteel")
       .thickTexture(0x2e2742)
@@ -70,7 +70,7 @@
       .bucketColor(0x4cfbff)
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
-      .displayName("Metabolic Broth");
+      .displayName("Plasma Fluid");
     event
       .create("hellfire")
       .thickTexture(0x9fddfc)
@@ -102,6 +102,13 @@
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .displayName("Blast-Resistant Cement");
     event
+      .create("blast-resistant_dement")
+      .thickTexture(0xB68E78)
+      .bucketColor(0xB68E78)
+      .stillTexture("tconstruct:block/fluid/molten/still")
+      .flowingTexture("tconstruct:block/fluid/molten/flowing")
+      .displayName("Blast-Resistant Dement");
+    event
       .create("red_grape_juice")
       .thinTexture(0x864e97)
       .bucketColor(0x864e97)
@@ -121,7 +128,7 @@
       .bucketColor(0x17ff45)
       .stillTexture("tconstruct:block/fluid/molten/shimmer")
       .flowingTexture("tconstruct:block/fluid/molten/shimmer")
-      .displayName("Liquified Experience Nuggets");
+      .displayName("Liquid XP Nuggies");
     event
       .create("red_paste")
       .thickTexture(0xff0000)

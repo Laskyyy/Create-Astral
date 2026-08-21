@@ -1,0 +1,13 @@
+filename = 'chunkcorruptionpreventor-1.0.0.jar'
+name = 'Chunk Corruption Preventor'
+side = 'both'
+
+[download]
+hash = '116d6ae7c42b8149861c59669e2845bae44b9075'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 7329315
+project-id = 1403907

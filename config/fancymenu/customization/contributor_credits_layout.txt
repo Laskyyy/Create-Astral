@@ -202,7 +202,7 @@ element {
 
 element {
   interactable = true
-  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.artists"}}%n%^^^%n%Ethanicuss%n%Jamiscus%n%ShaiN%n%Xelo%n%;;_Shortman;;%n%;;Miko_Boi;;%n%DepressedBlobfish%n%Sparrow%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.translators"}}%n%^^^%n%HarmonicSkies%n%XETROO%n%lrcno6%n%;;Miko_Boi;;%n%Nageih%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.other"}}%n%^^^%n%;;Infern0_b0b;;%n%NikWas%n%Blueish Sapphire%n%RaKonski%n%NickIndustries%n%HelixGlitch%n%Cuberyl%n%^^^
+  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.artists"}}%n%^^^%n%Ethanicuss%n%Jamiscus%n%ShaiN%n%Xelo%n%;;_Shortman;;%n%;;Miko_Boi;;%n%DepressedBlobfish%n%Sparrow%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.translators"}}%n%^^^%n%HarmonicSkies%n%XETROO%n%lrcno6%n%;;Miko_Boi;;%n%VM Chinese Translation Group%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.other"}}%n%^^^%n%;;Infern0_b0b;;%n%NikWas%n%Blueish Sapphire%n%RaKonski%n%NickIndustries%n%HelixGlitch%n%Cuberyl%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -259,7 +259,7 @@ element {
 
 element {
   interactable = true
-  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.programmers"}}%n%^^^%n%Laskyyy%n%Ethanicuss%n%Winter%n%GreenOxygen%n%koncz314%n%Lizard%n%TheSpokesman%n%Erdragh%n%TheBCWonder%n%KonSola5%n%arc25275%n%TrashPanda%n%Xelo%n%DefinedEntity%n%_Shortman%n%a pepper%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.composers"}}%n%^^^%n%Ethanicuss%n%Winter%n%XETROO%n%PINS3Y%n%Enslaved Angel%n%IAmSolaara%n%^^^
+  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.programmers"}}%n%^^^%n%Laskyyy%n%Ethanicuss%n%Winter%n%GreenOxygen%n%koncz314%n%Lizard%n%TheSpokesman%n%Erdragh%n%TheBCWonder%n%KonSola5%n%arc25275%n%TrashPanda%n%Xelo%n%DefinedEntity%n%_Shortman%n%a pepper%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.composers"}}%n%^^^%n%Ethanicuss%n%Winter%n%XETROO%n%WORLDLINE%n%Enslaved Angel%n%IAmSolaara%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -316,7 +316,7 @@ element {
 
 element {
   interactable = true
-  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.structures"}}%n%^^^%n%Alpvia%n%;;Ari_8449;;%n%;;A_Tangerine;;%n%DoktorPills%n%Ethanicuss%n%Gamefather%n%Ghostlyplays%n%ItsLexa%n%Justinzs%n%JustPhm%n%KonSola5%n%Laskyyy%n%Lina666%n%Lizard%n%;;Lost_Lorf;;%n%Michael0f%n%Nikolaos1811%n%Rshtg7776%n%ScaeluxUltima%n%Sleepysadden%n%Tamanomae%n%;;Teno_6068;;%n%ThatKerbal%n%TrashPanda%n%Vilkki8%n%^^^
+  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.structures"}}%n%^^^%n%Selvia%n%;;Ari_8449;;%n%;;A_Tangerine;;%n%DoktorPills%n%Ethanicuss%n%Gamefather%n%Ghostlyplays%n%ItsLexa%n%Justinzs%n%JustPhm%n%KonSola5%n%Laskyyy%n%Lina666%n%Lizard%n%;;Lost_Lorf;;%n%Michael0f%n%Nikolaos1811%n%Rshtg7776%n%ScaeluxUltima%n%Sleepysadden%n%Tamanomae%n%;;Teno_6068;;%n%ThatKerbal%n%TrashPanda%n%Vilkki8%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0

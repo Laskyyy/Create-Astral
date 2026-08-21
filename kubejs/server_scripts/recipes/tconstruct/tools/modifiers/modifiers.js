@@ -226,8 +226,8 @@
     const incrementalModifierRecipes = [
       {
         input: {
-          item: "tconstruct:ichor_slime_ball",
-          needed: 192,
+          item: "minecraft:blaze_rod",
+          needed: 16,
         },
         appliableTo: "#tconstruct:modifiable/armor/chestplate",
         slots: { abilities: 1 },

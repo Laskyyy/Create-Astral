@@ -70,7 +70,7 @@
       .hardness(4)
       .tagBlock("minecraft:mineable/pickaxe")
       .lightLevel(1)
-      .displayName("Radiant Block");
+      .displayName("Refined Radiance Block");
     event
       .create("createastral:bronze_block")
       .material("lantern")
@@ -83,6 +83,36 @@
       .hardness(3)
       .tagBlock("minecraft:mineable/pickaxe")
       .displayName("Copper Coil Block");
+	event
+      .create("createastral:blast-resistant_doncrete", "basic")
+      .material("stone")
+      .hardness(4)
+      .resistance(1200)
+      .textureAll("createastral:block/doncrete_side")
+      .texture("up", "createastral:block/doncrete")
+      .texture("down", "createastral:block/doncrete")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Doncrete");
+	event
+      .create("createastral:blast-resistant_doncrete_slab", "slab")
+      .material("stone")
+      .hardness(4)
+      .resistance(1200)
+      .textureAll("createastral:block/doncrete_side")
+      .texture("up", "createastral:block/doncrete")
+      .texture("down", "createastral:block/doncrete")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Doncrete Slab");
+	event
+      .create("createastral:blast-resistant_doncrete_stairs", "stairs")
+      .material("stone")
+      .hardness(4)
+      .resistance(1200)
+      .textureAll("createastral:block/doncrete_side")
+      .texture("up", "createastral:block/doncrete")
+      .texture("down", "createastral:block/doncrete")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Doncrete Stairs");
     event
       .create("createastral:blast-resistant_concrete", "basic")
       .material("stone")
@@ -178,6 +208,42 @@
       .hardness(4)
       .tagBlock("minecraft:mineable/pickaxe")
       .material("stone");
+    event
+      .create("createastral:rock_salt", "basic")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_slab", "slab")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_stairs", "stairs")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_wall", "wall")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_bricks", "basic")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_pillar", "basic")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone");
+    event
+      .create("createastral:rock_salt_polished", "basic")
+      .hardness(5)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("stone")
+      .displayName("Polished Rock Salt");
     event
       .create("createastral:compressed_experience_block")
       .tagBlock("minecraft:mineable/pickaxe")

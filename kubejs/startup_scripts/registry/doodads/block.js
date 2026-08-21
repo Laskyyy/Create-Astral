@@ -6,13 +6,13 @@
       .hardness(4)
       .tagBlock("minecraft:mineable/pickaxe")
       .textureAll("doodads:block/asphalt")
-      .displayName("Asphalt Slab");
+      .displayName("Andesite Pavement Slab");
     event
       .create("doodads:asphalt_stair", "stairs")
       .material("stone")
       .hardness(4)
       .tagBlock("minecraft:mineable/pickaxe")
       .textureAll("doodads:block/asphalt")
-      .displayName("Asphalt Stair");
+      .displayName("Andesite Pavement Stair");
   });
 })();

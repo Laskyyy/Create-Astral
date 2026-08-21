@@ -44,6 +44,13 @@
       ore.size(60);
     });
     event.addOre((ore) => {
+      ore.id = "kubejs:rock_salt"; // optional
+      ore.biomes = ["ad_astra:mercury_deltas"];
+      ore.addTarget("#ad_astra:mercury_ore_replaceables", "createastral:rock_salt");
+      ore.count(0, 1).squared().triangleHeight(-48, 32);
+      ore.size(64);
+    });
+    event.addOre((ore) => {
       ore.id = "kubejs:skystoneae2"; // optional
       ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
       ore.addTarget("#ad_astra:moon_ore_replaceables", "ad_astra:sky_stone");

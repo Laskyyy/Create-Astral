@@ -10,6 +10,17 @@
     /** @type {MechanicalCraftingRecipe[]} */
     const mechanicalCraftingRecipes = [
       {
+        output: "astraladditions:rapier",
+        pattern: ["   P", " EP ", "OFO ", "OI  "],
+        key: {
+          E: "techreborn:electronic_circuit",
+          P: "createastral:prismatic_crystal",
+          F: "astraladditions:fragile_item",
+          I: "createaddition:iron_rod",
+          O: "ad_astra:ostrum_plate",
+        },
+      },
+      {
         output: "ad_astra:calorite_tank",
         pattern: [" C ", "COC", " C "],
         key: {
@@ -79,6 +90,15 @@
           W: "createaddition:iron_wire",
           I: "techreborn:industrial_circuit",
           T: "createaddition:tesla_coil",
+        },
+      },
+      {
+        output: "astraladditions:spudshotgun",
+        pattern: ["PPLLL", "PPLM "],
+        key: {
+          L: "techreborn:lead_plate",
+          P: "create:fluid_pipe",
+          M: "create:precision_mechanism"
         },
       },
       {
@@ -195,10 +215,18 @@
         },
       },
       {
-        output: "ad_astra:launch_pad",
+        output: Item.of("ad_astra:launch_pad", 2),
         pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
         key: {
           A: "createastral:blast-resistant_concrete",
+          B: "create:sturdy_sheet",
+        },
+      },
+      {
+        output: Item.of("ad_astra:launch_pad", 2),
+        pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
           B: "create:sturdy_sheet",
         },
       },
@@ -542,7 +570,7 @@
         pattern: ["  C  ", "C S C", " SDS ", "  S  ", "  S  "],
         key: {
           S: "minecraft:prismarine_shard",
-          D: "createaddition:diamond_grit",
+          D: "techreborn:diamond_dust",
           C: "minecraft:prismarine_crystals",
         },
       },

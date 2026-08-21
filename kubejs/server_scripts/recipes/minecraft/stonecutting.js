@@ -12,10 +12,33 @@
     /** @type {StonecuttingRecipe[]} */
     const stonecuttingRecipes = [
       {
+        input: "ad_astra:moon_stone_bricks",
+        outputs: [
+          Item.of("ad_astra:moon_stone_brick_slab", 2),
+        ],
+      },
+      {
         input: "createastral:blast-resistant_concrete",
         outputs: [
           Item.of("createastral:blast-resistant_concrete_slab", 2),
           "createastral:blast-resistant_concrete_stairs",
+        ],
+      },
+      {
+        input: "createastral:blast-resistant_doncrete",
+        outputs: [
+          Item.of("createastral:blast-resistant_doncrete_slab", 2),
+          "createastral:blast-resistant_doncrete_stairs",
+        ],
+      },
+      {
+        input: "createastral:rock_salt",
+        outputs: [
+          Item.of("createastral:rock_salt_slab", 2),
+          "createastral:rock_salt_stairs",
+          "createastral:rock_salt_bricks",
+          "createastral:rock_salt_pillar",
+          "createastral:rock_salt_polished"
         ],
       },
       {
@@ -67,7 +90,7 @@
       },
       {
         input: "#c:plates/gold",
-        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast"],
+        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast", "createastral:straw_gold_cast"],
       },
       {
         input: "automobility:dash_panel",
@@ -103,18 +126,6 @@
           "yttr:ruined_frame",
           "yttr:ruined_lever",
           "yttr:ruined_torch",
-        ],
-      },
-      {
-        input: "astraladditions:desizer_8",
-        outputs: [
-          "astraladditions:desizer_1",
-          "astraladditions:desizer_2",
-          "astraladditions:desizer_3",
-          "astraladditions:desizer_4",
-          "astraladditions:desizer_6",
-          "astraladditions:desizer_7",
-          "astraladditions:desizer_9",
         ],
       },
       { input: "create:copper_sheet", outputs: [Item.of("createdeco:copper_sheet_metal", 2)] },

@@ -1,0 +1,21 @@
+
+#.
+#Settings for the dash effect
+[dash]
+	#.
+	#Enable dash from the Effect of Estrogen
+	dashEnabled = true
+	#.
+	#The multiplier for the dash delta movement
+	#Range: 0 ~ 100
+	dashDeltaModifier = 1.75
+
+#.
+#Settings for the centrifuge
+[centrifuge]
+	#.
+	#Minimum speed required for the centrifuge to work
+	#[@cui:RequiresReload:both]
+	#Range: 0.0 ~ 256.0
+	centrifugeSpeedRequired = 256.0
+

@@ -74,9 +74,9 @@
   /// swift andesite by max
   onEvent("player.tick", (event) => {
     const player = event.getPlayer();
-    const x = Math.floor(player.x);
-    const y = Math.floor(player.y);
-    const z = Math.floor(player.z);
+    let x = Math.floor(player.x);
+    let y = Math.floor(player.y);
+    let z = Math.floor(player.z);
     if (event.level.getBlock(x, y - 2, z).id == "createastral:swift_andesite") {
       player.potionEffects.add("minecraft:speed", 20, 0, false, false);
     }
@@ -216,6 +216,18 @@
           },
         ],
       },
+      sound: {
+        enabled: true,
+        soundList: [
+          {
+            soundName: "createastral:stop_sound",
+            soundType: "master",
+            soundRange: "128",
+            soundVolume: "0.3",
+            soundPitch: "1"
+          }
+        ],
+      },
     },
     {
       projectile: { item: "createbigcannons:autocannon_cartridge" },
@@ -257,14 +269,14 @@
         if (entity.fullNBT.Item.id === ammoType.projectile.item) {
           server.scheduleInTicks(5, (event) => {
             if (entity.removed || entity.deadOrDying || !entity.alive) {
-              const x = entity.fullNBT.Pos[0];
-              const y = entity.fullNBT.Pos[1];
-              const z = entity.fullNBT.Pos[2];
-              const dim = entity.getLevel().getDimension();
-              const explosion = entity.block.offset(0, 0, 0).createExplosion();
+              let x = entity.fullNBT.Pos[0];
+              let y = entity.fullNBT.Pos[1];
+              let z = entity.fullNBT.Pos[2];
+              let dim = entity.getLevel().getDimension();
+              let explosion = entity.block.offset(0, 0, 0).createExplosion();
               if (ammoType.particles.enabled) {
                 if (ammoType.particles.hasColor) {
-                  const [red, green, blue] = ammoType.particles.color;
+                  let [red, green, blue] = ammoType.particles.color;
                   server.runCommandSilent(
                     `execute in ${dim} run particle ${ammoType.particles.type} ${red} ${green} ${blue} ${ammoType.particles.size} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
                   );
@@ -309,17 +321,15 @@
         }
       });
     } else if (entity.type === "minecraft:item") {
-      const dim = entity.getLevel().getDimension();
-      const {x, y, z} = entity;
+      let dim = entity.getLevel().getDimension();
+      let { x, y, z } = entity;
       switch (entity.item) {
         case "createastral:fragile_sheet":
           entity.item = "createastral:broken_fragile_sheet";
           server.runCommandSilent(
             `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "createastral:fragile_rocket_fin":
@@ -327,9 +337,7 @@
           server.runCommandSilent(
             `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "kubejs:fragile_sheet_block":
@@ -337,9 +345,7 @@
           server.runCommandSilent(
             `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "kubejs:fire_resistant_fragile_sheet_block":
@@ -347,9 +353,7 @@
           server.runCommandSilent(
             `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         default:
