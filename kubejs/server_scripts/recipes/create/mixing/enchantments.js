@@ -752,17 +752,17 @@
     //   ],
     //   heat: "superheated",
     // },
-    {
-      enchantment: "minecraft:piercing",
-			level: 6,
-      input: [
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
-        "create:experience_block",
-        { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-        { fluid: "kubejs:hellfire", amount: 250 * mB },
-      ],
-      heat: "superheated",
-    },
+    // {
+    //   enchantment: "minecraft:piercing",
+		// 	level: 6,
+    //   input: [
+    //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
+    //     "create:experience_block",
+    //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+    //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+    //   ],
+    //   heat: "superheated",
+    // },
     {
       enchantment: "minecraft:looting",
 			level: 2,
