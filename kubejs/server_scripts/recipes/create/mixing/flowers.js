@@ -65,7 +65,7 @@
       },
     ];
     deadBushFlowerRevivingRecipes.forEach((recipe) => {
-      let flower_name = recipe.flower.split(":")[1];
+      const flower_name = recipe.flower.split(":")[1];
 
       event.recipes
         .createMixing(recipe.flower, [
@@ -75,7 +75,7 @@
           { fluid: "kubejs:shimmer", amount: 100 * mB },
         ])
         .processingTime(50)
-        .id(`kubejs:revive_${flower_name}`);
+        .id(`kubejs:create/mixing/flowers/revive_${flower_name}`);
     });
 
     /**
@@ -133,7 +133,7 @@
       },
     ];
     smallToTallFlowerMixingRecipes.forEach((recipe) => {
-      let flower_name = recipe.flower.split(":")[1];
+      const flower_name = recipe.flower.split(":")[1];
 
       event.recipes
         .createMixing(recipe.tallFlower, [
@@ -142,7 +142,7 @@
           { fluid: "kubejs:shimmer", amount: 200 * mB },
         ])
         .processingTime(50)
-        .id(`kubejs:grow_taller_${flower_name}`);
+        .id(`kubejs:create/mixing/flowers/taller_${flower_name}`);
     });
   });
 })();
