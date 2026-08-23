@@ -208,7 +208,7 @@
         .createMixing(Fluid.of(recipe.output, BUCKET), recipe.input)
         .heatRequirement("heated")
         .processingTime(BASE_PROCESSING_TIME)
-        .id(`kubejs:create/mixing/drinkbeer/${liquid_name}`);
+        .id(`kubejs:create/mixing/drinkbeer/liquid_${liquid_name}`);
     });
   });
 })();
