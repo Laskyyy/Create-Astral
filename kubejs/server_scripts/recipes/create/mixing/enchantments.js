@@ -1404,7 +1404,7 @@
 
   onEvent("recipes", (event) => {
     enchantmentMixingRecipes.forEach((recipe) => {
-      let enchant_name = recipe.enchantment.split(":")[1];
+      const enchant_name = recipe.enchantment.split(":")[1];
 
       event.recipes
         .createMixing(
@@ -1416,7 +1416,7 @@
         )
         .heatRequirement(recipe.heat ?? "none")
         .processingTime(recipe.time ?? BASE_PROCESSING_TIME)
-        .id(`kubejs:enchant_mixing_${enchant_name}_${recipe.level}`);
+        .id(`kubejs:create/mixing/enchantments/${enchant_name}_${recipe.level}`);
     });
   });
 })();
