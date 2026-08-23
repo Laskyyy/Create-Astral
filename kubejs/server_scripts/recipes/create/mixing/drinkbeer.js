@@ -88,75 +88,127 @@
   ];
 
   /**
+   * @typedef DrinkBeerFluidMixingRecipe
+   * 
+   * A recipe for mixing 'Drink Beer' mod fluids.
+   * No need for heat, since all recipes are heated.
+   * No need for time, since all recipes use the base time.
+   * 
+   * @property {string} output A fluid ID.
+   * @property {Internal.IngredientJS_} input A list of inputs.
+  */
+
+  /**
    * Drink Beer Liquids
-   * @type {MixingRecipe[]}
+   * @type {DrinkBeerFluidMixingRecipe[]}
    */
   const liquidMixingRecipes = [
     {
-      output: [{ fluid: "kubejs:miner_pale_ale_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:wheat", 3), { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:miner_pale_ale_fluid",
+      input: [
+        Item.of("minecraft:wheat", 3),
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:blaze_stout_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:wheat", 2), "minecraft:blaze_powder", { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:blaze_stout_fluid",
+      input: [
+        "minecraft:blaze_powder",
+        Item.of("minecraft:wheat", 2),
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:blaze_milk_stout_fluid", amount: BUCKET }],
+      output: "kubejs:blaze_milk_stout_fluid",
       input: [
         "minecraft:wheat",
         "minecraft:sugar",
         "minecraft:blaze_powder",
-        { fluid: "minecraft:water", amount: BUCKET },
+        Fluid.of("minecraft:water", BUCKET),
       ],
-      heat: "heated",
     },
     {
-      output: [{ fluid: "kubejs:apple_lambic_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:wheat", 2), "minecraft:apple", { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:apple_lambic_fluid",
+      input: [
+        "minecraft:apple",
+        Item.of("minecraft:wheat", 2),
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:sweet_berry_kriek_fluid", amount: BUCKET }],
-      input: ["minecraft:sweet_berries", Item.of("minecraft:wheat", 2), { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:sweet_berry_kriek_fluid",
+      input: [
+        "minecraft:sweet_berries",
+        Item.of("minecraft:wheat", 2),
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:haars_icey_pale_lager_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:wheat", 3), "minecraft:ice"],
-      heat: "heated",
+      output: "kubejs:haars_icey_pale_lager_fluid",
+      input: [
+        "minecraft:ice",
+        Item.of("minecraft:wheat", 3),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:pumpkin_kvass_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:bread", 2), "minecraft:pumpkin", { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:pumpkin_kvass_fluid",
+      input: [
+        "minecraft:pumpkin",
+        Item.of("minecraft:bread", 2),
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:night_howl_kvass_fluid", amount: BUCKET }],
-      input: [Item.of("minecraft:bread", 2), "minecraft:bone", { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:night_howl_kvass_fluid",
+      input: [
+        Item.of("minecraft:bread", 2),
+        "minecraft:bone",
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
     {
-      output: [{ fluid: "kubejs:frothy_pink_eggnog_fluid", amount: BUCKET }],
-      input: ["minecraft:wheat", "minecraft:egg", "minecraft:beetroot", { fluid: "minecraft:water", amount: BUCKET }],
-      heat: "heated",
+      output: "kubejs:frothy_pink_eggnog_fluid",
+      input: [
+        "minecraft:wheat",
+        "minecraft:egg",
+        "minecraft:beetroot",
+        Fluid.of("minecraft:water", BUCKET),
+      ],
     },
   ];
 
   onEvent("recipes", (event) => {
     spiceMixingRecipes.forEach((recipe) => {
+      /** @type {string} */
+      let spice_name;
+
+      // not perfectly robust
+      if (typeof recipe.output === "string") {
+        spice_name = recipe.output.split(":")[1];
+      } else {
+        recipe.output.forEach((item_out) => {
+          if (typeof item_out === "string" && item_out.startsWith("drinkbeer:spice_")) {
+            spice_name = item_out.split(":")[1];
+          }
+        });
+      }
+      
       event.recipes
         .createMixing(recipe.output, recipe.input)
         .heatRequirement(recipe.heat ?? "none")
-        .processingTime(recipe.time ?? BASE_PROCESSING_TIME);
+        .processingTime(recipe.time ?? BASE_PROCESSING_TIME)
+        .id(`kubejs:create/mixing/drinkbeer/${spice_name}`);
     });
 
     liquidMixingRecipes.forEach((recipe) => {
+      /** @type {string} */
+      let liquid_name = recipe.output.split(":")[1];
+
       event.recipes
-        .createMixing(recipe.output, recipe.input)
-        .heatRequirement(recipe.heat ?? "none")
-        .processingTime(recipe.time ?? BASE_PROCESSING_TIME);
+        .createMixing(Fluid.of(recipe.output, BUCKET), recipe.input)
+        .heatRequirement("heated")
+        .processingTime(BASE_PROCESSING_TIME)
+        .id(`kubejs:create/mixing/drinkbeer/${liquid_name}`);
     });
   });
 })();
