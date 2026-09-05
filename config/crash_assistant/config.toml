@@ -4,7 +4,7 @@
 	#Link which will be opened in browser on request_help_button pressed.
 	#If equals CHANGE_ME, will open Forge/NeoForge/Fabric/Quilt discord link. Names of communities/channels also will be used not from config, but according to this link.
 	#Must start with 'https://' or 'www.'
-	help_link = "https://discord.gg/StW3Q5K8dJ"
+	help_link = "https://info.createastral.uk/discord"
 	#With this option, you can select the formulation of the GUI (e.g., in the help buttons, title).
 	#Currently supported:
 	#   - DISCORD: Uses terminology like 'join the Discord' and 'post in #channel'.
