@@ -7,7 +7,7 @@
     "tconstruct:molten_bronze",
     "createbigcannons:flowing_molten_steel",
     "tconstruct:molten_steel",
-    "createbigcannons:flowing_molten_ostrum",
-    "createbigcannons:molten_ostrum"
+    "kubejs:flowing_molten_ostrum",
+    "kubejs:molten_ostrum"
   ]
 }
