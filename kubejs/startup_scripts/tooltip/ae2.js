@@ -19,6 +19,10 @@
         item: "ae2:certus_quartz_dust",
         tooltip: "tooltip.ae2.quartz_ore",
       },
+      {
+        item: "ae2:quartz_growth_accelerator",
+        tooltip: "tooltip.ae2.quartz_growth_accelerator",
+      },
     ];
     ae2Tooltips.forEach((tooltip) => addLocalizedShiftTooltip(event, tooltip.item, tooltip.tooltip));
   });

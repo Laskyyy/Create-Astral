@@ -129,8 +129,9 @@
 
   "tooltip.ae2.quartz_ore": "Found underground on The Moon",
   "tooltip.ae2.deepslate_quartz_ore": "Found underground on The Moon",
-  "tooltip.ae2.certus_quartz": "Found underground on The Moon.",
+  "tooltip.ae2.certus_quartz": "Found underground on The Moon",
   "tooltip.ae2.certus_quartz_dust": "Found underground on The Moon",
+  "tooltip.ae2.quartz_growth_accelerator": "Doesn't work on Budding Crystals!",
 
   "tooltip.computercraft.disk": "This recipe is not correct, use Redstone instead of Rose Quartz.",
   "tooltip.extractinator.extractinator": "Extractinate blocks for loot! Press U on me to see available recipes.",
