@@ -1,0 +1,13 @@
+name = "Phonos Patched"
+filename = "phonos-0.3.1+1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e71d23c8318da974c80cadd7dbc432471234821"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8437933
+project-id = 1611389
