@@ -71,6 +71,25 @@
       }
     }
   });
+  //* Missing Blocks and potions stuff
+  const missingBlocks = [
+    "createastral:missing_block",
+    "createastral:missing_plane",
+  ];
+  onEvent('block.right_click', event => {
+  	if (!missingBlocks.includes(event.block.id) || event.item.id != "minecraft:glass_bottle") return
+  	  event.item.count--
+	    event.player.playSound('item.bottle.fill')
+  	  event.player.giveInHand("astralfoods:missing_potion")
+
+    //? bottling missing_block turns it into missing_plane and bottling plane turns it into air
+	  if (event.block.id == "createastral:missing_block") {
+		  event.block.set("createastral:missing_plane")
+	  } 
+	  else {
+		  event.block.set("air")
+	  }
+  });
   /// swift andesite by max
   onEvent("player.tick", (event) => {
     const player = event.getPlayer();

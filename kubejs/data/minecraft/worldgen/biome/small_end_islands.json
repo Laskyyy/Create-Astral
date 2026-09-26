@@ -74,7 +74,8 @@
 		[
 		],
 		[	
-			"minecraft:chorus_plant"
+			"minecraft:chorus_plant",
+      "createastral:nether_pile_missing"
 		]
   ]
 }

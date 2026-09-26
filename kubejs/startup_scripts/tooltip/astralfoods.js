@@ -15,6 +15,10 @@
         item: "astralfoods:dipped_potato",
         tooltip: "tooltip.astralfoods.dipped_potato",
       },
+      {
+        item: "astralfoods:missing_potion",
+        tooltip: "tooltip.astralfoods.missing_potion",
+      },
     ];
     astralfoodsTooltips.forEach((tooltip) => addLocalizedShiftTooltip(event, tooltip.item, tooltip.tooltip));
   });
