@@ -15,6 +15,38 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
+## [UNRELEASED]
+
+### CHANGES
+
+#### Quality of life
+
+- Backported the unique names of many of the Chipped blocks from the 1.21.1 version of the mod, meaning blocks that prior had generic names, such as the Glass variants, are much easier to differentate without having to look at their item ID (#734) @Nik-Was
+
+#### Bug patches
+
+- Fixed inconsistencies in how many Chipped blocks are named (#734) @Nik-Was
+- Fixed Pointed Granite and Pointed Smooth Basalt having their names swapped around (#734) @Nik-Was
+- Fixed the Chipped "Polished" variants of andesite, basalt, blackstone, deepslate, diorite, and granite having the same name as vanilla blocks, replacing them with "Smoothed" (#734) @Nik-Was
+- Fixed the fact that there were missing crimson stem and stripped dark oak Chipped block variants (#734) @Nik-Was @HyperRaccoon13
+- Fixed "Mixed" Chipped variants of logs having the wrong top texture (#734) @Nik-Was
+- Fixed some misaligned top textures on crimson and warped stem Chipped variants (#734) @Nik-Was
+- Fixed "Snowy" Chipped variants of leaves having the wrong textures on their top and bottom (#734) @Nik-Was
+- Fixed texture misalignments in the "Bamboo" and "Crimson" Chipped variants of the Dried Kelp Block (#734) @Nik-Was
+- Fixed the Arched Leaded Glass Pane Pillar having an incorrect texture and inventory model (#734) @Nik-Was
+- Fixed Chipped stripped log variants not being mineable with an axe (#734) @Nik-Was
+- Fixed Chipped leaves and moss variants not being mineable with a hoe (#734) @Nik-Was
+- Fixed Chipped ice and uncoloured terracotta variants not being mineable with a pickaxe (#734) @Nik-Was
+- Fixed uncoloured Terracotta being uncraftable and not dropping when mined (#734) @Nik-Was @HyperRaccoon13
+- Fixed the Tinkerer's Workbench not having Create Sawing equivalent recipes (#734) @Nik-Was
+- Fixed Glassblower recipes not showing up in REI (#734) @Nik-Was @HyperRaccoon13
+- Fixed REI not showing recipes done in a Chipped workbench when looking at the workbench's uses (#734) @Nik-Was @HyperRaccoon13
+- Fixed REI not showing the Chipped workbench a block is made in when looking at the block's recipes (#734) @Nik-Was @HyperRaccoon13
+- Fixed multiple tags throwing errors during loading (#734) @Nik-Was
+- Fixed the bottomless fluids tag not working for the 5 people opting to not use the 2.1 lava and shimmer generation methods (#734) @Nik-Was
+- Fixed the Cogwheel Skull hit sound not being registered properly (#734) @Nik-Was
+- Fixed Crushed Raw Desh getting voided when attempting to bulk blast it (#779) @The-Shortman
+
 ## [2.1.5b] - 2026-08-22
 
 ### SUMMARY
