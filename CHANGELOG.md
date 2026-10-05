@@ -47,6 +47,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed the Cogwheel Skull hit sound not being registered properly (#734) @Nik-Was
 - Fixed Crushed Raw Desh getting voided when attempting to bulk blast it (#779) @The-Shortman
 - Fixed the "Gather Souls" quest in Chapter 3 requesting Soul Soil, implying that is is used in Nether Grout, when it is actually Soul Sand used in Nether Grout (#781) @The-Shortman
+- Fixed rain sounds not working, one of the oldest bugs on the issue tracker (#782) @The-Shortman
 
 ## [2.1.5b] - 2026-08-22
 
