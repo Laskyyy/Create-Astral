@@ -87,10 +87,8 @@
     "block.chipped.crimson_roots_13": "Wilted Crimson Roots Bulb",
     "block.chipped.crimson_roots_14": "Sprouting Crimson Roots Bulb",
 
-  	"block.chipped.acacia_door_1": "Acacia Sliding Door",
-
 	"block.chipped.birch_door_1": "Barred Birch Door",
-	"block.chipped.birch_door_3": "Birch Sliding Door",
+	"block.chipped.birch_door_3": "Birch Slide Door",
 	"block.chipped.birch_door_4": "Boarded Birch Door",
 	"block.chipped.birch_door_5": "Dual Paneled Birch Door",
 	"block.chipped.birch_door_6": "Fortified Birch Door",
@@ -102,7 +100,7 @@
 	"block.chipped.birch_door_12": "Paneled Birch Door",
 
 	"block.chipped.crimson_door_1": "Barred Crimson Door",
-	"block.chipped.crimson_door_4": "Crimson Sliding Door",
+	"block.chipped.crimson_door_4": "Crimson Slide Door",
 	"block.chipped.crimson_door_5": "Dual Paneled Crimson Door",
 	"block.chipped.crimson_door_6": "Fortified Crimson Door",
 	"block.chipped.crimson_door_7": "Gated Crimson Door",
@@ -118,7 +116,7 @@
 	"block.chipped.crimson_door_17": "Shack Crimson Door",
 
   	"block.chipped.dark_oak_door_1": "Barred Dark Oak Door",
-	"block.chipped.dark_oak_door_4": "Dark Oak Sliding Door",
+	"block.chipped.dark_oak_door_4": "Dark Oak Slide Door",
 	"block.chipped.dark_oak_door_5": "Dual Paneled Dark Oak Door",
 	"block.chipped.dark_oak_door_6": "Fortified Dark Oak Door",
 	"block.chipped.dark_oak_door_7": "Gated Dark Oak Door",
@@ -134,10 +132,10 @@
 	"block.chipped.jungle_door_5": "Gated Jungle Door",
 	"block.chipped.jungle_door_6": "Glass Jungle Door",
 	"block.chipped.jungle_door_7": "Heavy Jungle Door",
-	"block.chipped.jungle_door_8": "Jungle Sliding Door",
+	"block.chipped.jungle_door_8": "Jungle Slide Door",
 
   	"block.chipped.oak_door_1": "Barred Oak Door",
-	"block.chipped.oak_door_9": "Oak Sliding Door",
+	"block.chipped.oak_door_9": "Oak Slide Door",
 
   	"block.chipped.spruce_door_1": "Tiled Spruce Door",
 	"block.chipped.spruce_door_3": "Dual Paneled Spruce Door",
@@ -154,7 +152,7 @@
 	"block.chipped.spruce_door_14": "Secret Spruce Door",
 	"block.chipped.spruce_door_15": "Shack Spruce Door",
 	"block.chipped.spruce_door_16": "Barred Spruce Door",
-    "block.chipped.spruce_door_17": "Spruce Sliding Door",
+    "block.chipped.spruce_door_17": "Spruce Slide Door",
     "block.chipped.spruce_door_18": "Supported Spruce Door",
     "block.chipped.spruce_door_19": "Tile Windowed Spruce Door",
 
@@ -168,17 +166,17 @@
 	"block.chipped.warped_door_16": "Supported Warped Door",
 	"block.chipped.warped_door_17": "Tile Windowed Warped Door",
 	"block.chipped.warped_door_18": "Tiled Warped Door",
-	"block.chipped.warped_door_19": "Warped Sliding Door",
+	"block.chipped.warped_door_19": "Warped Slide Door",
 
 	"block.chipped.dried_kelp_block_1": "Brown Dried Kelp Block",
 	"block.chipped.dried_kelp_block_2": "Blue Dried Kelp Block",
 	"block.chipped.dried_kelp_block_3": "Bamboo Dried Kelp Block",
 	"block.chipped.dried_kelp_block_4": "Compact Dried Kelp Block",
 	"block.chipped.dried_kelp_block_5": "Crimson Dried Kelp Block",
-	"block.chipped.dried_kelp_block_6": "Netherwart Dried Kelp Block",
-	"block.chipped.dried_kelp_block_7": "Wart Dried Kelp Block",
+	"block.chipped.dried_kelp_block_6": "Nether Wart Dried Kelp Block",
+	"block.chipped.dried_kelp_block_7": "Warped Dried Kelp Block",
 	"block.chipped.dried_kelp_block_8": "Shroomy Dried Kelp Block",
-	"block.chipped.dried_kelp_block_9": "Sugarcane Dried Kelp Block",
+	"block.chipped.dried_kelp_block_9": "Sugar Cane Dried Kelp Block",
 	"block.chipped.dried_kelp_block_10": "Rough Crimson Dried Kelp Block",
 	"block.chipped.dried_kelp_block_11": "Mossy Dried Kelp Block",
 	"block.chipped.dried_kelp_block_12": "Leafy Dried Kelp Block",
