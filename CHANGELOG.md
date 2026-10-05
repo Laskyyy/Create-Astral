@@ -46,6 +46,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed the bottomless fluids tag not working for the 5 people opting to not use the 2.1 lava and shimmer generation methods (#734) @Nik-Was
 - Fixed the Cogwheel Skull hit sound not being registered properly (#734) @Nik-Was
 - Fixed Crushed Raw Desh getting voided when attempting to bulk blast it (#779) @The-Shortman
+- Fixed the "Gather Souls" quest in Chapter 3 requesting Soul Soil, implying that is is used in Nether Grout, when it is actually Soul Sand used in Nether Grout (#781) @The-Shortman
 
 ## [2.1.5b] - 2026-08-22
 
