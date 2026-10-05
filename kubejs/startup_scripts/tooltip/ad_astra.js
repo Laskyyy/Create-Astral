@@ -6,51 +6,51 @@
     const adAstraTooltips = [
       {
         item: "ad_astra:space_helmet",
-        tooltip: "tooltip.ad_astra.space_helmet",
+        tooltip: "tooltip.ad_astra.space_helmet_repair_tip",
       },
       {
         item: "ad_astra:space_suit",
-        tooltip: "tooltip.ad_astra.space_helmet",
+        tooltip: "tooltip.ad_astra.space_helmet_repair_tip",
       },
       {
         item: "ad_astra:space_pants",
-        tooltip: "tooltip.ad_astra.space_helmet",
+        tooltip: "tooltip.ad_astra.space_helmet_repair_tip",
       },
       {
         item: "ad_astra:space_boots",
-        tooltip: "tooltip.ad_astra.space_helmet",
+        tooltip: "tooltip.ad_astra.space_helmet_repair_tip",
       },
       {
         item: "ad_astra:netherite_space_helmet",
-        tooltip: "tooltip.ad_astra.netherite_space_helmet",
+        tooltip: "tooltip.ad_astra.netherite_space_helmet_repair_tip",
       },
       {
         item: "ad_astra:netherite_space_suit",
-        tooltip: "tooltip.ad_astra.netherite_space_suit",
+        tooltip: "tooltip.ad_astra.netherite_space_suit_repair_tip",
       },
       {
         item: "ad_astra:netherite_space_pants",
-        tooltip: "tooltip.ad_astra.netherite_space_suit",
+        tooltip: "tooltip.ad_astra.netherite_space_suit_repair_tip",
       },
       {
         item: "ad_astra:netherite_space_boots",
-        tooltip: "tooltip.ad_astra.netherite_space_suit",
+        tooltip: "tooltip.ad_astra.netherite_space_suit_repair_tip",
       },
       {
         item: "ad_astra:jet_suit_helmet",
-        tooltip: "tooltip.ad_astra.jet_suit_helmet",
+        tooltip: "tooltip.ad_astra.jet_suit_helmet_repair_tip",
       },
       {
         item: "ad_astra:jet_suit",
-        tooltip: "tooltip.ad_astra.jet_suit_helmet",
+        tooltip: "tooltip.ad_astra.jet_suit_helmet_repair_tip",
       },
       {
         item: "ad_astra:jet_suit_pants",
-        tooltip: "tooltip.ad_astra.jet_suit_helmet",
+        tooltip: "tooltip.ad_astra.jet_suit_helmet_repair_tip",
       },
       {
         item: "ad_astra:jet_suit_boots",
-        tooltip: "tooltip.ad_astra.jet_suit_helmet",
+        tooltip: "tooltip.ad_astra.jet_suit_helmet_repair_tip",
       },
       {
         item: "ad_astra:tier_1_rocket",
