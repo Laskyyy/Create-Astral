@@ -1,6 +1,4 @@
 {
-    "replace": false,
-    "values": [
-      "customportalapi:customportalblock"
-    ]
+  "replace": false,
+  "values": ["customportalapi:customportalblock"]
 }
