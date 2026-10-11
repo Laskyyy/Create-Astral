@@ -7,6 +7,7 @@ LICENSE*.md
 CHANGELOG.md
 CONTRIBUTING.md
 CODE_STYLE.md
+config/crash_assistant/crash_assistant_localization_overrides/README.md
 
 # linting
 .prettierrc
