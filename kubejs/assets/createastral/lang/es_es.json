@@ -3030,5 +3030,7 @@
 
   "modifier.createastral.amplified": "Amplificado",
   "modifier.createastral.amplified.flavor": "¡Sobrecargado!",
-  "modifier.createastral.amplified.description": "El dispositivo de amplificación de Shimmer permite que tu herramienta maneje una habilidad adicional."
+  "modifier.createastral.amplified.description": "El dispositivo de amplificación de Shimmer permite que tu herramienta maneje una habilidad adicional.",
+
+  "item.phonos.redstone_chip": "Chip de redstone"
 }

@@ -836,16 +836,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests30.title}"
-			icon: {
-				id: "phonos:custom_music_disc"
-				Count: 1b
-				tag: {
-					MusicData: {
-						SoundId: "minecraft:empty"
-						ComparatorSignal: 1
-					}
-				}
-			}
+			icon: "railways:jukeboxcart"
 			x: 16.5d
 			y: 3.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests30.subtitle}"
