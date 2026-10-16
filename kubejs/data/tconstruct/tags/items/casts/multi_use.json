@@ -1,4 +1,9 @@
 {
-    "replace": false,
-    "values": ["astraladditions:ring_gold_cast", "tconstruct:gold_platform", "tconstruct:gold_bars"]
+  "replace": false,
+  "values": [
+    "astraladditions:ring_gold_cast",
+    "createastral:straw_gold_cast",
+    "tconstruct:gold_platform",
+    "tconstruct:gold_bars"
+  ]
 }
