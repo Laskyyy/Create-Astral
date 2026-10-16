@@ -10,6 +10,16 @@
     /** @type {MechanicalCraftingRecipe[]} */
     const mechanicalCraftingRecipes = [
       {
+        output: "ae2:molecular_assembler",
+        pattern: ["SES", "CGC", "SCS"],
+        key: {
+          S: "techreborn:silver_plate",
+          E: "ae2:engineering_processor",
+          C: "create:mechanical_crafter",
+          G: "ae2:quartz_glass",
+        },
+      },
+      {
         output: "astraladditions:rapier",
         pattern: ["   P", " EP ", "OFO ", "OI  "],
         key: {
