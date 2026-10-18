@@ -314,5 +314,19 @@
           "facing=west" : { "model": "createastral:block/cogwheel_skull", "y": 270 },
         }
       };
+    event
+      .create("createastral:missing_plane")
+	    .material("ice")
+	    .hardness(0)
+	    .textureAll("createastral:block/missing_texture")
+	    .box(0, 0, 0, 16, 1, 16)
+	    .noCollision()
+	    .noDrops()
+	  event
+      .create("createastral:missing_block", "basic")
+	    .material("ice")
+	    .hardness(0)
+	    .textureAll("createastral:block/missing_texture")
+	    .noDrops()
   });
 })();

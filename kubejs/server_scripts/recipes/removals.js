@@ -37,7 +37,6 @@
       { output: "techreborn:refined_iron_fence" },
       { output: "techreborn:chunk_loader" },
       { output: "techreborn:pyrite_dust" },
-      { output: "ae2:spatial_anchor" },
       { output: "techreborn:carbon_fiber" },
       { output: "techreborn:scrap_box" },
       { output: "techreborn:industrial_electrolyzer" },
@@ -445,6 +444,7 @@
       { output: "ae2:quartz_growth_accelerator" },
       { type: "ae2:inscriber" },
       { output: "ae2:controller", type: "crafting_shaped" },
+      { output: "ae2:spatial_anchor" },
       // Tconstruct
       { output: "tconstruct:gold_bars" },
       { input: "tconstruct:gold_bars", output: "tconstruct:molten_gold" },

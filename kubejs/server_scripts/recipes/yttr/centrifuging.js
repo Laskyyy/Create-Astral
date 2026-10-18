@@ -76,6 +76,15 @@
         ],
         time: 800,
       },
+      {
+        input: { item: "astralfoods:missing_potion", count: 4 },
+        output: [
+          { item: "tconstruct:ender_slime_crystal", count: 2 },
+          { item: "tconstruct:dragon_scale", count: 2 },
+		      { item: "yttr:glassy_void", count: 1 },
+        ],
+        time: 200,
+      },
     ];
     centrifugingRecipes.forEach((recipe) => {
       event.custom({
