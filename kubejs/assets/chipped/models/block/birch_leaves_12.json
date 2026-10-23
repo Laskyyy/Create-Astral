@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/birch_leaves/birch_leaves_11",
+    "side": "chipped:block/birch_leaves/birch_leaves_12"
+  }
+}

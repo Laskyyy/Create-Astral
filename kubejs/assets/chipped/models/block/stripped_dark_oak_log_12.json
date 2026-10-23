@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/stripped_dark_oak_log/stripped_dark_oak_log_1_top",
+    "side": "chipped:block/stripped_dark_oak_log/stripped_dark_oak_log_13"
+  }
+}

@@ -226,7 +226,7 @@
       "chipped:glassblower",
       "chipped:loom_table",
       "chipped:mason_table",
-      /** @type {Special.RecipeSerializer}*/ ("chipped:tinkering_table"),
+      /** @type {Special.RecipeSerializer}*/ ("chipped:mechanist_workbench"),
     ]);
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
@@ -245,6 +245,15 @@
         });
       });
     });
+    Ingredient.of("#chipped:terracotta")
+      .getStacks()
+      .forEach((item) => {
+        event.custom({
+          type: "create:cutting",
+          ingredients: [{ tag: "chipped:terracotta" }],
+          results: [{ item: item.id }]
+        })
+      })
   }
   /**
    * @author RandomUser240306

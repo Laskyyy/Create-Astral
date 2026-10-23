@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#chipped:acacia_leaves",
+    "#chipped:birch_leaves",
+    "#chipped:dark_oak_leaves",
+    "#chipped:jungle_leaves",
+    "#chipped:oak_leaves",
+    "#chipped:spruce_leaves",
+    "#chipped:moss_block"
+  ]
+}

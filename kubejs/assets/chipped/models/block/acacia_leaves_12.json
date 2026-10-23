@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/acacia_leaves/acacia_leaves_11",
+    "side": "chipped:block/acacia_leaves/acacia_leaves_12"
+  }
+}

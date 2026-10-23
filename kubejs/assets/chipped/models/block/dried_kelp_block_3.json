@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/dried_kelp_block",
+  "textures": {
+    "particle": "chipped:block/dried_kelp_block/dried_kelp_block_3_side",
+    "down": "chipped:block/dried_kelp_block/dried_kelp_block_3_bottom",
+    "up": "chipped:block/dried_kelp_block/dried_kelp_block_3_top",
+    "north": "chipped:block/dried_kelp_block/dried_kelp_block_3_side",
+    "east": "chipped:block/dried_kelp_block/dried_kelp_block_3_side",
+    "south": "chipped:block/dried_kelp_block/dried_kelp_block_3_side",
+    "west": "chipped:block/dried_kelp_block/dried_kelp_block_3_side"
+  }
+}

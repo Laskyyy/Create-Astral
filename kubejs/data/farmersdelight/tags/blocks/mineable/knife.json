@@ -1,0 +1,20 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:cobweb",
+    "minecraft:cake",
+    "farmersdelight:apple_pie",
+    "farmersdelight:sweet_berry_cheesecake",
+    "farmersdelight:chocolate_pie",
+    "farmersdelight:roast_chicken_block",
+    "farmersdelight:honey_glazed_ham_block",
+    "farmersdelight:shepherds_pie_block",
+    "farmersdelight:rice_roll_medley_block",
+    "#minecraft:carpets",
+    "#minecraft:wool",
+    "#minecraft:candle_cakes",
+    "#farmersdelight:straw_blocks",
+    "#chipped:cobweb",
+    "#c:mineable/knife"
+  ]
+}
