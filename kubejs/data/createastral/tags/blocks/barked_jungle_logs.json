@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:jungle_log",
-        "minecraft:jungle_wood"
-    ]
+  "values": ["minecraft:jungle_log", "minecraft:jungle_wood"]
 }

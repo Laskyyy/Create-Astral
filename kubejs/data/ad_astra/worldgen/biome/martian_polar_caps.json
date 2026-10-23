@@ -20,11 +20,7 @@
   "spawners": {},
   "spawn_costs": {},
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [
@@ -38,7 +34,7 @@
       "minecraft:large_dripstone",
       "minecraft:dripstone_cluster",
       "minecraft:pointed_dripstone",
-       "astralrails:mars_blackstone_patch"
+      "astralrails:mars_blackstone_patch"
     ]
   ]
 }

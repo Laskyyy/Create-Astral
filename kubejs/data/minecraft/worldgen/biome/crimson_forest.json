@@ -97,9 +97,7 @@
     "air": "minecraft:nether_cave"
   },
   "features": [
-    [
-			"astralrails:nether/crimson/noise"
-		],
+    ["astralrails:nether/crimson/noise"],
     [],
     [],
     [],
@@ -119,15 +117,15 @@
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
-			"astralrails:nether/nether_enderslime_geode",
-			"astralrails:nether/nether_monazite_geode"
+      "astralrails:nether/nether_enderslime_geode",
+      "astralrails:nether/nether_monazite_geode"
     ],
     [],
     [
       "minecraft:spring_lava",
-			"astralrails:nether/crimson/blood_clot",
-			"astralrails:nether/crimson/scab",
-			"astralrails:nether/crimson/bones",
+      "astralrails:nether/crimson/blood_clot",
+      "astralrails:nether/crimson/scab",
+      "astralrails:nether/crimson/bones",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:weeping_vines",

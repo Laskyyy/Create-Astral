@@ -1,6 +1,4 @@
 {
   "replace": true,
-  "values": [
-    "ad_astra:martian_wastelands"
-  ]
+  "values": ["ad_astra:martian_wastelands"]
 }

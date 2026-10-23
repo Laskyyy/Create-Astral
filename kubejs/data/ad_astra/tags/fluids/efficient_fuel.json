@@ -1,7 +1,4 @@
 {
   "replace": true,
-  "values": [
-    "techreborn:nitro_diesel"
-
-  ]
+  "values": ["techreborn:nitro_diesel"]
 }

@@ -1,6 +1,3 @@
 {
-    "values": [
-        "tconstruct:skyroot_log",
-        "tconstruct:skyroot_wood"
-    ]
+  "values": ["tconstruct:skyroot_log", "tconstruct:skyroot_wood"]
 }

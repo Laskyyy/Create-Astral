@@ -455,9 +455,7 @@
           }
         ]
       }
-    }
-,    
-    
+    },
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

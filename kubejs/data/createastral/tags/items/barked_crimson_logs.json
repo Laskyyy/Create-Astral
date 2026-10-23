@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:crimson_stem",
-        "minecraft:crimson_hyphae"
-    ]
+  "values": ["minecraft:crimson_stem", "minecraft:crimson_hyphae"]
 }

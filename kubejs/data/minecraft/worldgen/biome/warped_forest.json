@@ -74,7 +74,7 @@
     "water_ambient": [],
     "misc": []
   },
-  "spawn_costs": {  },
+  "spawn_costs": {},
   "carvers": {
     "air": "minecraft:nether_cave"
   },
@@ -96,30 +96,26 @@
       "minecraft:ore_blackstone",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
-			"astralrails:nether/nether_enderslime_geode",
-			"astralrails:nether/nether_monazite_ore"
+      "astralrails:nether/nether_enderslime_geode",
+      "astralrails:nether/nether_monazite_ore"
     ],
     [
-			
-			"astralrails:nether/warped/noise_nylium",
-			"astralrails:nether/warped/noise_enderrack",
-			"astralrails:nether/warped/sputum_pools",
-			"astralrails:nether/warped/sputum_puddles",
-			"astralrails:nether/warped/end_clot",
-			"astralrails:nether/warped/enderslime_crystal",
-			"astralrails:nether/warped/ender_sprouts",
-			"astralrails:nether/warped/ender_tip",
-			"astralrails:nether/nether_pearl_pod_veg",
-			"minecraft:spring_lava",
+      "astralrails:nether/warped/noise_nylium",
+      "astralrails:nether/warped/noise_enderrack",
+      "astralrails:nether/warped/sputum_pools",
+      "astralrails:nether/warped/sputum_puddles",
+      "astralrails:nether/warped/end_clot",
+      "astralrails:nether/warped/enderslime_crystal",
+      "astralrails:nether/warped/ender_sprouts",
+      "astralrails:nether/warped/ender_tip",
+      "astralrails:nether/nether_pearl_pod_veg",
+      "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:warped_fungi",
       "minecraft:warped_forest_vegetation",
       "minecraft:nether_sprouts"
-		],
-    [
-      "minecraft:twisting_vines",
-      "minecraft:weeping_vines"
-    ]
+    ],
+    ["minecraft:twisting_vines", "minecraft:weeping_vines"]
   ]
 }

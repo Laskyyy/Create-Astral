@@ -17,9 +17,7 @@
     [],
     [],
     [],
-    [
-      "minecraft:end_spike"
-    ]
+    ["minecraft:end_spike"]
   ],
   "spawners": {
     "monster": [
