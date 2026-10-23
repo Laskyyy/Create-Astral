@@ -1,8 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "minecraft:lukewarm_ocean",
-    "minecraft:warm_ocean",
-    "minecraft:deep_lukewarm_ocean"
-  ]
+  "values": ["minecraft:lukewarm_ocean", "minecraft:warm_ocean", "minecraft:deep_lukewarm_ocean"]
 }

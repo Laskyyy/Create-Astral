@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "#minecraft:is_badlands"
-  ]
+  "values": ["#minecraft:is_badlands"]
 }

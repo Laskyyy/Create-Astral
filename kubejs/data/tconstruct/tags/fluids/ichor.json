@@ -1,7 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "tconstruct:ichor",
-    "tconstruct:flowing_ichor"
-  ]
+  "values": ["tconstruct:ichor", "tconstruct:flowing_ichor"]
 }

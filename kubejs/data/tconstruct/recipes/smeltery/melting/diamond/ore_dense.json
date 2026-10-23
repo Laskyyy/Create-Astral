@@ -4,10 +4,7 @@
     {
       "condition": "tconstruct:tag_intersection_present",
       "registry": "minecraft:item",
-      "tags": [
-        "c:ores/diamond",
-        "c:ore_rates/dense"
-      ]
+      "tags": ["c:ores/diamond", "c:ore_rates/dense"]
     }
   ],
   "rate": "gem",

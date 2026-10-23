@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "kubejs:molten_desh"
-  ]
+  "values": ["kubejs:molten_desh"]
 }

@@ -1,6 +1,4 @@
 {
   "replace": true,
-  "values": [
-    "ad_astra:mercury_deltas"
-  ]
+  "values": ["ad_astra:mercury_deltas"]
 }
