@@ -1,6 +1,3 @@
 {
-    "values": [
-        "tconstruct:bloodshroom_log",
-        "tconstruct:bloodshroom_wood"
-    ]
+  "values": ["tconstruct:bloodshroom_log", "tconstruct:bloodshroom_wood"]
 }

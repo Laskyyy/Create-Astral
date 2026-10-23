@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:birch_log",
-        "minecraft:birch_wood"
-    ]
+  "values": ["minecraft:birch_log", "minecraft:birch_wood"]
 }

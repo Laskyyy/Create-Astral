@@ -1,7 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "create:copper_casing",
-    "astraladditions:steel_casing"
-  ]
+  "values": ["create:copper_casing", "astraladditions:steel_casing"]
 }

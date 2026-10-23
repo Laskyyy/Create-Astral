@@ -1,6 +1,3 @@
 {
-    "values": [
-        "tconstruct:greenheart_log",
-        "tconstruct:greenheart_wood"
-    ]
+  "values": ["tconstruct:greenheart_log", "tconstruct:greenheart_wood"]
 }
