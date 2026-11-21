@@ -1,0 +1,15 @@
+{
+  "tooltip.ad_astra.space_helmet": "Se puede reparar con placas robustas o lingotes de acero.",
+  "tooltip.ad_astra.space_suit": "Se puede reparar con placas robustas o lingotes de acero.",
+  "tooltip.ad_astra.space_pants": "Se puede reparar con placas robustas o lingotes de acero.",
+  "tooltip.ad_astra.space_boots": "Se puede reparar con placas robustas o lingotes de acero.",
+  "tooltip.ad_astra.netherite_space_helmet": "Se puede reparar con lingotes de netherita.",
+  "tooltip.ad_astra.netherite_space_suit": "Se puede reparar con lingotes de netherita.",
+  "tooltip.ad_astra.netherite_space_pants": "Se puede reparar con lingotes de netherita.",
+  "tooltip.ad_astra.netherite_space_boots": "Se puede reparar con lingotes de netherita.",
+  "tooltip.ad_astra.jet_suit_helmet": "Se puede reparar con lingotes de calorita.",
+  "tooltip.ad_astra.jet_suit": "Se puede reparar con lingotes de calorita.",
+  "tooltip.ad_astra.jet_suit_pants": "Se puede reparar con lingotes de calorita.",
+  "tooltip.ad_astra.jet_suit_boots": "Se puede reparar con lingotes de calorita.",
+  "tooltip.ad_astra.tier_1_rocket": "Deshabilizado, usa el portal personalizado en su lugar."
+}

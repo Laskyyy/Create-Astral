@@ -1,4 +1,14 @@
 {
+  "tooltip.createbigcannons.steel_screw_breech": "Wrenchable",
+  "tooltip.createbigcannons.incomplete_steel_screw_breech": "Wrenchable",
+  "tooltip.createbigcannons.nethersteel_screw_breech": "Wrenchable",
+  "tooltip.createbigcannons.incomplete_nethersteel_screw_breech": "Wrenchable",
+
+  "item.createbigcannons.delayed_impact_fuze.tooltip.summary": "Detonates a _short time_ after _hitting_ something. Due to its _simple trigger mechanism_, it does not always trigger the timer.",
+  "item.createbigcannons.impact_fuze.tooltip.summary": "Detonates when the projectile _hits something_. Due to its _simplicity_, it does not always detonate on impact.",
+  "item.createbigcannons.nethersteel_screw_lock": "Ostrum Screw Lock",
+  "item.createbigcannons.proximity_fuze.tooltip.summary": "Detonates when it _gets close_ to a block.",
+
   "block.createbigcannons.built_up_nethersteel_cannon_barrel": "Built-Up Ostrum Cannon Barrel",
   "block.createbigcannons.built_up_nethersteel_cannon_chamber": "Built-Up Ostrum Cannon Chamber",
   "block.createbigcannons.fluid_shell.tooltip.condition3": "Note",
@@ -18,16 +28,6 @@
   "block.createbigcannons.unbored_very_small_nethersteel_cannon_layer": "Unbored Very Small Ostrum Cannon Layer",
   "block.createbigcannons.very_large_nethersteel_cannon_layer": "Very Large Ostrum Cannon Layer",
   "block.createbigcannons.very_small_nethersteel_cannon_layer": "Very Small Ostrum Cannon Layer",
-  
-  "createbigcannons.ponder.cannon_crafting/finishing_built_up_cannons.text_3": "It takes a while for the cannon layers to transform into cannon blocks.",
-  "createbigcannons.ponder.tag.cannon_crafting.description": "How to manufacture big cannons",
-  "createbigcannons.ponder.tag.munitions.description": "Blocks that make up cannon loads, and what they can do",
-  "createbigcannons.ponder.tag.operating_cannons.description": "How to use big cannons safely and effectively",
-
-  "item.createbigcannons.delayed_impact_fuze.tooltip.summary": "Detonates a _short time_ after _hitting_ something. Due to its _simple trigger mechanism_, it does not always trigger the timer.",
-  "item.createbigcannons.impact_fuze.tooltip.summary": "Detonates when the projectile _hits something_. Due to its _simplicity_, it does not always detonate on impact.",
-  "item.createbigcannons.nethersteel_screw_lock": "Ostrum Screw Lock",
-  "item.createbigcannons.proximity_fuze.tooltip.summary": "Detonates when it _gets close_ to a block.",
 
   "tag.c.ingots.nethersteel": "Ostrum Ingots (Forge Format)",
   "tag.c.nethersteel_ingots": "Ostrum Ingots",
@@ -35,5 +35,10 @@
   "tag.c.nuggets.nethersteel": "Ostrum Nuggets (Forge Format)",
   "tag.createbigcannons.block_nethersteel": "Ostrum Blocks",
   "tag.createbigcannons.ingot_nethersteel": "Ostrum Ingots",
-  "tag.createbigcannons.nugget_nethersteel": "Ostrum Nuggets"
+  "tag.createbigcannons.nugget_nethersteel": "Ostrum Nuggets",
+
+  "createbigcannons.ponder.cannon_crafting/finishing_built_up_cannons.text_3": "It takes a while for the cannon layers to transform into cannon blocks.",
+  "createbigcannons.ponder.tag.cannon_crafting.description": "How to manufacture big cannons",
+  "createbigcannons.ponder.tag.munitions.description": "Blocks that make up cannon loads, and what they can do",
+  "createbigcannons.ponder.tag.operating_cannons.description": "How to use big cannons safely and effectively"
 }

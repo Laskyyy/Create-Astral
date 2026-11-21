@@ -1,3 +1,5 @@
 {
-    "block.doodads.asphalt": "Андезитовая мостовая"
+  "block.doodads.asphalt": "Андезитовая мостовая",
+  "block.doodads.asphalt_slab": "Плита андезитовой мостовой",
+  "block.doodads.asphalt_stair": "Ступеньки андезитовой мостовой"
 }
