@@ -20,8 +20,8 @@
         input: "minecraft:charcoal",
         output: "minecraft:coal",
       },
-      {
-        input: "minecraft:sand",
+	    {
+        input: "#minecraft:sand",
         output: "minecraft:soul_sand",
       },
       {

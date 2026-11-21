@@ -328,5 +328,14 @@
 	    .hardness(0)
 	    .textureAll("createastral:block/missing_texture")
 	    .noDrops()
+    event
+      .create("createastral:bramblecage")
+      .tagBlock("minecraft:mineable/pickaxe")
+	    .tagBlock("minecraft:mineable/axe")
+      .material("berry_bush")
+	    .renderType('cutout') 
+	    .notSolid()
+      .hardness(2)
+      .lightLevel(5)
   });
 })();

@@ -1041,6 +1041,17 @@
       .addFillingStep({ fluid: "kubejs:shimmer", amount: 250 * mB })
       .loops(4)
       .build();
+      
+    createSequencedAssembly(event, {
+      input: "astraladditions:bramblebone",
+      transitional: "astraladditions:bramblebone",
+      outputs: ["createastral:bramblecage"],
+    })
+	  .addDeployingStep("minecraft:shroomlight")
+	  .addFillingStep({ fluid: "create:potion", amount: 1 * BUCKET, nbt: { Bottle: "REGULAR", Potion: "minecraft:strength" }})
+	  .addDeployingStep("tconstruct:blood_slime_ball")
+	  .addFillingStep({ fluid: "kubejs:shimmer", amount: 1 * BUCKET })
+    .build();  
   });
   /** @param {Internal.RecipeEventJS} event */
   function enchantBooks(event) {
