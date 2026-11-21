@@ -1,0 +1,13 @@
+{
+  "fluid.astraladditions.sputum": "Escarro",
+  "item.yttr.raw_gadolinite": "Ítrio Bruto",
+  "item.yttr.ultrapure_wolfram": "Detritos Ultrapuros",
+  "block.yttr.gadolinite": "Ítrio",
+  "block.yttr.raw_gadolinite_block": "Bloco de Ítrio Bruto",
+  "block.yttr.deepslate_gadolinite": "Ítrio de Ardósia",
+  "block.yttr.continuous_platform": "Cristais Prismáticos Estruturados",
+  "block.yttr.centrifuge": "Centrífuga Ítrica",
+  "advancements.yttr.obtain_xl_iron_ingot.desc": "Consiga um Ferrão fundindo Ítrio Bruto",
+  "advancements.yttr.obtain_yttrium_ingot.desc": "Consiga uma Barra de Ítrio fundindo Ítrio Bruto no alto-forno",
+  "fluid.yttr.core_lava": "Lava do Núcleo"
+}
