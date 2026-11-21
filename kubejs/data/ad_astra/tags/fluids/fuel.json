@@ -1,8 +1,4 @@
 {
   "replace": true,
-  "values": [
-
-    "techreborn:biofuel",
-    "ad_astra:cryo_fuel"
-  ]
+  "values": ["techreborn:biofuel", "ad_astra:cryo_fuel"]
 }

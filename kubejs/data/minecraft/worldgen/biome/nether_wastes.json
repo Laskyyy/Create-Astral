@@ -111,23 +111,12 @@
     "air": "minecraft:nether_cave"
   },
   "features": [
-    [
-			"astralrails:nether/wastes/decay",
-			"astralrails:nether/wastes/no_lava"
-		],
+    ["astralrails:nether/wastes/decay", "astralrails:nether/wastes/no_lava"],
     [],
-    [
-			"astralrails:nether/wastes/endstone"
-		],
-    [
-			"astralrails:nether/wastes/decay_2"
-		],
-    [
-			"astralrails:nether/wastes/vein"
-		],
-    [
-			"astralrails:nether/wastes/endstone_vein"
-		],
+    ["astralrails:nether/wastes/endstone"],
+    ["astralrails:nether/wastes/decay_2"],
+    ["astralrails:nether/wastes/vein"],
+    ["astralrails:nether/wastes/endstone_vein"],
     [],
     [
       "minecraft:patch_fire",
@@ -144,8 +133,8 @@
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
-			"astralrails:nether/nether_enderslime_geode",
-			"astralrails:nether/nether_monazite_geode"
+      "astralrails:nether/nether_enderslime_geode",
+      "astralrails:nether/nether_monazite_geode"
     ],
     [],
     [
@@ -153,7 +142,7 @@
       "minecraft:red_mushroom_normal",
       "minecraft:chorus_plant",
       "minecraft:end_island_decorated",
-			"astralrails:nether/wastes/no_yttr_tuff"
+      "astralrails:nether/wastes/no_yttr_tuff"
     ]
   ]
 }

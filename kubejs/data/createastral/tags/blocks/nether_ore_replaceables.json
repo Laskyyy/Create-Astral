@@ -1,4 +1,4 @@
 {
-    "replace": false,
-    "values": ["minecraft:netherrack", "astraladditions:enderrack", "yttr:nethertuff"]
+  "replace": false,
+  "values": ["minecraft:netherrack", "astraladditions:enderrack", "yttr:nethertuff"]
 }

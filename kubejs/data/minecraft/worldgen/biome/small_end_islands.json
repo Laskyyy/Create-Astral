@@ -68,13 +68,11 @@
     [],
     [
       "minecraft:end_island_decorated",
-			"astralrails:nether/nether_enderslime_geode",
-			"astralrails:nether/nether_monazite_geode"
+      "astralrails:nether/nether_enderslime_geode",
+      "astralrails:nether/nether_monazite_geode"
     ],
-		[
-		],
-		[	
-			"minecraft:chorus_plant"
-		]
+    [
+    ],
+    ["minecraft:chorus_plant"]
   ]
 }

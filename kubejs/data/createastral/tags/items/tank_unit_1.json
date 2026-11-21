@@ -1,5 +1,3 @@
 {
-    "values": [
-        "create:fluid_tank"
-    ]
+  "values": ["create:fluid_tank"]
 }

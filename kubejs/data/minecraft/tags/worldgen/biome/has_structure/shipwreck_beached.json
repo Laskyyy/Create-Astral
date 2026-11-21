@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "#minecraft:is_beach"
-  ]
+  "values": ["#minecraft:is_beach"]
 }

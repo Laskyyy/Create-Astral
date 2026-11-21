@@ -75,11 +75,7 @@
     }
   },
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [
@@ -90,9 +86,9 @@
       "ad_astra:mars_ostrum_ore"
     ],
     [
-			"astralrails:mars_desert_veg",
-			"astralrails:mars_soul_sand_patch",
-			"astralrails:mars_bone_pillar",
+      "astralrails:mars_desert_veg",
+      "astralrails:mars_soul_sand_patch",
+      "astralrails:mars_bone_pillar",
       "astralrails:mars_blackstone_patch",
       "astralrails:mars_bramblebone_veg"
     ]
