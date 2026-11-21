@@ -19,9 +19,9 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 ### ADDITIONS
 
-#### Translations
+#### Localisation
 
-- Added a Brazilian Portuguese (pt_br) translation of the quests, items, tooltips, custom Ponder scenes, main menu and credits screen @Muinhant1
+- Added a Brazilian Portuguese (pt_br) translation of the quests, items, tooltips, custom Ponder scenes, main menu and credits screen (#786, #787) @Muinhant1
 
 ### CHANGES
 
