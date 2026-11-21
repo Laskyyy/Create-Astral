@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:dark_oak_log",
-        "minecraft:dark_oak_wood"
-    ]
+  "values": ["minecraft:dark_oak_log", "minecraft:dark_oak_wood"]
 }

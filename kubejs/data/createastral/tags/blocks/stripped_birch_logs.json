@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:stripped_birch_log",
-        "minecraft:stripped_birch_wood"
-    ]
+  "values": ["minecraft:stripped_birch_log", "minecraft:stripped_birch_wood"]
 }

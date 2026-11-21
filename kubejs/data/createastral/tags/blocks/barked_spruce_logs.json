@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:spruce_log",
-        "minecraft:spruce_wood"
-    ]
+  "values": ["minecraft:spruce_log", "minecraft:spruce_wood"]
 }

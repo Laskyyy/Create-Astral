@@ -14,7 +14,6 @@
   "creature_spawn_probability": 0.2,
   "spawners": {
     "monster": [
-
       {
       	"type": "astraladditions:voidtouched_skeleton",
       	"weight": 15,
@@ -41,9 +40,7 @@
       }
     ]
   },
-  "spawn_costs": {
-
-  },
+  "spawn_costs": {},
   "carvers": {
     "air": [
       "minecraft:cave",

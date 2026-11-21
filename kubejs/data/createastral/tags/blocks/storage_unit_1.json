@@ -1,6 +1,3 @@
 {
-    "values": [
-        "techreborn:storage_buffer",
-        "techreborn:crude_storage_unit"
-    ]    
+  "values": ["techreborn:storage_buffer", "techreborn:crude_storage_unit"]
 }

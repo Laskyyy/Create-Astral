@@ -15,26 +15,17 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-		[],
-		[],
-		[],
-		[],
-		[
-			"astralrails:orbit/asteroids_large",
-			"astralrails:orbit/asteroids_small"
-		],
-		[
-			"astralrails:orbit/asteroids_large_replace_snow"
-		],
-		[
-			"astralrails:orbit/asteroids_desh_ore",
-			"astralrails:orbit/asteroids_ice_shard_ore",
-			"astralrails:orbit/asteroids_cheese_ore"
-		],
-		[
-			"astralrails:orbit/meteor_cobalt",
-			"astralrails:orbit/meteor_silver",
-			"astralrails:orbit/meteor_sky"
-		]
-	]
+    [],
+    [],
+    [],
+    [],
+    ["astralrails:orbit/asteroids_large", "astralrails:orbit/asteroids_small"],
+    ["astralrails:orbit/asteroids_large_replace_snow"],
+    [
+      "astralrails:orbit/asteroids_desh_ore",
+      "astralrails:orbit/asteroids_ice_shard_ore",
+      "astralrails:orbit/asteroids_cheese_ore"
+    ],
+    ["astralrails:orbit/meteor_cobalt", "astralrails:orbit/meteor_silver", "astralrails:orbit/meteor_sky"]
+  ]
 }

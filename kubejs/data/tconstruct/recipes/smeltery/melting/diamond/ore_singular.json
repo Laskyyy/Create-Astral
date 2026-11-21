@@ -5,10 +5,7 @@
       "condition": "tconstruct:tag_difference_present",
       "registry": "minecraft:item",
       "base": "c:ores/diamond",
-      "subtracted": [
-        "c:ore_rates/sparse",
-        "c:ore_rates/dense"
-      ]
+      "subtracted": ["c:ore_rates/sparse", "c:ore_rates/dense"]
     }
   ],
   "rate": "gem",

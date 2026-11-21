@@ -1,7 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "obsidian",
-    "crying_obsidian"
-  ]
+  "values": ["obsidian", "crying_obsidian"]
 }
