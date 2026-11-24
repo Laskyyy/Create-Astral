@@ -1,5 +1,7 @@
 {
-    "item.immersive_aircraft.engine": "Двигатель",
-    "item.immersive_aircraft.sail": "Большой парус",
-    "item.immersive_aircraft.propeller": "Большой пропеллер"
+  "tooltip.immersiveaircraft.nether_engine": "У этого улучшения нет рецепта",
+
+  "item.immersive_aircraft.engine": "Двигатель",
+  "item.immersive_aircraft.sail": "Большой парус",
+  "item.immersive_aircraft.propeller": "Большой пропеллер"
 }

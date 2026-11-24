@@ -1,3 +1,5 @@
 {
-    "block.doodads.asphalt": "Andesite Pavement"
+  "block.doodads.asphalt": "Andesite Pavement",
+  "block.doodads.asphalt_slab": "Andesite Pavement Slab",
+  "block.doodads.asphalt_stair": "Andesite Pavement Stair"
 }

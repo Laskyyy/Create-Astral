@@ -1,0 +1,39 @@
+{
+  "custommachinery.astralfoods.blender": "Блендер",
+  "custommachinery.astralfoods.blender.text": "Блендер",
+
+  "tooltip.astralfoods.shimmered_rabbit_stew": "Предложено NikWas!",
+  "tooltip.astralfoods.astral_sauce": "Не спрашивайте, откуда берётся миска...",
+  "tooltip.astralfoods.dipped_potato": "Любимая еда пиглинов! Предложено TheRobbie72",
+
+  "item.astralfoods.quantum_bites": "Квантовые кусочки",
+  "item.astralfoods.astral_sauce": "Астральный соус",
+  "item.astralfoods.quantum_pasta": "Квантовая паста",
+  "item.astralfoods.seared_potato": "Обожжённый картофель",
+  "item.astralfoods.dipped_potato": "Картофель в соусе",
+  "item.astralfoods.mashed_potato": "Картофельное пюре",
+  "item.astralfoods.hash_brown": "Хашбраун",
+  "item.astralfoods.shimmered_rabbit_stew": "Мерцающее рагу из кролика",
+  "item.astralfoods.shimmered_apple": "Мерцающее яблоко",
+  "item.astralfoods.compressed_onion": "Спрессованный лук",
+  "item.astralfoods.food_amalgamation": "Пищевая амальгама",
+  "item.astralfoods.bulbas_tea": "Чай Бульбы",
+  "item.astralfoods.protein_ball": "Белковый шарик",
+  "item.astralfoods.ambrosia": "Амброзия",
+  "item.astralfoods.chocolate_ice_cream": "Шоколадное мороженое",
+  "item.astralfoods.ice_cream_sandwich": "Мороженое-cэндвич",
+  "item.astralfoods.gamers_delight": "Радость геймеров",
+  "item.astralfoods.fried_cod": "Треска во фритюре",
+  "item.astralfoods.blaze_rods": "Стержни всполоха (еда)",
+  "item.astralfoods.blaze_fries": "Огненная картошка фри",
+  "item.astralfoods.blaze_fries_and_cod": "Огненная картошка фри с треской",
+  "item.astralfoods.cod_n_blaze": "Треска со всполохом",
+  "item.astralfoods.recovery_orb": "Сфера восстановления",
+  "item.astralfoods.cream_bucket": "Ведро сливок",
+
+  "block.astralfoods.blender": "Блендер",
+  "block.astralfoods.blender_dummy": "Заглушка блендера",
+  "block.astralfoods.blender_on_dummy": "Заглушка активного блендера",
+
+  "fluid.astralfoods.cream": "Сливки"
+}

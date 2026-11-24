@@ -1,0 +1,9 @@
+{
+  "tooltip.create.blaze_burner": "Las Blazes se encuentran en la Luna, dentro de la estructura \"Central de Energía Lunar\".",
+  "tooltip.create.empty_blaze_burner": "Las Blazes se encuentran en la Luna, dentro de la estructura \"Central de Energía Lunar\".",
+  "tooltip.create.mechanical_arm": "Usa una tolva para colocar esto en un ensamblador mecánico.",
+  "tooltip.create.blaze_cake": "¡Se obtiene en el capítulo 4!",
+
+  "item.create.lapis_sheet": "placa de Lapis",
+  "item.create.integrated_circuit": "Circuito integradoo"
+}

@@ -1,3 +1,10 @@
 {
+  "tooltip.create.blaze_burner": "Os Blazes ficam na Lua, dentro da estrutura \"Usina Lunar\".",
+  "tooltip.create.empty_blaze_burner": "Os Blazes ficam na Lua, dentro da estrutura \"Usina Lunar\".",
+  "tooltip.create.mechanical_arm": "Use um Funil, ou método de logística parecido, para colocar isto num Fabricador Mecânico.",
+  "tooltip.create.blaze_cake": "Obtido no Capítulo 4!",
+
+  "item.create.lapis_sheet": "Chapa de Lápis",
+  "item.create.integrated_circuit": "Circuito Integrado",
   "item.create.brass_hand": "Mão de Borracha"
 }

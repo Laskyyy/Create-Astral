@@ -1,0 +1,21 @@
+{
+  "custommachinery.astralgenerators.amalgamation_matrix": "Núcleo de la matriz de amalgamación",
+  "custommachinery.astralgenerators.amalgamation_matrix.text": "Matriz de amalgamación",
+  "custommachinery.astralgenerators.assembler": "Ensamblador",
+  "custommachinery.astralgenerators.assembler.text": "Ensamblador",
+  "custommachinery.astralgenerators.fluid_boiler": "Controlador del caldera de fluidos",
+  "custommachinery.astralgenerators.fluid_boiler.text": "Caldera de fluidos",
+  "custommachinery.astralgenerators.fusion_reactor": "Controlador del reactor de fusión",
+  "custommachinery.astralgenerators.fusion_reactor.text": "Reactor de Fusión",
+  "custommachinery.astralgenerators.particle_accelerator": "Controlador del acelerador de partículas",
+  "custommachinery.astralgenerators.particle_accelerator.text": "Acelerador de partículas",
+  "custommachinery.astralgenerators.solid_boiler": "Controlador de caldera de sólidos",
+  "custommachinery.astralgenerators.solid_boiler.text": "Caldera de sólidos",
+  "custommachinery.astralgenerators.steam_turbine": "Turbina de vapor",
+  "custommachinery.astralgenerators.steam_turbine.text": "Generador de vapor",
+
+  "fluid.astralgenerators.steam": "Vapor",
+  "fluid.astralgenerators.deuterium": "Deuterio",
+  "fluid.astralgenerators.tritium": "Tritio",
+  "fluid.astralgenerators.helium3": "Helio-3"
+}

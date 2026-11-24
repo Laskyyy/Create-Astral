@@ -1,0 +1,18 @@
+{
+  "category.starei.channeling_transformer": "Громовая генрация",
+  "category.starei.distillery": "Дистилляция",
+  "category.starei.electrolyzer": "Электролиз",
+  "category.starei.gas_mixer": "Смешивание газов",
+  "category.starei.shimmer_refinery": "Очистка мерцания",
+  "category.starei.slime_furnace": "Слизевое топливо",
+  "category.starei.stone_growth": "Выращивание камня",
+
+  "starei.slime_furnace.text1": "%d SU при %d RPM",
+  "starei.slime_furnace.text2": "%s секунд",
+  "starei.planet.earth": "Земля",
+  "starei.planet.moon": "Луна",
+  "starei.planet.mars": "Марс",
+  "starei.planet.mercury": "Меркурий",
+  "starei.planet.venus": "Венера",
+  "starei.planet.glacio": "Гляцио"
+}

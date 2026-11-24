@@ -1,0 +1,20 @@
+{
+  "tooltip.techreborn.uu_matter": "Material fabricado en el Capítulo 5 usando la refinería de Shimmer multibloque.",
+  "tooltip.techreborn.scrap": "Se obtiene poniendo cualquier objeto en un reciclador.",
+  "tooltip.techreborn.basic_machine_casing": "Se fabrica con placas de plomo, placas de plata o placas de hierro.",
+  "tooltip.techreborn.silver_ore": "Este metal se encuentra en la Luna, sobre todo en Y=65.",
+  "tooltip.techreborn.deepslate_silver_ore": "Este metal se encuentra en la Luna, principalmente en Y=65.",
+  "tooltip.techreborn.raw_silver": "Este metal se encuentra en la Luna, principalmente en Y=65.",
+  "tooltip.techreborn.silver_ingot": "Este metal se encuentra en la Luna, principalmente en Y=65.",
+  "tooltip.techreborn.silver_nugget": "Este metal se encuentra en la Luna, principalmente en Y=65.",
+  "tooltip.techreborn.lead_ore": "Este metal se encuentra en Marte, principalmente en Y=50.",
+  "tooltip.techreborn.deepslate_lead_ore": "Este metal se encuentra en Marte, principalmente en Y=50.",
+  "tooltip.techreborn.raw_lead": "Este metal se encuentra en Marte, principalmente en Y=50.",
+  "tooltip.techreborn.lead_ingot": "Este metal se encuentra en Marte, principalmente en Y=50.",
+  "tooltip.techreborn.lead_nugget": "Este metal se encuentra en Marte, principalmente en Y=50.",
+  "tooltip.techreborn.tin_ore": "Este metal se encuentra en el mundo superior, principalmente en Y=70.",
+  "tooltip.techreborn.deepslate_tin_ore": "Este metal se encuentra en el mundo superior, principalmente en Y=70.",
+  "tooltip.techreborn.raw_tin": "Este metal se encuentra en el mundo superior, principalmente en Y=70.",
+  "tooltip.techreborn.tin_ingot": "Este metal se encuentra en el mundo superior, principalmente en Y=70.",
+  "tooltip.techreborn.tin_nugget": "Este metal se encuentra en el mundo superior, principalmente en Y=70."
+}

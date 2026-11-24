@@ -1,0 +1,21 @@
+{
+  "custommachinery.astralgenerators.amalgamation_matrix": "Ядро матрицы слияния",
+  "custommachinery.astralgenerators.amalgamation_matrix.text": "Матрица слияния",
+  "custommachinery.astralgenerators.assembler": "Сборщик",
+  "custommachinery.astralgenerators.assembler.text": "Сборщик",
+  "custommachinery.astralgenerators.fluid_boiler": "Контроллер жидкостного котла",
+  "custommachinery.astralgenerators.fluid_boiler.text": "Жидкостный котёл",
+  "custommachinery.astralgenerators.fusion_reactor": "Контроллер термоядерного реактора",
+  "custommachinery.astralgenerators.fusion_reactor.text": "Термоядерный реактор",
+  "custommachinery.astralgenerators.particle_accelerator": "Контроллер ускорителя частиц",
+  "custommachinery.astralgenerators.particle_accelerator.text": "Ускоритель частиц",
+  "custommachinery.astralgenerators.solid_boiler": "Контроллер твердотопливного котла",
+  "custommachinery.astralgenerators.solid_boiler.text": "Твердотопливный котёл",
+  "custommachinery.astralgenerators.steam_turbine": "Паровая турбина",
+  "custommachinery.astralgenerators.steam_turbine.text": "Паровой генератор",
+
+  "fluid.astralgenerators.steam": "Пар",
+  "fluid.astralgenerators.deuterium": "Дейтерий",
+  "fluid.astralgenerators.tritium": "Тритий",
+  "fluid.astralgenerators.helium3": "Гелий-3"
+}
