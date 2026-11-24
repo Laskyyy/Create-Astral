@@ -1,9 +1,9 @@
 {
-  "tooltip.create.blaze_burner": "Blazes are found on The Moon inside of the \"Lunar Power Plant\" structure.",
-  "tooltip.create.empty_blaze_burner": "Blazes are found on The Moon inside of the \"Lunar Power Plant\" structure.",
-  "tooltip.create.mechanical_arm": "Use a Hopper, Funnel, or similar logistical method to place this in a Mechanical Crafter.",
-  "tooltip.create.blaze_cake": "Obtained in Chapter 4!",
-
-  "item.create.lapis_sheet": "Lapis Sheet",
-  "item.create.integrated_circuit": "Integrated Circuit"
+  "item.create.brass_hand":"Rubber Hand",
+  "item.create.integrated_circuit":"Integrated Circuit",
+  "item.create.lapis_sheet":"Lapis Sheet",
+  "tooltip.create.blaze_burner":"Blazes are found on The Moon inside of the \"Lunar Power Plant\" structure.",
+  "tooltip.create.blaze_cake":"Obtained in Chapter 4!",
+  "tooltip.create.empty_blaze_burner":"Blazes are found on The Moon inside of the \"Lunar Power Plant\" structure.",
+  "tooltip.create.mechanical_arm":"Use a Hopper, Funnel, or similar logistical method to place this in a Mechanical Crafter."
 }

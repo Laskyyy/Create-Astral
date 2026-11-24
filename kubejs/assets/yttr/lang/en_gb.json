@@ -1,6 +1,16 @@
 {
-  "tooltip.yttr.gadolinite": "Gated by reaching Mercury! (Chapter 5)",
-  "tooltip.yttr.yttrium_ingot": "Gated by reaching Mercury! (Chapter 5)",
-
-  "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive"
+  "advancements.yttr.obtain_xl_iron_ingot.desc":"Obtain Big Iron by smelting Raw Yttrium",
+  "advancements.yttr.obtain_yttrium_ingot.desc":"Obtain a Yttrium Ingot by blasting Raw Yttrium",
+  "block.yttr.centrifuge":"Yttric Centrifuge",
+  "block.yttr.continuous_platform":"Structured Prismatic Crystals",
+  "block.yttr.deepslate_gadolinite":"Deepslate Yttrium",
+  "block.yttr.gadolinite":"Yttrium",
+  "block.yttr.polished_scorched_obsidian_holster_alive":"Polished Scorched Obsidian Holster Alive",
+  "block.yttr.raw_gadolinite_block":"Raw Yttrium Block",
+  "fluid.astraladditions.sputum":"Sputum",
+  "fluid.yttr.core_lava":"Core Lava",
+  "item.yttr.raw_gadolinite":"Raw Yttrium",
+  "item.yttr.ultrapure_wolfram":"Ultrapure Debris",
+  "tooltip.yttr.gadolinite":"Gated by reaching Mercury! (Chapter 5)",
+  "tooltip.yttr.yttrium_ingot":"Gated by reaching Mercury! (Chapter 5)"
 }
