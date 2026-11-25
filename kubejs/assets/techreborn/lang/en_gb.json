@@ -1,0 +1,20 @@
+{
+  "tooltip.techreborn.uu_matter": "Material made in Chapter 5 using the Shimmer Refinery multiblock.",
+  "tooltip.techreborn.scrap": "Made by putting any item into a Recycler.",
+  "tooltip.techreborn.basic_machine_casing": "Crafted with either Lead plates, Silver Plates, or Iron Sheets.",
+  "tooltip.techreborn.silver_ore": "This metal is found on The Moon, most commonly at Y=65",
+  "tooltip.techreborn.deepslate_silver_ore": "This metal is found on The Moon, most commonly at Y=65",
+  "tooltip.techreborn.raw_silver": "This metal is found on The Moon, most commonly at Y=65",
+  "tooltip.techreborn.silver_ingot": "This metal is found on The Moon, most commonly at Y=65",
+  "tooltip.techreborn.silver_nugget": "This metal is found on The Moon, most commonly at Y=65",
+  "tooltip.techreborn.lead_ore": "This metal is found on Mars, most commonly at Y=50",
+  "tooltip.techreborn.deepslate_lead_ore": "This metal is found on Mars, most commonly at Y=50",
+  "tooltip.techreborn.raw_lead": "This metal is found on Mars, most commonly at Y=50",
+  "tooltip.techreborn.lead_ingot": "This metal is found on Mars, most commonly at Y=50",
+  "tooltip.techreborn.lead_nugget": "This metal is found on Mars, most commonly at Y=50",
+  "tooltip.techreborn.tin_ore": "This metal is found in the overworld, most commonly at Y=70 ",
+  "tooltip.techreborn.deepslate_tin_ore": "This metal is found in the overworld, most commonly at Y=70 ",
+  "tooltip.techreborn.raw_tin": "This metal is found in the overworld, most commonly at Y=70 ",
+  "tooltip.techreborn.tin_ingot": "This metal is found in the overworld, most commonly at Y=70 ",
+  "tooltip.techreborn.tin_nugget": "This metal is found in the overworld, most commonly at Y=70 "
+}

@@ -1,0 +1,9 @@
+{
+  "tooltip.drawer.upgrade": "Drawer Slot capacity: ",
+  "tooltip.dot": ".",
+  "tooltip.extended_drawers.downgrade.1": "Reduces the Drawer Slot capacity to ",
+  "tooltip.extended_drawers.downgrade.2": "64",
+  "tooltip.extended_drawers.lock.1": "Shift-Right-click the Drawer Slot to ",
+  "tooltip.extended_drawers.lock.2": "lock it",
+  "tooltip.extended_drawers.lock.3": " to the item inside."
+}

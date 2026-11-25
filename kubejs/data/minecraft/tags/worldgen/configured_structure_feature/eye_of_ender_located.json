@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "minecraft:stronghold"
-  ]
+  "values": ["minecraft:stronghold"]
 }

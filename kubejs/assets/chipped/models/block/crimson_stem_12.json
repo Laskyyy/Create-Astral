@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/crimson_stem/crimson_stem_12_top",
+    "side": "chipped:block/crimson_stem/crimson_stem_12_side"
+  }
+}

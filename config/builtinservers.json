@@ -1,0 +1,15 @@
+{
+  "badgeVisible": true,
+  "builtinServers": [
+    {
+      "name": "Official Server",
+      "address": "official.createastral.uk",
+      "forced": true
+    },
+    {
+      "name": "Sister Server",
+      "address": "sister.createastral.uk",
+      "forced": true
+    }
+  ]
+}

@@ -1,6 +1,3 @@
 {
-    "values": [
-        "minecraft:acacia_log",
-        "minecraft:acacia_wood"
-    ]
+  "values": ["minecraft:acacia_log", "minecraft:acacia_wood"]
 }

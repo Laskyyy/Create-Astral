@@ -1,4 +1,4 @@
-(function yttrLootFix() {
+(function blockLootFix() {
   /** @typedef {Special.Block & Special.Item} BlockThatIsAlsoAnItem */
 
   /**
@@ -17,6 +17,22 @@
 
   onEvent("block.loot_tables", (event) => {
     yttrBlockFix(event);
+
+    event.addSimpleBlock(/^chipped:terracotta_\d+$/);
+
+    Ingredient.of(/^chipped:(packed_|blue_)?ice_\d+$/).getStacks().forEach(block => {
+      event.addBlock(block.id, table => {
+        table.addPool(pool => {
+          pool.addItem(block.id);
+          pool.addCondition({
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "enchantments": [{ "enchantment": "minecraft:silk_touch" }]
+            }
+          });
+        });
+      });
+    });
   });
   // Taken from the old yttr_block_fix.js file
   // ! Commented out entries aren't both blocks and items!

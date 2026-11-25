@@ -51,11 +51,7 @@
     }
   },
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [
@@ -64,13 +60,13 @@
       "ad_astra:moon_ice_shard_ore",
       "ad_astra:moon_iron_ore",
       "ad_astra:moon_desh_ore",
-			"astralrails:moon_shroom",
-			"astralrails:moon_soul_sand_patch",
-			"astralrails:moon_shroom_veg",
-			"astralrails:moon_nether_wart_patch",
-			"astralrails:moon_twisting_vines",
-			"astralrails:moon_lune_shroom_patch",
-			"astralrails:moon_bulba_patch",
+      "astralrails:moon_shroom",
+      "astralrails:moon_soul_sand_patch",
+      "astralrails:moon_shroom_veg",
+      "astralrails:moon_nether_wart_patch",
+      "astralrails:moon_twisting_vines",
+      "astralrails:moon_lune_shroom_patch",
+      "astralrails:moon_bulba_patch",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small"
     ]

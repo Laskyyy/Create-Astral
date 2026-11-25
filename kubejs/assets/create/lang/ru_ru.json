@@ -1,3 +1,10 @@
 {
-    "item.create.brass_hand": "Резиновая рука"
+  "tooltip.create.blaze_burner": "Всполохи (ифриты) обитают на Луне внутри структуры «Лунная электростанция».",
+  "tooltip.create.empty_blaze_burner": "Всполохи (ифриты) обитают на Луне внутри структуры «Лунная электростанция».",
+  "tooltip.create.mechanical_arm": "Используйте воронку, шлюз или другой логистический метод, чтобы поместить это в механический крафтер.",
+  "tooltip.create.blaze_cake": "Доступно в главе 4!",
+
+  "item.create.lapis_sheet": "Лазуритовый лист",
+  "item.create.integrated_circuit": "Интегральная схема",
+  "item.create.brass_hand": "Резиновая рука"
 }

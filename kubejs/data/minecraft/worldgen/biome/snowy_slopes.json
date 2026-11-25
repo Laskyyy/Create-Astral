@@ -18,25 +18,13 @@
     "water_fog_color": 329011
   },
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [],
-    [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
-    ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
+    ["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
+    ["minecraft:amethyst_geode"],
+    ["minecraft:monster_room", "minecraft:monster_room_deep"],
     [],
     [],
     [
@@ -70,21 +58,10 @@
       "minecraft:disk_gravel",
       "minecraft:ore_emerald"
     ],
-    [
-      "minecraft:ore_infested"
-    ],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
-    [
-      "minecraft:glow_lichen",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin"
-    ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    ["minecraft:ore_infested"],
+    ["minecraft:spring_water", "minecraft:spring_lava"],
+    ["minecraft:glow_lichen", "minecraft:patch_sugar_cane", "minecraft:patch_pumpkin"],
+    ["minecraft:freeze_top_layer"]
   ],
   "spawners": {
     "monster": [

@@ -1,6 +1,25 @@
 {
+  "tooltip.ad_astra.space_helmet": "Можно починить прочными листами или стальными слитками.",
+  "tooltip.ad_astra.space_suit": "Можно починить прочными листами или стальными слитками.",
+  "tooltip.ad_astra.space_pants": "Можно починить прочными листами или стальными слитками.",
+  "tooltip.ad_astra.space_boots": "Можно починить прочными листами или стальными слитками.",
+  "tooltip.ad_astra.netherite_space_helmet": "Можно починить незеритовыми слитками.",
+  "tooltip.ad_astra.netherite_space_suit": "Можно починить незеритовыми слитками.",
+  "tooltip.ad_astra.netherite_space_pants": "Можно починить незеритовыми слитками.",
+  "tooltip.ad_astra.netherite_space_boots": "Можно починить незеритовыми слитками.",
+  "tooltip.ad_astra.jet_suit_helmet": "Можно починить калоритовыми слитками.",
+  "tooltip.ad_astra.jet_suit": "Можно починить калоритовыми слитками.",
+  "tooltip.ad_astra.jet_suit_pants": "Можно починить калоритовыми слитками.",
+  "tooltip.ad_astra.jet_suit_boots": "Можно починить калоритовыми слитками.",
+  "tooltip.ad_astra.tier_1_rocket": "Отключено, используйте специальный портал на Луну.",
+
+  "gui.ad_astra.text.proxima_centauri": "Иное измерение",
+  "gui.ad_astra.text.solar_system": "Измерение",
+
   "biome.ad_astra.infernal_venus_barrens": "Адские пустоши Марса",
+
   "entity.ad_astra.glacian_ram": "Лунный баран",
+
   "item.ad_astra.netherite_space_boots": "Освинцованные космические ботинки",
   "item.ad_astra.netherite_space_helmet": "Освинцованный космический шлем",
   "item.ad_astra.netherite_space_pants": "Освинцованные космические поножи",
@@ -8,21 +27,19 @@
   "item.ad_astra.tier_2_rocket": "Ракета из деша",
   "item.ad_astra.tier_3_rocket": "Ракета из острума",
   "item.ad_astra.tier_4_rocket": "Ракета из калорита",
-  "fluid.ad_astra.oxygen": "Кислород",
-  "fluid.ad_astra.oil": "Нефть",
-  "fluid.ad_astra.cryo_fuel": "Криогенное топливо",
-  "fluid.ad_astra.fuel": "Топливо",
-
-  "block.ad_astra.venus_gold_ore": "Марсианская золотая руда",
   "item.ad_astra.venus_gold_ore": "Марсианская золотая руда",
-  "block.ad_astra.deepslate_calorite_ore": "Меркурианская калоритовая руда",
   "item.ad_astra.deepslate_calorite_ore": "Меркурианская калоритовая руда",
-
   "item.ad_astra.steel_plate": "Стальной лист",
   "item.ad_astra.desh_plate": "Лист деша",
   "item.ad_astra.ostrum_plate": "Лист острума",
   "item.ad_astra.calorite_plate": "Лист калорита",
+
+  "block.ad_astra.venus_gold_ore": "Марсианская золотая руда",
+  "block.ad_astra.deepslate_calorite_ore": "Меркурианская калоритовая руда",
   "block.ad_astra.calorite_block": "Блок калорита",
-  "gui.ad_astra.text.proxima_centauri": "Иное измерение",
-  "gui.ad_astra.text.solar_system": "Измерение"
+
+  "fluid.ad_astra.oxygen": "Кислород",
+  "fluid.ad_astra.oil": "Нефть",
+  "fluid.ad_astra.cryo_fuel": "Криогенное топливо",
+  "fluid.ad_astra.fuel": "Топливо"
 }

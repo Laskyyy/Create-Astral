@@ -1,6 +1,4 @@
 {
-    "replace": false,
-    "values": [
-        "createastral:synthetic_slime_block"
-    ]
+  "replace": false,
+  "values": ["createastral:synthetic_slime_block"]
 }

@@ -1,13 +1,20 @@
 {
-    "fluid.astraladditions.sputum": "Мокрота",
-    "item.yttr.raw_gadolinite": "Рудный иттрий",
-    "item.yttr.ultrapure_wolfram": "Сверхчистые обломки",
-    "block.yttr.gadolinite": "Иттрий",
-    "block.yttr.raw_gadolinite_block": "Блок рудного иттрия",
-    "block.yttr.deepslate_gadolinite": "Глубинносланцевый иттрий",
-    "block.yttr.continuous_platform": "Структурированные призматические кристаллы",
-    "block.yttr.centrifuge": "Иттриевая центрифуга",
-    "advancements.yttr.obtain_xl_iron_ingot.desc": "Получите Большое Железо, переплавив необработанный иттрий",
-    "advancements.yttr.obtain_yttrium_ingot.desc": "Получите слиток иттрия, переплавив необработанный иттрий в плавильне",
-    "fluid.yttr.core_lava": "Лава ядра"
+  "advancements.yttr.obtain_xl_iron_ingot.desc": "Получите Большое Железо, переплавив необработанный иттрий",
+  "advancements.yttr.obtain_yttrium_ingot.desc": "Получите слиток иттрия, переплавив необработанный иттрий в плавильне",
+
+  "tooltip.yttr.gadolinite": "Доступно только после полёта на Меркурий! (Глава 5)",
+  "tooltip.yttr.yttrium_ingot": "Доступно только после полёта на Меркурий! (Глава 5)",
+
+  "item.yttr.raw_gadolinite": "Рудный иттрий",
+  "item.yttr.ultrapure_wolfram": "Сверхчистые обломки",
+
+  "block.yttr.gadolinite": "Иттрий",
+  "block.yttr.raw_gadolinite_block": "Блок рудного иттрия",
+  "block.yttr.deepslate_gadolinite": "Глубинносланцевый иттрий",
+  "block.yttr.continuous_platform": "Структурированные призматические кристаллы",
+  "block.yttr.centrifuge": "Иттриевая центрифуга",
+  "block.yttr.polished_scorched_obsidian_holster_alive": "Живой держатель из полированного обожжённого обсидиана",
+
+  "fluid.astraladditions.sputum": "Мокрота",
+  "fluid.yttr.core_lava": "Лава ядра"
 }

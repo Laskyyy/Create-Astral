@@ -1,0 +1,9 @@
+{
+  "tooltip.drawer.upgrade": "Вместимость ячейки ящика: ",
+  "tooltip.dot": ".",
+  "tooltip.extended_drawers.downgrade.1": "Снижает вместимость ячейки до ",
+  "tooltip.extended_drawers.downgrade.2": "64",
+  "tooltip.extended_drawers.lock.1": "Shift+ПКМ по ячейке ящика, чтобы ",
+  "tooltip.extended_drawers.lock.2": "заблокировать её",
+  "tooltip.extended_drawers.lock.3": " для текущего предмета."
+}

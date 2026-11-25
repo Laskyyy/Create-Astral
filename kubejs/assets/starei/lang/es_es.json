@@ -1,0 +1,18 @@
+{
+  "category.starei.channeling_transformer": "Canalización",
+  "category.starei.distillery": "Destilación",
+  "category.starei.electrolyzer": "Electrólisis",
+  "category.starei.gas_mixer": "Mezcla de gases",
+  "category.starei.shimmer_refinery": "Refinado de Shimmer",
+  "category.starei.slime_furnace": "Combustible de slime",
+  "category.starei.stone_growth": "Crecimiento de piedra",
+
+  "starei.slime_furnace.text1": "%d SU a %d RPM",
+  "starei.slime_furnace.text2": "%s segundos",
+  "starei.planet.earth": "Tierra",
+  "starei.planet.moon": "Luna",
+  "starei.planet.mars": "Marte",
+  "starei.planet.mercury": "Mercurio",
+  "starei.planet.venus": "Venus",
+  "starei.planet.glacio": "Glacio"
+}

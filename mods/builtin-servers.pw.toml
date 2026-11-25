@@ -1,0 +1,13 @@
+name = "Builtin Servers"
+filename = "builtin-servers-2.0-BETA+1.18.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8200951f20bd2191ce8eee54996e35498698bf36"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3857543
+project-id = 473131

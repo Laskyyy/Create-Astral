@@ -1,0 +1,39 @@
+{
+  "custommachinery.astralfoods.blender": "Liquidificador",
+  "custommachinery.astralfoods.blender.text": "Liquidificador",
+
+  "tooltip.astralfoods.shimmered_rabbit_stew": "Sugestão do NikWas!",
+  "tooltip.astralfoods.astral_sauce": "Não pergunte de onde veio a tigela...",
+  "tooltip.astralfoods.dipped_potato": "A comida favorita dos piglins! Sugestão do TheRobbie72",
+
+  "item.astralfoods.quantum_bites": "Petiscos Quânticos",
+  "item.astralfoods.astral_sauce": "Molho Astral",
+  "item.astralfoods.quantum_pasta": "Macarrão Quântico",
+  "item.astralfoods.seared_potato": "Batata Tostada",
+  "item.astralfoods.dipped_potato": "Batata Mergulhada",
+  "item.astralfoods.mashed_potato": "Purê de Batata",
+  "item.astralfoods.hash_brown": "Batata Rösti",
+  "item.astralfoods.shimmered_rabbit_stew": "Ensopado de Coelho Cintilado",
+  "item.astralfoods.shimmered_apple": "Maçã Cintilada",
+  "item.astralfoods.compressed_onion": "Cebola Comprimida",
+  "item.astralfoods.food_amalgamation": "Amálgama de Comida",
+  "item.astralfoods.bulbas_tea": "Chá de Bulba",
+  "item.astralfoods.protein_ball": "Bolinha de Proteína",
+  "item.astralfoods.ambrosia": "Ambrosia",
+  "item.astralfoods.chocolate_ice_cream": "Sorvete de Chocolate",
+  "item.astralfoods.ice_cream_sandwich": "Sanduíche de Sorvete",
+  "item.astralfoods.gamers_delight": "Delícia dos Gamers",
+  "item.astralfoods.fried_cod": "Bacalhau Frito",
+  "item.astralfoods.blaze_rods": "Palitos de Blaze",
+  "item.astralfoods.blaze_fries": "Fritas de Blaze",
+  "item.astralfoods.blaze_fries_and_cod": "Fritas de Blaze com Bacalhau",
+  "item.astralfoods.cod_n_blaze": "Bacalhau com Blaze",
+  "item.astralfoods.recovery_orb": "Orbe de Recuperação",
+  "item.astralfoods.cream_bucket": "Balde de Creme de Leite",
+
+  "block.astralfoods.blender": "Liquidificador",
+  "block.astralfoods.blender_dummy": "Liquidificador (Modelo)",
+  "block.astralfoods.blender_on_dummy": "Liquidificador Ligado (Modelo)",
+
+  "fluid.astralfoods.cream": "Creme de Leite"
+}

@@ -1,5 +1,6 @@
 {
-    "item.astraladditions.fragile_item": "Механизм охлаждения [Хрупкий]",
-    "item.astraladditions.fragile_item_2": "Субатомное ядро [Хрупкое]",
-    "item.astraladditions.fragile_item_3": "Сияющий ускоритель [Хрупкий]"
+  "tooltip.astraladditions.fragile_item": "Ломается, если держать в инвентаре игрока. Его нужно перемещать только логистическими методами!",
+  "item.astraladditions.fragile_item": "Механизм охлаждения [Хрупкий]",
+  "item.astraladditions.fragile_item_2": "Субатомное ядро [Хрупкое]",
+  "item.astraladditions.fragile_item_3": "Сияющий ускоритель [Хрупкий]"
 }

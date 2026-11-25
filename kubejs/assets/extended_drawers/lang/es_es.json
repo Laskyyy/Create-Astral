@@ -1,0 +1,9 @@
+{
+  "tooltip.drawer.upgrade": "Capacidad de la ranura del cajón:",
+  "tooltip.dot": ".",
+  "tooltip.extended_drawers.downgrade.1": "Reduce la capacidad de la ranura del cajón a ",
+  "tooltip.extended_drawers.downgrade.2": "64",
+  "tooltip.extended_drawers.lock.1": "Shift-Clic-Derecho a la ranura del cajón para ",
+  "tooltip.extended_drawers.lock.2": "fijarla",
+  "tooltip.extended_drawers.lock.3": " al item de dentro."
+}
