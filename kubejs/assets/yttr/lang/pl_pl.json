@@ -1,1 +1,16 @@
-{}
+{
+  "advancements.yttr.obtain_xl_iron_ingot.desc":"Otrzymaj duże żelazo poprzez przetapianie rudy itru",
+  "advancements.yttr.obtain_yttrium_ingot.desc":"Otrzymaj sztabkę itru poprzez przetapianie rudy itru",
+  "block.yttr.centrifuge":"Itrowa wirówka",
+  "block.yttr.continuous_platform":"Struktuowane pryzmatowe kryształy",
+  "block.yttr.deepslate_gadolinite":"Łupkowe złoże itru",
+  "block.yttr.gadolinite":"Itr",
+  "block.yttr.polished_scorched_obsidian_holster_alive":"Żywa wypolerowana spalona obsydianowa komora",
+  "block.yttr.raw_gadolinite_block":"Blok rudy itru",
+  "fluid.astraladditions.sputum":"Plwonica",
+  "fluid.yttr.core_lava":"Lawa rdzenna",
+  "item.yttr.raw_gadolinite":"Ruda itru",
+  "item.yttr.ultrapure_wolfram":"Ultraczyste zgliszcza",
+  "tooltip.yttr.gadolinite":"Zablokowany przed dotarciem do Merkury! (Rozdział 5)",
+  "tooltip.yttr.yttrium_ingot":"Zablokowany przed dotarciem do Merkury! (Rozdział 5)"
+}

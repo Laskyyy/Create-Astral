@@ -1,1 +1,11 @@
-{}
+{
+  "block.dustrial_decor.cast_iron_balustrade":"Żelazno andezytowa balustrada",
+  "block.dustrial_decor.cast_iron_block":"Blok żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_brick_slab":"Żelazno andezytowa ceglana płyta",
+  "block.dustrial_decor.cast_iron_brick_stairs":"Żelazno andezytowe ceglane schody",
+  "block.dustrial_decor.cast_iron_brick_vertical_slab":"Żelazno andezytowa ceglana pionowa płyta",
+  "block.dustrial_decor.cast_iron_bricks":"Żelazno andezytowe cegły",
+  "block.dustrial_decor.cast_iron_pillar":"Żelazno andezytowy filar",
+  "block.dustrial_decor.engraved_cast_iron_block":"Grawerowany blok żelaza andezytowego",
+  "item.dustrial_decor.cast_iron_billet":"Żelazno andezytowy kęs"
+}

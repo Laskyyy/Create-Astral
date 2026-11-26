@@ -2,9 +2,12 @@
   "achievement.ae2.Charger": "Production de Shimmer",
   "achievement.ae2.Fluix.desc": "Créez de la poussière de Shimmer",
   "achievement.ae2.GlassCable": "Connexion énergétique de Shimmer",
-
+  "block.ae2.deepslate_quartz_ore": "Minerai de Certus Quartz de pierre de lune",
+  "block.ae2.fluix_block": "Bloc de Shimmer",
+  "block.ae2.fluix_slab": "Dalles de Shimmer",
+  "block.ae2.fluix_stairs": "Escaliers de Shimmer",
+  "block.ae2.fluix_wall": "Mur de Shimmer",
   "gui.ae2.Fluix": "Shimmer",
-
   "item.ae2.fluix_axe": "Hache en Shimmer",
   "item.ae2.fluix_covered_cable": "Câble ME couvert de Shimmer",
   "item.ae2.fluix_covered_dense_cable": "Câble dense ME couvert de Shimmer",
@@ -18,11 +21,5 @@
   "item.ae2.fluix_shovel": "Pelle en Shimmer",
   "item.ae2.fluix_smart_cable": "Câble intelligent ME en Shimmer",
   "item.ae2.fluix_smart_dense_cable": "Câble dense intelligent ME en Shimmer",
-  "item.ae2.fluix_sword": "Épée en Shimmer",
-
-  "block.ae2.fluix_block": "Bloc de Shimmer",
-  "block.ae2.fluix_slab": "Dalles de Shimmer",
-  "block.ae2.fluix_stairs": "Escaliers de Shimmer",
-  "block.ae2.fluix_wall": "Mur de Shimmer",
-  "block.ae2.deepslate_quartz_ore": "Minerai de Certus Quartz de pierre de lune"
+  "item.ae2.fluix_sword": "Épée en Shimmer"
 }
