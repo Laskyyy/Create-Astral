@@ -2598,12 +2598,19 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests83.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests83.description}"]
 			dependencies: ["20BFF582275C31C8"]
+			min_required_tasks: 1
 			id: "072FC342FAE44F38"
-			tasks: [{
-				id: "7D08C2F8EA085D3B"
-				type: "item"
-				item: "minecraft:soul_campfire"
-			}]
+			tasks: [
+				{
+					id: "7D08C2F8EA085D3B"
+					type: "item"
+					item: "minecraft:soul_campfire"
+				}
+				{
+					id: "01BF6D62446BC613"
+					type: "checkmark"
+				}
+			]
 			rewards: [{
 				id: "3D99B29D0BABB364"
 				type: "loot"
@@ -3017,7 +3024,11 @@
 			x: -1.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests96.description0}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests96.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests96.description3}"
+			]
 			dependencies: [
 				"70FE485B4505AC81"
 				"49BE333EAC6260C8"
@@ -3026,34 +3037,50 @@
 			id: "65DED861096175C2"
 			tasks: [
 				{
-					id: "6EAE447DF0EF949F"
+					id: "4997387DD35D9163"
 					type: "item"
-					item: "kubejs:blast-resistant_cement_bucket"
-				}
-				{
-					id: "19B1B96B0520A59C"
-					type: "item"
+					title: "{ftbquests.chapter.chapter_4.quests96.tasks0}"
 					item: {
-						id: "techreborn:cell"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							fluid: "kubejs:blast-resistant_cement"
+							items: [
+								{
+									id: "kubejs:blast-resistant_cement_bucket"
+									Count: 1b
+								}
+								{
+									id: "techreborn:cell"
+									Count: 1b
+									tag: {
+										fluid: "kubejs:blast-resistant_cement"
+									}
+								}
+							]
 						}
 					}
 				}
 				{
-					id: "489B4A821CCFBD34"
+					id: "712608D5AC9D4D72"
 					type: "item"
-					item: "kubejs:blast-resistant_dement_bucket"
-				}
-				{
-					id: "6B091A805C3BA1C5"
-					type: "item"
+					title: "{ftbquests.chapter.chapter_4.quests96.tasks2}"
 					item: {
-						id: "techreborn:cell"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							fluid: "kubejs:blast-resistant_dement"
+							items: [
+								{
+									id: "kubejs:blast-resistant_dement_bucket"
+									Count: 1b
+								}
+								{
+									id: "techreborn:cell"
+									Count: 1b
+									tag: {
+										fluid: "kubejs:blast-resistant_dement"
+									}
+								}
+							]
 						}
 					}
 				}
@@ -3081,20 +3108,28 @@
 			dependencies: ["65DED861096175C2"]
 			min_required_tasks: 1
 			id: "62C959AC63DD2A89"
-			tasks: [
-				{
-					id: "2D8437605F091BEF"
-					type: "item"
-					item: "createastral:blast-resistant_concrete"
-					count: 16L
+			tasks: [{
+				id: "230E31D26818A66A"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_4.quests96.tasks2}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "createastral:blast-resistant_concrete"
+								Count: 1b
+							}
+							{
+								id: "createastral:blast-resistant_doncrete"
+								Count: 1b
+							}
+						]
+					}
 				}
-				{
-					id: "226C1A5FF27D32AE"
-					type: "item"
-					item: "createastral:blast-resistant_doncrete"
-					count: 16L
-				}
-			]
+				count: 16L
+			}]
 			rewards: [{
 				id: "498DCE4281AF6E58"
 				type: "item"
@@ -4403,7 +4438,7 @@
 		}
 		{
 			x: -13.0d
-			y: -1.5d
+			y: -1.75d
 			subtitle: "{ftbquests.chapter.chapter_4.quests141.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests141.description0}"
@@ -4414,7 +4449,7 @@
 				""
 				"{ftbquests.chapter.chapter_4.quests141.description4}"
 			]
-			dependencies: ["301604FEAD4699AD"]
+			dependencies: ["752215E611021472"]
 			id: "20768473377DAF57"
 			tasks: [{
 				id: "33CDCD7F0C1EEDFE"

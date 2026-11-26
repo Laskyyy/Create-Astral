@@ -31,6 +31,18 @@
         time: 1000,
         heat: 1500,
       },
+      {
+        input: [
+          { item: "techreborn:steel_dust", count: 9 },
+          { item: "techreborn:cell", count: 1 },
+        ],
+        output: [
+          { fluid: "techreborn:carbon", holder: "techreborn:cell", count: 1 },
+        ],
+        power: 200,
+        time: 200,
+        heat: 1500,
+      },
     ];
     blastFurnaceRecipes.forEach((recipe) => {
       event.custom({
