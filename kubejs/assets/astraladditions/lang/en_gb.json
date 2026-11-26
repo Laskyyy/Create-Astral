@@ -1,3 +1,6 @@
 {
-  "tooltip.astraladditions.fragile_item": "Breaks when held in player inventories, it must be moved with logistical methods!"
+  "item.astraladditions.fragile_item":"Cooling Mechanism [Fragile]",
+  "item.astraladditions.fragile_item_2":"Subatomic Core [Fragile]",
+  "item.astraladditions.fragile_item_3":"Radiant Thruster [Fragile]",
+  "tooltip.astraladditions.fragile_item":"Breaks when held in player inventories, it must be moved with logistical methods!"
 }
